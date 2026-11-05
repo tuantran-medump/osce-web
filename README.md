@@ -35,3 +35,38 @@ node --test tests/*.test.js
 Trên web, trang **Nạp đề** cho phép chọn file .md hoặc dán chữ, xem trước, báo lỗi theo dòng, lưu vào trình duyệt (localStorage) và **Xuất ra .md** để đưa vào `mau-nap/tram/`.
 
 Tự chấm: làm xong trạm sẽ hiện phần Tự chấm (rubric F/40/80/100% hoặc checklist đáp án). Điểm %, ngày, thời gian làm lưu trong localStorage; trang **Lịch sử** có Xuất/Nhập file JSON để sao lưu.
+
+## Ứng dụng (PWA) và chạy offline
+
+- `manifest.webmanifest`, `icons/`, `sw.js` (sinh tự động khi build từ `tools/sw-mau.js`, danh sách tệp + phiên bản theo nội dung).
+- Lần mở đầu (có mạng) lưu toàn bộ trang, dữ liệu, hình vào bộ nhớ máy; sau đó dùng offline. Khi có bản mới sẽ hiện thông báo "Đã có bản cập nhật – Tải lại".
+- Cài như app: iPhone/iPad (Safari → Chia sẻ → Thêm vào MH chính), Android (Chrome → Cài đặt ứng dụng), PC (Chrome/Edge → biểu tượng cài ở thanh địa chỉ).
+- Service worker chỉ chạy qua `http(s)`; mở thẳng file `index.html` vẫn dùng được nhưng không offline/cài app.
+
+## Công cụ luyện tập
+
+- Tập đọc CTG: `js/ctg.js` (chuyển từ `nguon/tap-doc-ctg/script` sang JS, sinh băng mới bằng seed); 12 ca + đáp án `mau-nap/cong-cu/ctg-ca-goc.json`, khóa đáp án dạng chọn `mau-nap/cong-cu/ctg-khoa.json`.
+- Tập sản đồ: 6 tình huống `mau-nap/cong-cu/san-do.json` (nguồn ghi theo số đề và số dòng chương 5).
+- Biểu đồ tăng trưởng: số liệu `nguon/mau-trong/script/shino.json` (Shinozuka) và công thức Hadlock.
+- Thi thử: 6 trạm (mỗi chương 1 đề) × 7 phút + 1 phút chuyển trạm, bảng điểm cuối buổi.
+
+## Deploy
+
+Trang là web tĩnh, dữ liệu đã build sẵn trong repo, **không cần bước build trên máy chủ**. Trước khi đẩy lên, chạy `node tools/build_data.js` nếu có sửa đề/dữ liệu (để cập nhật `data/` và `sw.js`).
+
+### GitHub Pages
+
+1. Gộp nhánh vào `main` (hoặc chọn nhánh muốn xuất bản).
+2. Trên GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, chọn nhánh `main`, thư mục `/ (root)`, bấm **Save**.
+3. Sau 1–2 phút trang có ở `https://<tên-tài-khoản>.github.io/osce-web/`. Mọi đường dẫn trong web đều là đường dẫn tương đối nên chạy được dưới thư mục con `/osce-web/`.
+4. Tệp `.nojekyll` đã có để GitHub không xử lý các file `.md` bằng Jekyll (giữ nguyên `mau-nap/*.md` cho nút tải khuôn).
+
+### Vercel
+
+1. Vào vercel.com → **Add New… → Project** → chọn repo `osce-web`.
+2. **Framework Preset: Other**; **Build Command**: để trống; **Output Directory**: `.` (thư mục gốc); bấm **Deploy**.
+3. `vercel.json` đã đặt `Cache-Control: no-cache` cho `sw.js` để bản cập nhật đến người dùng nhanh.
+4. Mỗi lần push lên nhánh đã kết nối, Vercel tự triển khai lại.
+
+Sau khi deploy: mở trang bằng Safari/Chrome một lần khi có mạng, rồi cài như app theo hướng dẫn ở trên.
+

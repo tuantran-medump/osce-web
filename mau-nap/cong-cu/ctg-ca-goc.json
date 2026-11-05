@@ -1,0 +1,513 @@
+[
+ {
+  "gen": "c1",
+  "time": [
+   9,
+   0
+  ],
+  "cat": "NST có đáp ứng (≈ loại I)",
+  "catn": 1,
+  "ctx": "Chị A., 28 tuổi, PARA 0000, thai <b>38 tuần</b>, khám thai định kì. Thai máy bình thường, không đau bụng, chưa chuyển dạ. Thực hiện <b>NST 30 phút</b>. Vạch đen nhỏ ngay dưới phần tim thai là lúc thai phụ bấm nút báo cử động thai.",
+  "q": [
+   "Đọc đầy đủ băng ghi.",
+   "Kết luận NST.",
+   "Hướng quản lí tiếp theo."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "2 cơn nhỏ, thưa trong 30 phút, cường độ khoảng 20 mmHg, trương lực căn bản khoảng 8 mmHg. Không có chuyển dạ, nên đủ điều kiện đọc NST."
+   ],
+   [
+    "Tim thai cơ bản",
+    "140 nhịp/phút, bình thường."
+   ],
+   [
+    "Dao động nội tại",
+    "Khoảng 10–15 nhịp/phút, trung bình."
+   ],
+   [
+    "Nhịp tăng",
+    "5 nhịp tăng trong 30 phút, biên độ 20–35 nhịp, kéo dài trên 15 giây, đi kèm cử động thai (vạch đen)."
+   ],
+   [
+    "Nhịp giảm",
+    "Không có."
+   ]
+  ],
+  "ket": "<b>NST có đáp ứng (bình thường):</b> thai ≥ 32 tuần có ít nhất 2 nhịp tăng ≥ 15 nhịp, ≥ 15 giây trong 20 phút. Nếu xếp theo ACOG thì tương đương loại I.",
+  "li": "Hành não thai toàn vẹn: dao động nội tại bình thường và tim thai tăng khi thai cử động. Giá trị tiên đoán âm của NST khoảng 99% trong 1 tuần.",
+  "xt": "Thai kì nguy cơ thấp: tiếp tục khám thai định kì, hướng dẫn đếm cử động thai mỗi ngày, dặn các dấu hiệu cần nhập viện (đau bụng, ra huyết, ra nước, thai máy ít).",
+  "bay": "Ở thai ≤ 31 tuần, tiêu chuẩn nhịp tăng là 10 × 10, không phải 15 × 15.",
+  "src": "Chương 3, Bài 3 (Non-stress test); Handout CTG mục 8."
+ },
+ {
+  "gen": "c6",
+  "time": [
+   14,
+   20
+  ],
+  "cat": "Loại II",
+  "catn": 2,
+  "ctx": "Chị F., 29 tuổi, PARA 0000, thai <b>40 tuần</b>, khởi phát chuyển dạ bằng <b>oxytocin truyền tĩnh mạch</b>, vừa tăng liều 30 phút trước. Cổ tử cung 5 cm, ối đã vỡ, nước ối trong. Mạch 84, HA 120/70, không sốt.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Lí giải và xử trí ngay lúc này."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "<b>6 cơn/10 phút</b> (&gt; 5 cơn), mỗi cơn khoảng 60 giây, co:nghỉ gần 1:1 (nghỉ chỉ khoảng 40 giây). Trương lực căn bản khoảng 18 mmHg, cường độ 65–80 mmHg, biên độ khoảng 50–60 mmHg. Kết luận: <b>cơn co nhiều (tachysystole)</b>."
+   ],
+   [
+    "Tim thai cơ bản",
+    "145 nhịp/phút."
+   ],
+   [
+    "Dao động nội tại",
+    "Khoảng 8–12 nhịp/phút, trung bình."
+   ],
+   [
+    "Nhịp tăng",
+    "Không có."
+   ],
+   [
+    "Nhịp giảm",
+    "<b>Nhịp giảm muộn lặp lại</b> sau mỗi cơn co: tuần tiến (từ khởi đầu tới đáy hơn 30 giây), đáy nằm sau đỉnh cơn co khoảng 30 giây, hồi phục sau khi cơn co đã hết, sâu khoảng 20 nhịp."
+   ]
+  ],
+  "ket": "<b>CTG loại II</b>: nhịp giảm muộn lặp lại trên nền dao động nội tại trung bình. Chưa phải loại III vì còn dao động nội tại.",
+  "li": "Cơn co quá dày làm giảm cấp máu tới hồ máu, thai thiếu oxy trong mỗi cơn co nên xuất hiện nhịp giảm muộn. Nguyên nhân rõ: oxytocin vừa tăng liều. Dao động nội tại còn trung bình nên hành não chưa bị toan hóa.",
+  "xt": "1. <b>Ngưng oxytocin ngay.</b><br>2. Nằm nghiêng trái, truyền dịch tinh thể đẳng trương.<br>3. Khám lại: loại trừ bất xứng đầu chậu, dọa vỡ tử cung.<br>4. Cơn co không giảm sau ngưng thuốc: thuốc giảm co (terbutaline).<br>5. Theo dõi EFM liên tục. Nhịp giảm muộn hết thì có thể dùng lại oxytocin liều thấp hơn. Nếu mất dao động nội tại (thành loại III) thì mổ lấy thai.",
+  "bay": "ACOG dùng thuật ngữ “cơn co nhiều”, không dùng “cơn co cường tính”. Nhịp giảm muộn không cần sâu, chỉ cần thấy được và lệch pha với cơn co.",
+  "src": "Handout CTG mục 5, 9, 15, 17; Chương 5, Bài 11 (can thiệp sơ cấp khi EFM bất thường); Note APP 4.5."
+ },
+ {
+  "gen": "c2",
+  "time": [
+   10,
+   40
+  ],
+  "cat": "Loại I",
+  "catn": 1,
+  "ctx": "Chị B., 30 tuổi, PARA 1001, thai <b>39 tuần</b>, chuyển dạ tự nhiên. Cổ tử cung <b>8 cm</b>, ngôi chỏm, độ lọt <b>+2</b>, ối đã vỡ, nước ối trong. Không dùng oxytocin.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Nhận định tình trạng thai và hướng xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "4 cơn/10 phút, mỗi cơn khoảng 75 giây, co:nghỉ khoảng 1:1. Trương lực căn bản khoảng 12 mmHg, cường độ 65–80 mmHg, biên độ khoảng 55–65 mmHg. Phù hợp giai đoạn hoạt động, không phải cơn co nhiều."
+   ],
+   [
+    "Tim thai cơ bản",
+    "135 nhịp/phút."
+   ],
+   [
+    "Dao động nội tại",
+    "Khoảng 10 nhịp/phút, trung bình."
+   ],
+   [
+    "Nhịp tăng",
+    "Có 1 nhịp tăng ở phút thứ 2 (khoảng 20 nhịp, trên 15 giây)."
+   ],
+   [
+    "Nhịp giảm",
+    "<b>Nhịp giảm sớm lặp lại</b>: tuần tiến, đối xứng gương với cơn co (khởi đầu cùng lúc cơn co bắt đầu, đáy trùng đỉnh cơn co, hồi phục khi cơn co hết), sâu khoảng 15–20 nhịp."
+   ]
+  ],
+  "ket": "<b>CTG loại I</b>: tim thai cơ bản bình thường, dao động nội tại trung bình, không có nhịp giảm muộn hay bất định. Nhịp giảm sớm không làm thay đổi phân loại.",
+  "li": "Nhịp giảm sớm do đầu thai bị chèn ép khi ngôi xuống thấp trong đường sanh (độ lọt +2), gây phản xạ phó giao cảm. Thai hiện chưa bị đe dọa.",
+  "xt": "Tiếp tục theo dõi chuyển dạ thường quy bằng sản đồ, chờ sanh ngả âm đạo. Không cần can thiệp vì nhịp giảm sớm.",
+  "bay": "Đừng gọi nhịp giảm sớm là “suy thai”. Khi đọc OSCE phải nêu đủ các thông số cơn co (tần số, co:nghỉ, trương lực, cường độ), không chỉ đọc tim thai.",
+  "src": "Handout CTG mục 9, 13, 20; OSCE Y21 trạm sản đồ + CTG (Y18, phần 2)."
+ },
+ {
+  "gen": "c10",
+  "time": [
+   21,
+   5
+  ],
+  "cat": "Loại III",
+  "catn": 3,
+  "ctx": "Chị K., 33 tuổi, PARA 1001, thai <b>37 tuần</b>, tiền sản giật. Nhập viện vì <b>đột ngột đau bụng dữ dội</b> 1 giờ, ra huyết âm đạo đỏ sẫm lượng ít. Mạch 112, HA 100/60 (lúc khám thai trước đó 150/95). Tử cung co cứng, ấn đau.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Chẩn đoán nghĩ đến và xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "Cơn co <b>nhỏ, dày</b>, khoảng 6–7 cơn/10 phút, biên độ chỉ 20–25 mmHg. <b>Trương lực căn bản tăng dần</b> từ khoảng 12 lên khoảng 30 mmHg. Tương quan co:nghỉ rối loạn, gần như không có thời gian nghỉ thật."
+   ],
+   [
+    "Tim thai cơ bản",
+    "<b>90 nhịp/phút</b>, chậm."
+   ],
+   [
+    "Dao động nội tại",
+    "<b>Mất</b>: đường ghi phẳng, biên độ dưới 2 nhịp."
+   ],
+   [
+    "Nhịp tăng",
+    "Không có."
+   ],
+   [
+    "Nhịp giảm",
+    "Không có nhịp giảm riêng biệt quan sát được."
+   ]
+  ],
+  "ket": "<b>CTG loại III</b>: mất dao động nội tại kèm tim thai căn bản chậm.",
+  "li": "Bệnh cảnh nhau bong non trên nền tiền sản giật: đau bụng đột ngột, tử cung co cứng, huyết đỏ sẫm, mạch nhanh và HA tụt so với trước. Trên CTG có tăng trương lực kèm cơn co nhỏ, dày. Bong nhau làm gián đoạn trao đổi khí, thai thiếu oxy nặng và toan hóa máu.",
+  "xt": "Cấp cứu: lập 2 đường truyền lớn, xét nghiệm công thức máu, đông máu, fibrinogen, nhóm máu, dự trù máu. <b>Mổ lấy thai cấp cứu</b> vì thai còn sống, CTG loại III. Báo nhi hồi sức sơ sinh. Sau sanh theo dõi rối loạn đông máu và băng huyết sau sanh.",
+  "bay": "Ghi ngoài thì trương lực căn bản chỉ là trị số tương đối so với lúc pre-set. Lỗi set máy có thể che mất hình ảnh “tử cung gỗ” và làm băng trông như có cơn co yếu, có nghỉ.",
+  "src": "Handout CTG mục 5 (hình 11), 14, 16; Chương 5, Bài 11 (nhau bong non cần chấm dứt chuyển dạ tức thì); OSCE Y21 trạm nhau bong non."
+ },
+ {
+  "gen": "c5",
+  "time": [
+   16,
+   30
+  ],
+  "cat": "Loại II",
+  "catn": 2,
+  "ctx": "Chị E., 27 tuổi, PARA 0000, thai <b>39 tuần</b>, chuyển dạ hoạt động, cổ tử cung 5 cm, ối còn. <b>40 phút trước được tiêm pethidine 50 mg</b> tiêm bắp để giảm đau. Sinh hiệu mẹ ổn định.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Lí giải và hướng xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "3 cơn/10 phút, mỗi cơn khoảng 65 giây. Trương lực căn bản khoảng 11 mmHg, cường độ 55–60 mmHg, biên độ khoảng 45 mmHg."
+   ],
+   [
+    "Tim thai cơ bản",
+    "140 nhịp/phút."
+   ],
+   [
+    "Dao động nội tại",
+    "<b>Tối thiểu</b>, khoảng 3–4 nhịp/phút (≤ 5). Đường ghi vẫn còn “nhăn nheo”, không phẳng hẳn."
+   ],
+   [
+    "Nhịp tăng",
+    "Không có."
+   ],
+   [
+    "Nhịp giảm",
+    "Không có."
+   ]
+  ],
+  "ket": "<b>CTG loại II</b>: dao động nội tại tối thiểu đơn độc.",
+  "li": "Thuốc ức chế thần kinh trung ương (pethidine, nhóm opioid) làm giảm dao động nội tại. Thai đang trong chu kì ngủ (20–40 phút) cũng gây hình ảnh này. Phải nghĩ đến thiếu oxy nặng nếu kéo dài hoặc có kèm nhịp giảm.",
+  "xt": "Nằm nghiêng trái, theo dõi EFM liên tục. Đánh giá lại sau khi thuốc hết tác dụng (1–2 giờ). Có thể kích thích da đầu thai khi khám trong: xuất hiện nhịp tăng thì gần như loại trừ toan hóa máu (nguồn ACOG). Nếu dao động nội tại không hồi phục hoặc xuất hiện nhịp giảm thì đánh giá lại và cân nhắc chấm dứt chuyển dạ.",
+  "bay": "Lỗi hay gặp nhất: đọc dao động tối thiểu thành mất dao động, tức là hạ loại II xuống loại III. Mất dao động là đường phẳng hoàn toàn (so với ca có nhau bong non).",
+  "src": "Handout CTG mục 7, 15, 16, 19; ACOG Practice Bulletin 106 (kích thích da đầu thai)."
+ },
+ {
+  "gen": "c7",
+  "time": [
+   3,
+   15
+  ],
+  "cat": "Loại II",
+  "catn": 2,
+  "ctx": "Chị G., 26 tuổi, PARA 1001, thai <b>39 tuần</b>, chuyển dạ tự nhiên. <b>Ối vỡ tự nhiên 3 giờ</b>, nước ối trong. Cổ tử cung 6 cm, ngôi chỏm, độ lọt 0. Siêu âm tuần trước: dây rốn quấn cổ 1 vòng.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Lí giải và xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "3–4 cơn/10 phút, mỗi cơn khoảng 70 giây. Trương lực căn bản khoảng 11 mmHg, cường độ 60–75 mmHg."
+   ],
+   [
+    "Tim thai cơ bản",
+    "140 nhịp/phút."
+   ],
+   [
+    "Dao động nội tại",
+    "Khoảng 10–15 nhịp/phút, trung bình."
+   ],
+   [
+    "Nhịp tăng",
+    "Chỉ có các “vai” nhỏ ngay trước và sau mỗi nhịp giảm. Vai không được tính là nhịp tăng."
+   ],
+   [
+    "Nhịp giảm",
+    "<b>Nhịp giảm bất định lặp lại</b>: đột ngột (dưới 30 giây từ khởi đầu tới đáy), sâu 40–60 nhịp, kéo dài 35–55 giây (dưới 2 phút). Thời điểm, độ sâu và độ dài thay đổi theo từng cơn co. Hồi phục nhanh về tim thai căn bản."
+   ]
+  ],
+  "ket": "<b>CTG loại II</b>: nhịp giảm bất định lặp lại trên nền dao động nội tại trung bình. Đây là loại II gần loại I vì còn dao động nội tại, có vai, hồi phục nhanh.",
+  "li": "Nhịp giảm bất định do rối loạn lưu thông dây rốn (căng kéo hoặc chèn ép), phù hợp với ối đã vỡ và dây rốn quấn cổ.",
+  "xt": "1. <b>Khám trong ngay để loại trừ sa dây rốn.</b><br>2. Thay đổi tư thế mẹ (nghiêng trái hoặc phải) để giải phóng dây rốn.<br>3. Theo dõi EFM liên tục, tiếp tục chuyển dạ nếu băng ghi cải thiện.<br>4. Nhịp giảm bất định lặp lại kéo dài có thể truyền ối (nguồn ACOG).<br>5. Can thiệp sớm nếu thấy dấu hiệu nguy hiểm: chậm hồi phục về căn bản, overshoot, mất vai, mất dao động nội tại.",
+  "bay": "Định danh nhịp giảm theo thứ tự 3 câu hỏi: thời gian, rồi tốc độ, rồi liên hệ với cơn co. Đột ngột thì là bất định, bất chấp nó có trùng cơn co hay không.",
+  "src": "Handout CTG mục 9, 11, 15, 20; Chương 5, Bài 11 (xử lí bất thường tuần hoàn dây rốn); ACOG Practice Bulletin 116."
+ },
+ {
+  "gen": "c3",
+  "time": [
+   23,
+   10
+  ],
+  "cat": "Loại II",
+  "catn": 2,
+  "ctx": "Chị C., 25 tuổi, PARA 0000, thai <b>40 tuần</b>. <b>Ối vỡ 22 giờ</b>, chuyển dạ tiềm thời, cổ tử cung 3 cm. Nhiệt độ <b>38,7°C</b>, mạch mẹ 110 lần/phút. Nước ối đục, hôi. Tử cung ấn đau. Chưa dùng thuốc gì.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Lí giải bất thường và xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "3 cơn/10 phút, mỗi cơn khoảng 65 giây. Trương lực căn bản khoảng 13 mmHg, cường độ 55–60 mmHg."
+   ],
+   [
+    "Tim thai cơ bản",
+    "<b>170 nhịp/phút</b>, nhanh (&gt; 160)."
+   ],
+   [
+    "Dao động nội tại",
+    "Khoảng 8–10 nhịp/phút, trung bình."
+   ],
+   [
+    "Nhịp tăng",
+    "Không có."
+   ],
+   [
+    "Nhịp giảm",
+    "Không có."
+   ]
+  ],
+  "ket": "<b>CTG loại II</b>: tim thai căn bản nhanh.",
+  "li": "Theo handout, nhịp nhanh có thể do tachysystole (băng này không có), hoặc do nguyên nhân rõ ràng như sốt cao, thuốc beta-mimetic, chèn ép tĩnh mạch chủ dưới, mất nước. Ở đây là <b>sốt mẹ do nhiễm trùng ối</b> (ối vỡ trên 18 giờ, sốt, mạch nhanh, ối hôi, tử cung đau). Dao động nội tại còn trung bình nên thai chưa toan hóa.",
+  "xt": "Hạ sốt (paracetamol), bù dịch. Kháng sinh tĩnh mạch phổ rộng (ví dụ ampicillin + gentamicin). Chấm dứt thai kì: nhiễm trùng ối là chỉ định chấm dứt thai kì, không phải chỉ định mổ. Tăng co bằng oxytocin, theo dõi EFM liên tục, mổ khi có chỉ định sản khoa. Báo nhi khám sơ sinh sau sanh.",
+  "bay": "Nhịp nhanh đơn độc vẫn là loại II, dù dao động nội tại bình thường. Luôn tìm nguyên nhân ở mẹ trước.",
+  "src": "Handout CTG mục 6, 15, 18; ACOG Committee Opinion 712 (nhiễm trùng ối)."
+ },
+ {
+  "gen": "c9",
+  "time": [
+   7,
+   45
+  ],
+  "cat": "Loại III",
+  "catn": 3,
+  "ctx": "Chị I., 35 tuổi, PARA 0000, thai <b>36 tuần</b>, <b>tiền sản giật nặng</b> (HA 170/110, đạm niệu 3+). Siêu âm: ước lượng cân thai dưới bách phân vị thứ 3, AFI 3 cm, Doppler động mạch rốn <b>mất dòng tâm trương</b>. Có cơn co tự nhiên, cổ tử cung 2 cm.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Nhận định tình trạng thai và xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "3 cơn/10 phút, mỗi cơn khoảng 70 giây. Trương lực căn bản khoảng 13 mmHg, cường độ 55–60 mmHg."
+   ],
+   [
+    "Tim thai cơ bản",
+    "150 nhịp/phút."
+   ],
+   [
+    "Dao động nội tại",
+    "<b>Mất</b>: đường ghi phẳng."
+   ],
+   [
+    "Nhịp tăng",
+    "Không có."
+   ],
+   [
+    "Nhịp giảm",
+    "<b>Nhịp giảm muộn lặp lại</b> sau cả 3 cơn co: nông (khoảng 15 nhịp), tuần tiến, đáy trễ hơn đỉnh cơn co khoảng 35 giây."
+   ]
+  ],
+  "ket": "<b>CTG loại III</b>: mất dao động nội tại kèm nhịp giảm muộn lặp lại.",
+  "li": "Suy chức năng nhau do tiền sản giật, gây thai chậm tăng trưởng, thiểu ối và mất dòng tâm trương động mạch rốn. Thai thiếu oxy mạn và đã toan hóa máu (mất dao động nội tại). Thai bị đe dọa nghiêm trọng.",
+  "xt": "Đánh giá ngay mẹ và thai. Nằm nghiêng trái, truyền dịch, magnesium sulfate dự phòng co giật, hạ áp. <b>Chấm dứt thai kì ngay bằng mổ lấy thai</b> vì cổ tử cung mới 2 cm, không thể sanh nhanh ngả âm đạo. Báo nhi chuẩn bị hồi sức sơ sinh.",
+  "bay": "Nhịp giảm muộn nông rất dễ bỏ sót trên nền phẳng. Hãy so vị trí đáy nhịp giảm với đỉnh cơn co ở bên dưới.",
+  "src": "Handout CTG mục 14 (ví dụ bà B.), 20; Chương 5, Bài 11; OSCE Y21 (Y20 đợt 2)."
+ },
+ {
+  "gen": "c8",
+  "time": [
+   8,
+   0
+  ],
+  "cat": "Loại II",
+  "catn": 2,
+  "notes": [
+   [
+    120,
+    "HA 85/50"
+   ]
+  ],
+  "ctx": "Chị H., 31 tuổi, PARA 0000, thai <b>39 tuần</b>, cổ tử cung 6 cm, ngôi chỏm, độ lọt 0, ối đã vỡ, nước ối trong. <b>Gây tê ngoài màng cứng</b> giảm đau lúc 07:55. Lúc 08:02 đo HA <b>85/50 mmHg</b>, mạch 105 (ghi chú màu xanh trên băng).",
+  "q": [
+   "Đọc đầy đủ CTG. Định danh biến động tim thai.",
+   "Phân loại theo ACOG 2009.",
+   "Lí giải và xử trí ngay."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "3 cơn/10 phút, mỗi cơn khoảng 70 giây. Trương lực căn bản khoảng 11 mmHg, cường độ 55–70 mmHg."
+   ],
+   [
+    "Tim thai cơ bản",
+    "140 nhịp/phút (trước và sau biến động)."
+   ],
+   [
+    "Dao động nội tại",
+    "Trung bình (khoảng 10 nhịp/phút) ngoài nhịp giảm. Trong nhịp giảm thì giảm còn khoảng 5 nhịp/phút."
+   ],
+   [
+    "Nhịp tăng",
+    "Không có."
+   ],
+   [
+    "Nhịp giảm",
+    "Từ khoảng 08:03 tim thai giảm xuống khoảng 85 nhịp/phút, giữ ở đó rồi hồi phục về 140 lúc khoảng 08:07:20. Tổng thời gian khoảng 4,5 phút: từ 2 đến dưới 10 phút nên là <b>nhịp giảm kéo dài</b>, bất chấp các đặc tính khác."
+   ]
+  ],
+  "ket": "<b>CTG loại II</b>: một nhịp giảm kéo dài, dao động nội tại trung bình.",
+  "li": "Tụt huyết áp mẹ sau gây tê ngoài màng cứng làm giảm cấp máu tới hồ máu. Tuy vậy, nhịp giảm kéo dài là vấn đề khẩn cấp và phải loại trừ <b>sa dây rốn thể ẩn</b> trước khi quy cho tê ngoài màng cứng.",
+  "xt": "1. <b>Khám trong ngay</b> loại trừ sa dây rốn, đồng thời nghe tim thai liên tục.<br>2. Nằm nghiêng trái (hoặc Fowler nghiêng trái).<br>3. Truyền nhanh dịch tinh thể (NaCl 0,9%), theo dõi HA và mạch. Không đáp ứng thì dùng thuốc vận mạch (ephedrine hoặc phenylephrine, nguồn ACOG).<br>4. Ngưng oxytocin nếu đang dùng.<br>5. Tim thai không hồi phục thì chuẩn bị mổ cấp cứu. Ở ca này tim thai đã hồi phục nên tiếp tục theo dõi chuyển dạ.",
+  "bay": "Nhịp giảm kéo dài trên 10 phút thì không còn là nhịp giảm nữa mà phải định lại tim thai căn bản (thành nhịp chậm).",
+  "src": "Handout CTG mục 9, 11, 16, 20; OSCE Y21 (Y19 đợt 2, CTG sau giảm đau sản khoa); Note APP 4.5."
+ },
+ {
+  "gen": "c12",
+  "time": [
+   12,
+   50
+  ],
+  "cat": "Loại II",
+  "catn": 2,
+  "ctx": "Chị M., 34 tuổi, PARA 1001, thai <b>39 tuần</b>, <b>đái tháo đường thai kì dùng insulin, kiểm soát kém</b>. Ước lượng cân thai 3900 g. Chuyển dạ hoạt động, cổ tử cung 7 cm, ối còn.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Ý nghĩa và hướng theo dõi."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "3 cơn/10 phút, mỗi cơn khoảng 70 giây. Trương lực căn bản khoảng 11 mmHg, cường độ 55–70 mmHg."
+   ],
+   [
+    "Tim thai cơ bản",
+    "Khoảng 145 nhịp/phút."
+   ],
+   [
+    "Dao động nội tại",
+    "<b>Tăng</b>: biên độ khoảng 30–40 nhịp/phút (&gt; 25), dạng “nhịp nhảy”. Riêng 30 giây đầu băng dao động còn trung bình."
+   ],
+   [
+    "Nhịp tăng",
+    "Không xác định được nhịp tăng riêng biệt."
+   ],
+   [
+    "Nhịp giảm",
+    "Không có nhịp giảm lặp lại liên quan cơn co."
+   ]
+  ],
+  "ket": "<b>CTG loại II</b>: dao động nội tại tăng đáng kể.",
+  "li": "Liên quan với kết cục còn chưa rõ. Theo handout, đây là dấu cảnh báo rối loạn chuyển hóa carbohydrate: đái tháo đường thai kì kiểm soát kém, thai to.",
+  "xt": "Theo dõi EFM liên tục. Kiểm soát đường huyết mẹ trong chuyển dạ. Theo dõi sát sản đồ vì nguy cơ thai to: chuyển dạ kéo dài, bất xứng, kẹt vai. Chuẩn bị xử trí kẹt vai khi sanh, báo nhi theo dõi hạ đường huyết sơ sinh.",
+  "bay": "Dao động tăng không phải là “tim thai tốt hơn”. Đừng nhầm với hình sin: hình sin thì đều đặn, mượt mà, 3–5 chu kì/phút.",
+  "src": "Handout CTG mục 7, 15, 19."
+ },
+ {
+  "gen": "c4",
+  "time": [
+   6,
+   0
+  ],
+  "cat": "Loại II",
+  "catn": 2,
+  "ctx": "Chị D., 32 tuổi, PARA 1001, thai <b>41 tuần 4 ngày</b>, nhập viện khởi phát chuyển dạ, chưa dùng thuốc. Mạch mẹ 82, HA 120/70, không sốt. Cổ tử cung 2 cm, ối còn, ngôi chỏm cao.",
+  "q": [
+   "Đọc đầy đủ CTG.",
+   "Phân loại theo ACOG 2009.",
+   "Cần làm gì trước tiên? Hướng xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "2–3 cơn/10 phút, mỗi cơn khoảng 60 giây. Trương lực căn bản khoảng 10 mmHg, cường độ khoảng 50 mmHg."
+   ],
+   [
+    "Tim thai cơ bản",
+    "<b>100 nhịp/phút</b>, chậm (&lt; 110)."
+   ],
+   [
+    "Dao động nội tại",
+    "Khoảng 10–12 nhịp/phút, trung bình."
+   ],
+   [
+    "Nhịp tăng",
+    "Có 1 nhịp tăng ở khoảng phút thứ 6 (khoảng 20 nhịp, trên 15 giây)."
+   ],
+   [
+    "Nhịp giảm",
+    "Không có."
+   ]
+  ],
+  "ket": "<b>CTG loại II</b>: tim thai căn bản chậm đơn độc, không kèm nhịp giảm.",
+  "li": "Theo trình tự lí giải, nhịp chậm là vấn đề khẩn cấp: phải nghĩ đến thiếu oxy thai nặng hoặc block nhĩ thất do dị tật tim. Ở ca này dao động nội tại trung bình và còn nhịp tăng nên hành não còn đáp ứng tốt, ít nghĩ toan hóa máu. Thai quá ngày có thể có tim thai căn bản thấp gần 100–110.",
+  "xt": "1. Bắt mạch mẹ cùng lúc để chắc máy không ghi nhịp mẹ (mạch mẹ 82, khác 100).<br>2. Khám trong loại trừ sa dây rốn.<br>3. Siêu âm đánh giá tim thai, nước ối. Nghĩ block nhĩ thất thì siêu âm tim thai.<br>4. Theo dõi EFM liên tục. Ổn định thì tiếp tục khởi phát chuyển dạ. Nếu mất dao động nội tại thì thành loại III và cần chấm dứt thai kì ngay.",
+  "bay": "Nhịp chậm đơn độc là loại II. Nhịp chậm kèm mất dao động nội tại mới là loại III.",
+  "src": "Handout CTG mục 6, 15, 16; Note RAT 4.3 (giảm tim thai căn bản xuất hiện sau giảm dao động nội tại)."
+ },
+ {
+  "gen": "c11",
+  "time": [
+   15,
+   0
+  ],
+  "cat": "Loại III",
+  "catn": 3,
+  "rows2": true,
+  "ctx": "Chị L., 30 tuổi, PARA 1001, thai <b>34 tuần</b>, đến khám vì <b>thai máy ít 1 ngày</b>. 2 ngày trước bị té xe, va bụng nhẹ, không đau bụng, không ra huyết. Nhóm máu O, Rh(+). Băng ghi 40 phút; dưới đây là <b>20 phút cuối, in liên tục thành 2 hàng</b>.",
+  "q": [
+   "Đọc đầy đủ băng ghi.",
+   "Phân loại theo ACOG 2009.",
+   "Nguyên nhân nghĩ đến và hướng xử trí."
+  ],
+  "rows": [
+   [
+    "Cơn co",
+    "Chỉ 1 cơn nhỏ khoảng 20 mmHg. Không có chuyển dạ."
+   ],
+   [
+    "Tim thai cơ bản",
+    "Khoảng 150 nhịp/phút."
+   ],
+   [
+    "Dao động nội tại",
+    "Không có dao động nội tại thật. Đường ghi uốn lượn <b>đều đặn, mềm mại như sóng sin</b>, khoảng 3–4 chu kì/phút, biên độ khoảng 15 nhịp, kéo dài suốt 20 phút."
+   ],
+   [
+    "Nhịp tăng",
+    "Không có (không đáp ứng)."
+   ],
+   [
+    "Nhịp giảm",
+    "Không có."
+   ]
+  ],
+  "ket": "<b>Biểu đồ hình sin thực, CTG loại III.</b>",
+  "li": "Hình sin thực bản chất là đã mất dao động nội tại, rất hiếm gặp, đặc trưng của <b>thiếu máu thai nặng</b>. Bối cảnh chấn thương bụng gợi ý <b>xuất huyết thai sang mẹ</b> (hoặc nhau bong non thể ẩn). Nguyên nhân khác: bất đồng nhóm máu Rh (ca này Rh dương), nhiễm parvovirus B19, Hb Bart’s.",
+  "xt": "Nhập viện, đánh giá ngay: siêu âm loại trừ nhau bong non và phù thai, Doppler đỉnh tâm thu động mạch não giữa (MCA-PSV) để ước tình trạng thiếu máu thai, xét nghiệm Kleihauer-Betke máu mẹ. Tùy tuổi thai và nơi điều trị: chấm dứt thai kì (thường mổ lấy thai) hoặc truyền máu trong tử cung ở trung tâm chuyên sâu. Báo nhi chuẩn bị truyền máu sơ sinh.",
+  "bay": "Phân biệt với giả hình sin: giả hình sin uốn lượn kém mượt, thời gian không ổn định và vẫn còn dao động nội tại. Hình sin cần kéo dài ≥ 20 phút, nên băng ngắn 10 phút chưa đủ để kết luận.",
+  "src": "Handout CTG mục 10, 14; Chương 3 (phân biệt hình sin và giả hình sin); Chương 5, Bài 6; ACOG Practice Bulletin 106."
+ }
+]

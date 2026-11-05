@@ -55,8 +55,50 @@ function main() {
     "window.OSCE_DATA = " + JSON.stringify(duLieu) + ";\nwindow.OSCE_RUBRIC = " + JSON.stringify(rubrics) + ";\n");
   baoCao(duLieu);
   baoCaoRubric(duLieu, kqRubric.rubric);
+  dungCongCu();
+  dungServiceWorker();
   const tong = duLieu.chuong.reduce((s, c) => s + c.tram.reduce((x, t) => x + t.de.length, 0), 0);
   console.log(`Xong: ${dsTram.length} trạm, ${tong} đề, ${kqRubric.rubric.length} rubric -> data/stations.json, data/rubrics.json, data/stations.js`);
+}
+
+/* Dữ liệu công cụ luyện tập: CTG (từ nguon/tap-doc-ctg), biểu đồ tăng trưởng (nguon/mau-trong/script/shino.json),
+   tình huống sản đồ (mau-nap/cong-cu/san-do.json). */
+function dungCongCu() {
+  const docJ = (p) => JSON.parse(fs.readFileSync(path.join(GOC, p), "utf8"));
+  const ctgGoc = docJ("mau-nap/cong-cu/ctg-ca-goc.json");
+  const ctgKhoa = docJ("mau-nap/cong-cu/ctg-khoa.json");
+  for (const c of ctgGoc) if (!ctgKhoa.khoa[c.gen]) throw new Error("Thiếu khóa đáp án CTG cho " + c.gen);
+  const sanDo = docJ("mau-nap/cong-cu/san-do.json");
+  for (const t of sanDo.tinh_huong) {
+    if (!t.kham.length || !["trai", "giua", "hanh_dong"].includes(t.vi_tri)) throw new Error("Tình huống sản đồ lỗi: " + t.id);
+  }
+  const cc = {
+    ctg: { nguon: "nguon/tap-doc-ctg/script (data.py, cases.py, ctggen.py)", ca: ctgGoc, khoa: ctgKhoa.khoa, tom_tat: ctgKhoa.tom_tat, ghi_chu: ctgKhoa.ghi_chu },
+    shino: { nguon: "nguon/mau-trong/script/shino.json (số hóa biểu đồ Shinozuka, Chương 3)", du_lieu: docJ("nguon/mau-trong/script/shino.json") },
+    san_do: sanDo,
+  };
+  fs.writeFileSync(path.join(GOC, "data", "cong-cu.js"),
+    "// Sinh tự động bởi tools/build_data.js – không sửa tay.\nwindow.OSCE_CONGCU = " + JSON.stringify(cc) + ";\n");
+}
+
+/* sw.js: danh sách tệp cần lưu để chạy offline + phiên bản theo nội dung (đổi tệp nào là đổi phiên bản). */
+function dungServiceWorker() {
+  const crypto = require("crypto");
+  const ds = ["./", "index.html", "manifest.webmanifest", "css/style.css",
+    "js/md.js", "js/nap.js", "js/ctg.js", "js/cong-cu.js", "js/app.js",
+    "data/stations.js", "data/cong-cu.js", "mau-nap/MAU_NAP_DE_OSCE.md",
+    "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
+  for (const f of fs.readdirSync(path.join(GOC, "nguon", "hinh")).sort()) if (/\.(jpe?g|png|svg)$/i.test(f)) ds.push("nguon/hinh/" + f);
+  const h = crypto.createHash("sha256");
+  for (const f of ds) {
+    if (f === "./") continue;
+    const p = path.join(GOC, f);
+    if (!fs.existsSync(p)) throw new Error("sw.js: thiếu tệp " + f);
+    h.update(f).update(fs.readFileSync(p));
+  }
+  const mau = fs.readFileSync(path.join(__dirname, "sw-mau.js"), "utf8");
+  fs.writeFileSync(path.join(GOC, "sw.js"),
+    mau.replace("__PHIEN_BAN__", h.digest("hex").slice(0, 12)).replace("__DANH_SACH__", JSON.stringify(ds, null, 1)));
 }
 
 function baoCaoRubric(D, rubric) {

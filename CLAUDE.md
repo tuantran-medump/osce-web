@@ -16,7 +16,8 @@
 
 ## Dữ liệu
 - Nguồn dữ liệu duy nhất: `mau-nap/tram/*.md` (khuôn: `mau-nap/MAU_NAP_DE_OSCE.md`). Không sửa tay `data/stations.json` / `data/stations.js`.
-- Sau khi sửa đề: chạy `node tools/build_data.js` và `node --test tests/*.test.js`.
+- Dữ liệu công cụ luyện tập: `mau-nap/cong-cu/*.json` (CTG, sản đồ); biểu đồ tăng trưởng đọc từ `nguon/mau-trong/script/shino.json`.
+- Sau khi sửa đề/dữ liệu: chạy `node tools/build_data.js` (sinh lại `data/` và `sw.js`) và `node --test tests/*.test.js`.
 
 ## Quy trình
 - Mỗi việc làm xong thì **commit và push** ngay.

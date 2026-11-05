@@ -128,6 +128,10 @@
       });
     });
     h += "</ul>";
+    h += '<h2 class="muc">Luyện tập thêm</h2><div class="luoi-chuong">' +
+      [["#/thi-thu", "⏱ Thi thử 6 trạm"], ["#/ctg", "〰 Tập đọc CTG"], ["#/san-do", "✕ Tập sản đồ"], ["#/tang-truong", "📈 Biểu đồ tăng trưởng"]].map(function (x) {
+        return '<a class="nut nut-chuong" href="' + x[0] + '"><span class="ten">' + x[1] + "</span></a>";
+      }).join("") + "</div>";
     h += '<details class="the cai-dat"><summary>Cài đặt thời gian mỗi trạm</summary>' + oChinhGio() + "</details>";
     h += "</div>";
     veLai(h);
@@ -206,8 +210,16 @@
       "<li>Phím tắt: <strong>Enter</strong> = Hoàn thành bước (khi không gõ trong ô ghi chú; trong ô ghi chú dùng Ctrl/⌘ + Enter), <strong>Space</strong> = tạm dừng/tiếp tục đồng hồ.</li>" +
       '<li>Chữ trong khung xám là nguyên văn tài liệu; khung viền đứt màu vàng có nhãn <span class="nhan nhan-st">soạn thêm</span> là phần tự soạn thêm cho đủ dữ kiện luyện tập.</li>' +
       "</ul></section>";
+    h += '<section class="the" style="margin-top:14px"><h2>Cài như ứng dụng, dùng offline</h2>' +
+      "<p>Sau lần mở đầu tiên (có mạng), toàn bộ đề, hình và công cụ được lưu trên máy nên dùng được khi không có mạng.</p><ul>" +
+      "<li><strong>iPhone / iPad (Safari):</strong> bấm nút Chia sẻ → <em>Thêm vào MH chính</em> (Add to Home Screen).</li>" +
+      "<li><strong>Android (Chrome):</strong> menu ⋮ → <em>Cài đặt ứng dụng</em> / <em>Thêm vào màn hình chính</em>.</li>" +
+      "<li><strong>PC (Chrome / Edge):</strong> biểu tượng cài đặt ở cuối thanh địa chỉ, hoặc menu → <em>Cài đặt Ôn OSCE Sản khoa Y4</em>.</li></ul>" +
+      '<button type="button" class="nut nut-chinh" id="nut-cai"' + (window.OSCE_APP && window.OSCE_APP.coTheCai && window.OSCE_APP.coTheCai() ? "" : " hidden") + ">Cài ứng dụng</button></section>";
     h += '<h2 class="muc">Hướng dẫn thi OSCE (theo tài liệu)</h2><section class="the">' + md(D.huong_dan_chung) + "</section></div>";
     veLai(h);
+    var nc = document.getElementById("nut-cai");
+    if (nc) nc.addEventListener("click", function () { window.OSCE_APP.caiApp(); });
   }
 
   /* ---------- Trang nạp đề ---------- */
@@ -380,12 +392,18 @@
   var TT = null; // trạng thái trạm đang làm
   var thanh = null;
 
-  function trangThi(id) {
+  /* che: undefined (luyện thường) | {loai: "thi_thu", k} | {loai: "xem_lai", k, ket} */
+  function trangThi(id, che) {
     var d = DE[id];
     if (!d) return trangChu();
     datTieuDe(tenDe(d));
     var t = d.tram;
-    var h = '<nav class="dieu-huong" aria-label="Đường dẫn"><a href="#/tram/' + t.id + '" data-thoat>‹ ' + esc(t.ten) + "</a></nav>";
+    var thiThu = che && che.loai === "thi_thu", xemLai = che && che.loai === "xem_lai";
+    var h = thiThu
+      ? '<nav class="dieu-huong"><span class="chip">Thi thử · trạm ' + (che.k + 1) + "/" + PHIEN.ds.length + "</span></nav>"
+      : xemLai
+        ? '<nav class="dieu-huong" aria-label="Đường dẫn"><a href="#/thi-thu/ket-qua">‹ Bảng điểm thi thử</a></nav>'
+        : '<nav class="dieu-huong" aria-label="Đường dẫn"><a href="#/tram/' + t.id + '" data-thoat>‹ ' + esc(t.ten) + "</a></nav>";
     h += '<header class="dau-thi"><h1>' + esc(tenDe(d)) + '</h1><div class="dong-chip">' + chipNguon(d) +
       '</div><p class="phu" style="margin:0">' + esc(t.ten) + "</p></header>";
 
@@ -404,7 +422,8 @@
 
     TT = {
       de: d,
-      tong: CAI.phut * 60000,
+      che: che || null,
+      tong: (thiThu ? 7 : CAI.phut) * 60000,
       daChay: 0,
       moc: null,
       dung: false,
@@ -414,11 +433,24 @@
       xong: false,
       buoc: d.buoc.map(function () { return { batDau: 0, thoiGian: null, ghiChu: "" }; })
     };
+    if (xemLai) {
+      var ket = che.ket;
+      TT.xong = true;
+      TT.hienTai = d.buoc.length - 1;
+      TT.daChay = ket.daChay || 0;
+      TT.buoc = d.buoc.map(function (b, i) {
+        var r = ket.buoc[i] || {};
+        return { batDau: 0, thoiGian: typeof r.thoiGian === "number" ? r.thoiGian : 0, chuaLam: typeof r.thoiGian !== "number", ghiChu: r.ghiChu || "" };
+      });
+      d.buoc.forEach(function (b, i) { veBuoc(i); });
+      veKetThuc();
+      return;
+    }
     d.buoc.forEach(function (b, i) { veBuoc(i); });
     taoThanh();
     batDau();
 
-    app.querySelector("[data-thoat]").addEventListener("click", function (e) {
+    if (!thiThu) app.querySelector("[data-thoat]").addEventListener("click", function (e) {
       if (TT && !TT.xong && !confirm("Thoát trạm đang làm? Ghi chú và thời gian sẽ không được lưu.")) e.preventDefault();
     });
   }
@@ -431,7 +463,8 @@
     el.setAttribute("data-tt", tt);
     var dau = '<div class="dau-buoc"><span class="so-buoc" aria-hidden="true">' + (i + 1) + '</span><h2 id="tieu-de-buoc-' + i + '">Bước ' +
       (i + 1) + "/" + d.buoc.length + " · " + esc(b.ten) + "</h2>" +
-      (st.thoiGian !== null ? '<span class="thoi-gian-buoc" title="Thời gian làm bước">⏱ ' + mmss(st.thoiGian) + "</span>" : "") + "</div>";
+      (st.chuaLam ? '<span class="thoi-gian-buoc">chưa làm kịp</span>' :
+        st.thoiGian !== null ? '<span class="thoi-gian-buoc" title="Thời gian làm bước">⏱ ' + mmss(st.thoiGian) + "</span>" : "") + "</div>";
     if (tt === "khoa") {
       el.innerHTML = '<div class="cot-trai">' + dau + '<p class="phu" style="margin:0">Hoàn thành bước trước để mở bước này.</p></div><div class="cot-phai"></div>';
       return;
@@ -454,6 +487,11 @@
         phai += khoiNguon(b.ket_qua) + khoiST(b.ket_qua_soan_them);
       } else {
         phai += '<p class="trong">Bước này không có thông tin mở thêm.</p>';
+      }
+      if (TT.che && TT.che.loai === "thi_thu") {
+        phai += '<p class="phu">Đáp án xem được sau buổi thi thử, ở bảng điểm.</p>';
+        el.innerHTML = '<div class="cot-trai">' + trai + '</div><div class="cot-phai">' + phai + "</div>";
+        return;
       }
       phai += '<div class="hang-nut"><button type="button" class="nut" data-dap-an="' + i + '" aria-expanded="false" aria-controls="dap-an-' + i +
         '">Xem đáp án bước này</button></div><div class="dap-an" id="dap-an-' + i + '" hidden>';
@@ -504,7 +542,10 @@
     } else if (phai) {
       phai.scrollIntoView({ block: "start", behavior: "smooth" });
     }
-    if (cuoi) veKetThuc();
+    if (cuoi) {
+      if (TT.che && TT.che.loai === "thi_thu") veXongThiThu();
+      else veKetThuc();
+    }
   }
 
   function veKetThuc() {
@@ -515,9 +556,13 @@
       h += "<tr><td>" + (i + 1) + ". " + esc(b.ten) + "</td><td>" + mmss(TT.buoc[i].thoiGian) + "</td></tr>";
     });
     h += '</tbody><tfoot><tr><th>Tổng</th><th>' + mmss(TT.daChay) + " / " + mmss(TT.tong) + "</th></tr></tfoot></table>";
-    h += '<div class="hang-nut"><button type="button" class="nut nut-chinh" id="lam-lai">↻ Làm lại đề này</button>' +
-      '<button type="button" class="nut" id="de-khac">🎲 Đề khác cùng trạm</button>' +
-      '<a class="nut" href="#/tram/' + d.tram.id + '">Về danh sách đề</a></div></div>';
+    if (TT.che && TT.che.loai === "xem_lai") {
+      h += '<div class="hang-nut"><a class="nut" href="#/thi-thu/ket-qua">‹ Về bảng điểm thi thử</a></div></div>';
+    } else {
+      h += '<div class="hang-nut"><button type="button" class="nut nut-chinh" id="lam-lai">↻ Làm lại đề này</button>' +
+        '<button type="button" class="nut" id="de-khac">🎲 Đề khác cùng trạm</button>' +
+        '<a class="nut" href="#/tram/' + d.tram.id + '">Về danh sách đề</a></div></div>';
+    }
     h += '<div class="cot-phai">';
     if (d.giai_dap) {
       h += '<details class="gap" open><summary>Giải đáp / ghi chú của đề (theo tài liệu)</summary>' + khoiNguon(d.giai_dap) + "</details>";
@@ -527,8 +572,10 @@
     h += "</div>";
     el.innerHTML = h;
     el.hidden = false;
-    document.getElementById("lam-lai").addEventListener("click", function () { trangThi(d.id); });
-    document.getElementById("de-khac").addEventListener("click", function () {
+    var nll = document.getElementById("lam-lai");
+    if (nll) nll.addEventListener("click", function () { trangThi(d.id); });
+    var ndk = document.getElementById("de-khac");
+    if (ndk) ndk.addEventListener("click", function () {
       var ds = d.tram.de.filter(function (x) { return x.id !== d.id; });
       location.hash = "#/de/" + (ds.length ? ngauNhien(ds) : d).id;
     });
@@ -568,8 +615,9 @@
     var d = TT.de, t = d.tram;
     var el = document.getElementById("tu-cham");
     var dsRubric = (t.rubric || []).filter(function (id) { return RUBRIC[id]; });
+    var ketTT = TT.che && TT.che.loai === "xem_lai" ? PHIEN.ket[TT.che.k] : null;
     TC = {
-      id: Date.now() + "-" + Math.random().toString(36).slice(2, 7),
+      id: (ketTT && ketTT.lich_su_id) || Date.now() + "-" + Math.random().toString(36).slice(2, 7),
       cach: dsRubric.length ? "rubric" : "checklist",
       rubric_id: dsRubric[0] || null,
       chon: {},
@@ -715,17 +763,159 @@
       thoi_gian_ms: TC.thoi_gian_ms,
       gio_quy_dinh_ms: TC.gio_quy_dinh_ms
     };
+    var thiThuK = TT.che && TT.che.loai === "xem_lai" ? TT.che.k : -1;
+    if (thiThuK >= 0) {
+      ban.thi_thu = PHIEN.id;
+      ban.thi_thu_tram = thiThuK + 1;
+    }
     var ds = docLichSu().filter(function (x) { return x.id !== ban.id; });
     ds.push(ban);
     var ok = LuuTru.ghiJSON(KHOA_LS, ds);
     var bao = document.getElementById("bao-luu");
     if (ok) {
+      if (thiThuK >= 0) {
+        PHIEN.ket[thiThuK].diem = k.phan_tram;
+        PHIEN.ket[thiThuK].lich_su_id = ban.id;
+        luuPhien();
+      }
       TC.da_luu = true;
       document.getElementById("luu-diem").textContent = "Lưu lại";
       bao.innerHTML = "Đã lưu " + soVN(k.phan_tram) + "% vào <a href=\"#/lich-su\">Lịch sử</a>.";
     } else {
       bao.textContent = "Không lưu được: trình duyệt chặn hoặc hết bộ nhớ lưu trữ.";
     }
+  }
+
+  /* ---------- Thi thử: 6 trạm × 7 phút + 1 phút chuyển trạm ---------- */
+  var KHOA_TT = "osce.thi_thu";
+  var PHIEN = LuuTru.docJSON(KHOA_TT, null);
+  if (!PHIEN || !Array.isArray(PHIEN.ds) || !PHIEN.ds.every(function (id) { return DE[id]; })) PHIEN = null;
+  var henChuyen = null;
+  function luuPhien() { LuuTru.ghiJSON(KHOA_TT, PHIEN); }
+
+  function taoPhien() {
+    // mỗi chương 1 đề ngẫu nhiên, theo thứ tự chương (giống bố cục 6 trạm trong tài liệu)
+    var ds = D.chuong.filter(function (c) { return c.tram.length; }).slice(0, 6).map(function (c) {
+      var tatCa = [];
+      c.tram.forEach(function (t) { tatCa = tatCa.concat(t.de); });
+      return ngauNhien(tatCa).id;
+    });
+    PHIEN = { id: "tt-" + Date.now(), bat_dau: new Date().toISOString(), ds: ds, k: 0, pha: "tram", ket: [], chuyen_den: 0 };
+    luuPhien();
+  }
+
+  function trangThiThu(p) {
+    var sub = p[1];
+    if (sub === "tram" && PHIEN && PHIEN.pha === "tram") return trangThi(PHIEN.ds[PHIEN.k], { loai: "thi_thu", k: PHIEN.k });
+    if (sub === "chuyen" && PHIEN && PHIEN.pha === "chuyen") return trangChuyenTram();
+    if (sub === "ket-qua" && PHIEN && PHIEN.pha === "xong") return trangBangDiem();
+    if (sub === "xem" && PHIEN && PHIEN.pha === "xong" && PHIEN.ket[+p[2]]) {
+      var k = +p[2];
+      return trangThi(PHIEN.ds[k], { loai: "xem_lai", k: k, ket: PHIEN.ket[k] });
+    }
+    datTieuDe("Thi thử");
+    var h = '<div class="trang-hep"><h1>Thi thử OSCE</h1>';
+    h += '<section class="the"><ul><li><strong>6 trạm liên tiếp</strong>, mỗi chương 1 đề bốc ngẫu nhiên.</li>' +
+      "<li>Mỗi trạm <strong>7 phút</strong>, không tạm dừng, không xem đáp án. Hết giờ tự sang trạm sau.</li>" +
+      "<li>Giữa hai trạm có <strong>1 phút chuyển trạm</strong>: đọc trước mở đầu của trạm sau.</li>" +
+      "<li>Cuối buổi: bảng điểm. Mở từng trạm để xem đáp án và tự chấm (rubric hoặc checklist); điểm lưu vào Lịch sử.</li>" +
+      "<li>Tải lại trang giữa trạm thì trạm đó làm lại từ đầu.</li></ul></section>";
+    if (PHIEN && PHIEN.pha !== "xong") {
+      h += '<div class="hang-boc"><a class="nut nut-chinh nut-to" href="#/thi-thu/' + (PHIEN.pha === "tram" ? "tram" : "chuyen") +
+        '">Tiếp tục buổi đang làm (trạm ' + (PHIEN.k + 1) + "/" + PHIEN.ds.length + ')</a><button type="button" class="nut nut-to" id="tt-moi">Bỏ buổi này, bắt đầu buổi mới</button></div>';
+    } else {
+      h += '<div class="hang-boc"><button type="button" class="nut nut-chinh nut-to" id="tt-moi">▶ Bắt đầu buổi thi thử</button>' +
+        (PHIEN ? '<a class="nut nut-to" href="#/thi-thu/ket-qua">Xem bảng điểm buổi trước</a>' : "") + "</div>";
+    }
+    h += "</div>";
+    veLai(h);
+    document.getElementById("tt-moi").addEventListener("click", function () {
+      if (PHIEN && PHIEN.pha !== "xong" && !confirm("Bỏ buổi thi thử đang làm?")) return;
+      taoPhien();
+      location.hash = "#/thi-thu/tram";
+    });
+  }
+
+  function ketThucTramThiThu(hetGio) {
+    if (!TT || !PHIEN) return;
+    var i = TT.hienTai;
+    var ta = document.getElementById("ghi-chu-" + i);
+    if (ta && TT.buoc[i].thoiGian === null) TT.buoc[i].ghiChu = ta.value;
+    PHIEN.ket[PHIEN.k] = {
+      de_id: TT.de.id,
+      daChay: Math.round(Math.min(daChay(), TT.tong)),
+      het_gio: !!hetGio,
+      buoc: TT.buoc.map(function (b) { return { ghiChu: b.ghiChu, thoiGian: b.thoiGian === null ? null : Math.round(b.thoiGian) }; }),
+      diem: null
+    };
+    PHIEN.k++;
+    if (PHIEN.k >= PHIEN.ds.length) {
+      PHIEN.pha = "xong";
+      PHIEN.ket_thuc = new Date().toISOString();
+    } else {
+      PHIEN.pha = "chuyen";
+      PHIEN.chuyen_den = Date.now() + 60000;
+    }
+    luuPhien();
+    dungTram();
+    if (hetGio) bao(PHIEN.pha === "xong" ? "Hết giờ – kết thúc buổi thi thử." : "Hết giờ – chuyển trạm.", true);
+    location.hash = PHIEN.pha === "xong" ? "#/thi-thu/ket-qua" : "#/thi-thu/chuyen";
+  }
+
+  function veXongThiThu() {
+    var el = document.getElementById("ket-thuc");
+    el.innerHTML = '<div class="cot-trai the"><h2>Đã xong các bước</h2><p>Bạn có thể chờ hết giờ hoặc sang trạm tiếp ngay. Đáp án xem ở bảng điểm cuối buổi.</p>' +
+      '<div class="hang-nut"><button type="button" class="nut nut-chinh" id="sang-tram">Sang trạm tiếp ›</button></div></div><div class="cot-phai"></div>';
+    el.hidden = false;
+    document.getElementById("sang-tram").addEventListener("click", function () { ketThucTramThiThu(false); });
+  }
+
+  function trangChuyenTram() {
+    var d = DE[PHIEN.ds[PHIEN.k]];
+    datTieuDe("Chuyển trạm");
+    var h = '<div class="trang-hep"><p class="chip">Thi thử · chuyển sang trạm ' + (PHIEN.k + 1) + "/" + PHIEN.ds.length + "</p>";
+    h += '<div class="dem-chuyen" role="timer" aria-live="off"><span id="dem-chuyen">01:00</span><span class="phu">chuyển trạm</span></div>';
+    h += '<section class="the"><h2>Trạm tiếp theo: ' + esc(d.tram.ten) + "</h2>" + '<p class="phu">' + esc(tenDe(d)) + " · " + esc(d.nguon_de) + "</p>" +
+      "<h3>Mở đầu</h3>" + khoiNguon(d.mo_dau) + khoiST(d.mo_dau_soan_them) +
+      (d.tac_vu || d.tac_vu_soan_them ? "<h3>Tác vụ</h3>" + khoiNguon(d.tac_vu) + khoiST(d.tac_vu_soan_them) : "") + "</section>";
+    h += '<div class="hang-boc"><button type="button" class="nut nut-chinh nut-to" id="vao-tram">Vào trạm ngay ›</button></div></div>';
+    veLai(h);
+    function vao() {
+      clearInterval(henChuyen);
+      henChuyen = null;
+      PHIEN.pha = "tram";
+      luuPhien();
+      location.hash = "#/thi-thu/tram";
+    }
+    document.getElementById("vao-tram").addEventListener("click", vao);
+    function dem() {
+      var con = PHIEN.chuyen_den - Date.now();
+      var o = document.getElementById("dem-chuyen");
+      if (!o) { clearInterval(henChuyen); return; }
+      o.textContent = mmss(Math.max(0, con));
+      if (con <= 0) { tiengBip(1); vao(); }
+    }
+    henChuyen = setInterval(dem, 250);
+    dem();
+  }
+
+  function trangBangDiem() {
+    datTieuDe("Bảng điểm thi thử");
+    var daCham = PHIEN.ket.filter(function (k) { return typeof k.diem === "number"; });
+    var tb = daCham.length ? daCham.reduce(function (s, k) { return s + k.diem; }, 0) / daCham.length : null;
+    var h = '<div class="trang-hep"><h1>Bảng điểm thi thử</h1><p class="phu">Buổi ' + esc(new Date(PHIEN.bat_dau).toLocaleString("vi-VN")) +
+      " · đã chấm " + daCham.length + "/" + PHIEN.ds.length + " trạm" + (tb !== null ? " · điểm trung bình <strong>" + soVN(tb) + "%</strong>" : "") + "</p>";
+    h += '<table class="bang-ls"><thead><tr><th>Trạm</th><th>Đề</th><th>Bước xong</th><th>Thời gian</th><th>Điểm</th><th><span class="an-chu">Thao tác</span></th></tr></thead><tbody>';
+    PHIEN.ket.forEach(function (k, i) {
+      var d = DE[k.de_id];
+      var xong = k.buoc.filter(function (b) { return b.thoiGian !== null; }).length;
+      h += '<tr><td data-nhan="Trạm"><span>' + (i + 1) + ". " + esc(d.tram.ten) + '</span></td><td data-nhan="Đề"><span>' + esc(tenDe(d)) + "<br><span class=\"phu\">" + esc(d.nguon_de) + "</span></span></td>" +
+        '<td data-nhan="Bước xong"><span>' + xong + "/" + k.buoc.length + (k.het_gio ? " (hết giờ)" : "") + '</span></td><td data-nhan="Thời gian"><span>' + mmss(k.daChay) + " / 07:00</span></td>" +
+        '<td data-nhan="Điểm"><span>' + (typeof k.diem === "number" ? "<strong>" + soVN(k.diem) + "%</strong>" : "chưa chấm") + "</span></td>" +
+        '<td><a class="nut nut-nho" href="#/thi-thu/xem/' + i + '">' + (typeof k.diem === "number" ? "Xem lại" : "Xem đáp án & tự chấm") + "</a></td></tr>";
+    });
+    h += '</tbody></table><div class="hang-nut"><a class="nut nut-chinh" href="#/thi-thu">Buổi thi thử mới</a><a class="nut" href="#/lich-su">Lịch sử</a></div></div>';
+    veLai(h);
   }
 
   /* ---------- Trang lịch sử ---------- */
@@ -766,7 +956,8 @@
     h += "</tbody></table>";
     h += '<h2 class="muc">Từng lần làm</h2><table class="bang-ls"><thead><tr><th>Ngày</th><th>Trạm · đề</th><th>Điểm</th><th>Thời gian</th><th>Cách chấm</th><th><span class="an-chu">Thao tác</span></th></tr></thead><tbody>';
     ds.forEach(function (x) {
-      var cach = x.cach_cham === "rubric" ? "Rubric" + (RUBRIC[x.rubric_id] ? ": " + esc(RUBRIC[x.rubric_id].ten) : "") : "Checklist đáp án";
+      var cach = (x.cach_cham === "rubric" ? "Rubric" + (RUBRIC[x.rubric_id] ? ": " + esc(RUBRIC[x.rubric_id].ten) : "") : "Checklist đáp án") +
+        (x.thi_thu ? " · thi thử trạm " + x.thi_thu_tram : "");
       h += "<tr><td data-nhan=\"Ngày\">" + esc(new Date(x.ngay).toLocaleString("vi-VN")) + "</td>" +
         '<td data-nhan="Trạm · đề"><span>' + esc(x.tram_ten || "") + "<br>" + (DE[x.de_id] ? '<a href="#/de/' + esc(x.de_id) + '">' + esc(x.de_ten || x.de_id) + "</a>" : esc(x.de_ten || x.de_id)) + "</span></td>" +
         '<td data-nhan="Điểm"><strong>' + soVN(x.diem) + "%</strong></td>" +
@@ -856,7 +1047,7 @@
     hen = null;
   }
   function tamDung() {
-    if (!TT || TT.xong) return;
+    if (!TT || TT.xong || (TT.che && TT.che.loai === "thi_thu")) return;
     if (TT.dung) {
       TT.dung = false;
       TT.moc = performance.now();
@@ -878,6 +1069,11 @@
       bao("Còn 1 phút!", false);
       tiengBip(1);
     }
+    if (TT.che && TT.che.loai === "thi_thu" && con <= 0) {
+      tiengBip(3);
+      ketThucTramThiThu(true);
+      return;
+    }
     if (!TT.het && con <= 0) {
       TT.het = true;
       bao("Hết giờ! Đồng hồ tiếp tục đếm thời gian vượt.", true);
@@ -886,7 +1082,7 @@
     capNhatThanh();
   }
   function chinhTong(phut) {
-    if (!TT || TT.xong) return;
+    if (!TT || TT.xong || (TT.che && TT.che.loai === "thi_thu")) return;
     TT.tong = Math.max(60000, TT.tong + phut * 60000);
     var con = TT.tong - daChay();
     TT.canh1 = con <= 60000;
@@ -910,6 +1106,11 @@
       document.body.insertBefore(thanh, app);
       document.getElementById("nut-dung").addEventListener("click", tamDung);
       document.getElementById("nut-xong").addEventListener("click", function () {
+        if (TT && TT.che && TT.che.loai === "thi_thu") {
+          if (TT.xong) ketThucTramThiThu(false);
+          else hoanThanhBuoc();
+          return;
+        }
         if (TT && TT.xong) {
           var k = document.getElementById("tu-cham");
           if (k) k.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -920,6 +1121,7 @@
       });
     }
     thanh.hidden = false;
+    thanh.classList.toggle("che-thi-thu", !!(TT && TT.che && TT.che.loai === "thi_thu"));
     document.body.classList.add("co-thanh");
     capNhatThanh();
   }
@@ -938,11 +1140,13 @@
     nd.setAttribute("aria-label", TT.dung ? "Tiếp tục đồng hồ (Space)" : "Tạm dừng đồng hồ (Space)");
     nd.disabled = TT.xong;
     var b = TT.de.buoc[TT.hienTai];
-    document.getElementById("chu-nut-xong").innerHTML = TT.xong ? "Tự chấm điểm" :
+    var tt = TT.che && TT.che.loai === "thi_thu";
+    document.getElementById("chu-nut-xong").innerHTML = TT.xong ? (tt ? "Sang trạm tiếp ›" : "Tự chấm điểm") :
       "✓ Hoàn thành bước" + '<span class="chu-dai"> ' + (TT.hienTai + 1) + (b ? ": " + esc(b.ten) : "") + "</span>";
   }
   function dungTram() {
     if (hen) { clearInterval(hen); hen = null; }
+    if (henChuyen) { clearInterval(henChuyen); henChuyen = null; }
     TT = null;
     if (thanh) thanh.hidden = true;
     document.body.classList.remove("co-thanh");
@@ -1022,6 +1226,29 @@
   hopHinh.addEventListener("click", function (e) { if (e.target === hopHinh) hopHinh.close(); });
 
   /* ---------- Định tuyến ---------- */
+  function trangLuyenTap() {
+    datTieuDe("Luyện tập");
+    var o = [
+      ["#/thi-thu", "⏱", "Thi thử OSCE", "6 trạm liên tiếp, mỗi trạm 7 phút + 1 phút chuyển trạm, cuối buổi có bảng điểm."],
+      ["#/ctg", "〰", "Tập đọc CTG", "12 băng mô phỏng có đáp án, sinh băng mới; nhập nhịp nền, dao động, nhịp tăng/giảm, cơn co, phân nhóm, xử trí rồi kiểm tra."],
+      ["#/san-do", "✕", "Tập sản đồ", "Vẽ sản đồ WHO bằng cách chạm: độ mở cổ tử cung, độ lọt, cơn co; kiểm đúng sai và chọn xử trí. 6 tình huống từ chương 5."],
+      ["#/tang-truong", "📈", "Biểu đồ tăng trưởng", "Nhập tuổi thai + EFW/AC/BPD/FL, chấm lên biểu đồ BPV 3–97 (Shinozuka, Hadlock), ra bách phân vị."],
+      ["#/nap", "📄", "Nạp đề", "Nạp thêm đề bằng file Markdown theo khuôn, xem trước, báo lỗi theo dòng."]
+    ];
+    var h = '<div class="trang-hep"><h1>Luyện tập</h1><ul class="danh-sach">';
+    o.forEach(function (x) {
+      h += '<li><a class="the the-lien-ket" href="' + x[0] + '"><span class="bieu-tuong" aria-hidden="true">' + x[1] + '</span><span class="noi-dung"><span class="ten">' + x[2] +
+        '</span><span class="phu">' + x[3] + '</span></span><span class="mui-ten" aria-hidden="true">›</span></a></li>';
+    });
+    h += "</ul></div>";
+    veLai(h);
+  }
+
+  window.OSCE_APP = {
+    veLai: veLai, esc: esc, md: md, khoiNguon: khoiNguon, khoiST: khoiST, datTieuDe: datTieuDe,
+    LuuTru: LuuTru, mmss: mmss, soVN: soVN, ngauNhien: ngauNhien, D: D
+  };
+
   function dinhTuyen() {
     var h = location.hash.replace(/^#\/?/, "");
     var p = h.split("/");
@@ -1031,9 +1258,62 @@
     else if (p[0] === "huong-dan") trangHuongDan();
     else if (p[0] === "nap") trangNap();
     else if (p[0] === "lich-su") trangLichSu();
+    else if (p[0] === "thi-thu") trangThiThu(p);
+    else if (p[0] === "luyen-tap") trangLuyenTap();
+    else if (window.OSCE_TRANG && window.OSCE_TRANG[p[0]]) { dungTram(); window.OSCE_TRANG[p[0]](p.slice(1)); }
     else trangChu();
     app.focus({ preventScroll: true });
   }
   window.addEventListener("hashchange", dinhTuyen);
   dinhTuyen();
+
+  /* ---------- PWA: service worker, cập nhật, cài đặt ---------- */
+  var loiMoiCai = null;
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    loiMoiCai = e;
+    var n = document.getElementById("nut-cai");
+    if (n) n.hidden = false;
+  });
+  window.addEventListener("appinstalled", function () { loiMoiCai = null; });
+  window.OSCE_APP.caiApp = function () {
+    if (!loiMoiCai) return false;
+    loiMoiCai.prompt();
+    loiMoiCai.userChoice.then(function () { loiMoiCai = null; });
+    return true;
+  };
+  window.OSCE_APP.coTheCai = function () { return !!loiMoiCai; };
+  if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").then(function (reg) {
+        function baoCapNhat(w) {
+          var o = document.getElementById("bao-cap-nhat");
+          if (!o) {
+            o = document.createElement("div");
+            o.id = "bao-cap-nhat";
+            o.className = "bao-cap-nhat";
+            o.setAttribute("role", "status");
+            o.innerHTML = 'Đã có bản cập nhật. <button type="button" class="nut nut-nho nut-chinh">Tải lại</button><button type="button" class="nut nut-nho" aria-label="Để sau">Để sau</button>';
+            document.body.appendChild(o);
+            o.querySelector(".nut-chinh").addEventListener("click", function () { w.postMessage("cap-nhat"); });
+            o.querySelectorAll(".nut")[1].addEventListener("click", function () { o.remove(); });
+          }
+        }
+        if (reg.waiting && navigator.serviceWorker.controller) baoCapNhat(reg.waiting);
+        reg.addEventListener("updatefound", function () {
+          var w = reg.installing;
+          if (!w) return;
+          w.addEventListener("statechange", function () {
+            if (w.state === "installed" && navigator.serviceWorker.controller) baoCapNhat(w);
+          });
+        });
+      }).catch(function () { /* chạy không cần service worker */ });
+      var daTai = false, coBanCu = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener("controllerchange", function () {
+        if (daTai || !coBanCu) return; // lần cài đầu tiên: không tải lại
+        daTai = true;
+        if (!TT || TT.xong) location.reload();
+      });
+    });
+  }
 })();
