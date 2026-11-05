@@ -2,6 +2,7 @@
 Mã: dtd
 Chương: CHƯƠNG 4: NỬA SAU THAI KÌ
 Tên gốc: TIẾP CẬN ĐÁI THÁO ĐƯỜNG THAI KÌ
+Rubric: trang-51
 
 ## LÝ THUYẾT
 

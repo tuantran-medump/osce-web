@@ -18,6 +18,10 @@
      "id": "kham-thai-tcn1",
      "ten": "Hỏi bệnh sử khám thai thường quy (trễ kinh, tuổi thai)",
      "ten_goc": "HỎI BỆNH SỬ KHÁM THAI THƯỜNG QUY",
+     "rubric": [
+      "trang-4",
+      "trang-8"
+     ],
      "ly_thuyet": "",
      "de": [
       {
@@ -712,6 +716,7 @@
      "id": "xhad-tcn1",
      "ten": "Xuất huyết âm đạo 3 tháng đầu",
      "ten_goc": "TIẾP CẬN XUẤT HUYẾT ÂM ĐẠO",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- **TH1: Thai nghén thất bại sớm. 4 tiêu chuẩn trên SA:**\n    + CRL ≥ 7mm và (-) tim thai\n    + MSD ≥ 25mm và (-) phôi thai\n    + Không thấy phôi có hoạt động tim thai sau 14 ngày mà trước đó đã có túi thai không có yolk-sac\n    + Không thấy phôi có hoạt động tim thai sau 11 ngày, tính từ khi SA có túi thai và yolk-sac\n- **TH2: Thai ngoài TC (ngưỡng phân định + TVS)**\n    + -> Tư vấn điều trị nội và ngoại\n- **TH3: Theo dõi thai ngoài TC (PUL)**\n    + -> Tư vấn nhập viện + đề nghị thêm 1 xét nghiệm TVS + beta hCG sau 48h\n    + -> Nếu đạt ngưỡng phân định-> Nguy cơ cao thai ngoài TC\n    + -> Hỏi kiến thức thai phụ về thai ngoài TC\n\n![](nguon/hinh/p021-1.jpg)\n\n![](nguon/hinh/p022-1.jpg)\n\n![](nguon/hinh/p023-1.jpg)\n\n![](nguon/hinh/p024-1.jpg)\n\n- Các tình huống ra thi\n\n- XH âm đạo không cấp cứu, QS (+), chưa làm TVS\n- XH âm đạo không cấp cứu, TVS có thai trong TC, thai <12 tuần\n- XH âm đạo không cấp cứu 3 tháng đầu, QS (+), TVS không có túi thai trong TC",
      "de": [
       {
@@ -868,6 +873,9 @@
      "id": "rubella",
      "ten": "Rubella",
      "ten_goc": "TIẾP CẬN RUBELLA",
+     "rubric": [
+      "trang-12"
+     ],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- IgM là một kháng thể xuất hiện 4-5 ngày và tồn tại 6 tuần sau khi bắt đầu có triệu chứng.\n- Một điểm lưu ý là tái nhiễm rubella có thể làm tăng IgM thoáng qua.\n- IgG huyết thanh xuất hiện 1-2 tuần sau khi bắt đầu có triệu chứng.",
      "de": [
       {
@@ -1171,6 +1179,9 @@
      "id": "thieu-mau",
      "ten": "Thiếu máu – Thalassemia",
      "ten_goc": "TIẾP CẬN THIẾU MÁU",
+     "rubric": [
+      "trang-18"
+     ],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- Thiếu máu trong thai kỳ khi Hb < 11g/dl ở TCN1 và 3, <10,5 ở TCN2\n- Thiếu máu nặng nếu Hb < 7g/dl máu.\n- HC nhỏ nhược sắc nếu MCV < 80fL, MCH < 27pg\n- Thiếu máu trong thai nghén chia thành các loại sau:\n- Thiếu máu do thiếu sắt (ferritin <10-50ng/ml)\n- Thiếu máu do thiếu acid folic\n- Thiếu máu do tán huyết (di truyền hoặc mắc phải)\n- Một thai phụ đến khám vì kết quả tầm soát thiếu máu cho kết quả thiếu máu nhược sắc hồng cầu nhỏ, cần được thực hiện thêm các biện pháp khảo sát thích hợp ở vợ và chồng. Tình huống chính: Thalassemia\n\n![](nguon/hinh/p040-1.jpg)",
      "de": [
       {
@@ -1527,6 +1538,7 @@
      "id": "viem-gan-b",
      "ten": "Viêm gan B",
      "ten_goc": "TIẾP CẬN VIÊM GAN B",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- **Huyết đồ:** /- giảm tiểu cầu, thời gian đông máu kéo dài\n- **Huyết thanh miễn dịch:** HBsAg (+) và IgM (+), nếu nhiễm mạn IgG(+) HBeAg (+): viêm gan cấp PCR (HBV DNA): thực hiện sau HBeAg(+) hoặc vào tuần 26-28 với HBeAg(-)\n- **Chức năng gan::** AST, ALT tăng cao (thường tăng trên 5 lần so với giá trị bình thường khi có vàng da).\n- **Bilirubin:** Bilirubin tăng cao, chủ yếu là Bilirubin trực tiếp.\n\n- Nguồn lực đủ: TCN1 nên tiếp cận với men gan + HBV luôn, nhưng theo step thì nên làm\n    + HbeAg trước rồi sau đó làm HBV do có khi HbeAg (-) nhưng tải lượng vẫn trên ngưỡng, nếu không làm HBV mình sẽ bỏ sót trường hợp cần điều trị\n- HbsAg (+) → trẻ phải được dự phòng sau sinh\n- Đang tiêm VGB mà có thai → sau sinh tiêm tiếp, tuy nhiên vẫn có thể tiêm lúc mang thai (TCN2) đối với những người có YTNC\n\n![](nguon/hinh/p046-1.jpg)",
      "de": [
       {
@@ -1656,6 +1668,7 @@
      "id": "giang-mai",
      "ten": "Giang mai",
      "ten_goc": "TIẾP CẬN GIANG MAI",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n![](nguon/hinh/p051-1.jpg)\n\n![](nguon/hinh/p052-1.jpg)",
      "de": [
       {
@@ -2100,6 +2113,9 @@
      "id": "lech-boi",
      "ten": "Tầm soát lệch bội",
      "ten_goc": "TIẾP CẬN LỆCH BỘI",
+     "rubric": [
+      "trang-29"
+     ],
      "ly_thuyet": "",
      "de": [
       {
@@ -2518,6 +2534,7 @@
      "id": "hiv",
      "ten": "Xét nghiệm HIV trong thai kỳ",
      "ten_goc": "TIẾP CẬN HIV",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -2566,6 +2583,7 @@
      "id": "lich-kham-thai",
      "ten": "Lên lịch khám thai",
      "ten_goc": "LÊN LỊCH KHÁM THAI",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -2621,6 +2639,9 @@
      "id": "fgr",
      "ten": "Thai giới hạn tăng trưởng (FGR) – biểu đồ tăng trưởng",
      "ten_goc": "TIẾP CẬN FGR",
+     "rubric": [
+      "trang-33"
+     ],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- FGR khi AC/ EFW dưới 3th percentile hoặc EFW, AC dưới bách phân vị 10th + chỉ số não nhau (CPR) <5th/ PI động mạch rốn > 95th/ đường biểu diễn AC< EFW giảm 2 tứ phân vị\n- FGR sớm (các thông tin TCN1): Trong thai kì có **bất thường di truyền, thiếu máu, nhiễm trùng bào thai, bất thường hình thái siêu âm 4D**\n- FGR muộn (các thông tin TCN2) : Trong thai kì **có tiền sản giật, tăng huyết áp** (nếu BN có tăng huyết áp check thử có làm đạm niệu không + bộ triệu chứng nghi TSG nặng - này không có khỏi hỏi hoặc sổ có thì khỏi), **đái tháo đường** (OGTT, nếu BN quá 28 tuần thì hỏi đường huyết sau ăn 2h/ HbA1c để coi kiểm soát đường)\n- Nếu cần CDTK\n\n- Có 2 phương pháp CDTK: khởi phát chuyển dạ hoặc MLT. Cố gắng sinh đường âm đạo.\n    + Tuy nhiên, khi việc khởi phát chuyển dạ hay sinh chỉ huy không thuận tiến triển tốt hoặc tình trạng mẹ/thai trở nên nguy kịch thì phải mổ lấy thai (tư vấn biến chứng mổ lấy thai).\n- Khởi phát chuyển dạ dựa theo:\n    + Nếu cổ TC đã mở sẵn sàng cho cuộc sanh, tăng co với Oxytocin.\n    + Nếu cổ TC chưa mở sẵn sàng cho cuộc sanh, thúc đẩy quá trình này bằng PGE1, PGE2 trước khi dùng Oxytocin. (Chú ý sau khi dùng PGE1, PGE2, tử cung rất nhạy với\n        * Oxytocin và dễ gây cơn gò cường tính, dọa vỡ - vỡ TC, thai suy nên cần theo dõi chặt chẽ CD với monitor sản khoa. Chỉ sử dụng Oxytocin sau 4 tiếng sử dụng PGE1 hay 6 tiếng sử dụng PGE2.)",
      "de": [
       {
@@ -3394,6 +3415,7 @@
      "id": "giam-cdt",
      "ten": "Giảm cử động thai – NST",
      "ten_goc": "TIẾP CẬN GIẢM CỬ ĐỘNG THAI",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -3524,6 +3546,7 @@
      "id": "qua-ngay",
      "ten": "Quá ngày dự sinh",
      "ten_goc": "TIẾP CẬN QUÁ NGÀY DỰ SINH",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -3740,6 +3763,9 @@
      "id": "dtd",
      "ten": "Đái tháo đường thai kì",
      "ten_goc": "TIẾP CẬN ĐÁI THÁO ĐƯỜNG THAI KÌ",
+     "rubric": [
+      "trang-51"
+     ],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- Thai phụ không mang nhật ký ăn + không test đường tại nhà, đến khám vì đường huyết hôm nay cao → hỏi cách ăn của bả (bả không đem thì phải hỏi): ăn như thế nào, hôm nay test đường ăn như thế nào, mấy nay ăn uống như thế nào, có bữa nào ăn ngọt, ăn chè gì không, có chia nhỏ bữa ăn không, tại sao bả không theo dõi đường huyết + không theo dõi bữa ăn? → lúc này phải tư vấn nguy cơ của con và nguy cơ của mẹ cho bả để thuyết phục bả tuân thủ, rồi hướng dẫn bả lại cách tiết chế + theo dõi đường huyết và bữa ăn\n- Hôm sau bả quay lại với 1 đường huyết vẫn cao → kiểm tra lại cách tiết chế + đường huyết như thế nào hằng ngày → nếu vẫn cao thì có thể cho chích\n- Tại sao lúc đầu không chích luôn đi? → chích insulin\n- Nếu 1 thai phụ đường huyết đói ổn, đường huyết sau ăn 1h ổn, chỉ (+) ở đường huyết sau ăn 2h thì khả năng là cổ vẫn MNT được\n- Trường hợp nào xài insulin ngay từ đầu? → trường hợp nào mà MNT khả năng cao sẽ không hiệu quả? → rối loạn cả 3 số đường huyết\n- Tiêu chuẩn để chuyển qua sử dụng insulin\n- ĐTĐ type 2 trước khi mang thai → bắt đầu từ MNT + insulin luôn\n- OGTT (-), sau đó, ở giai đoạn sau của TCN3 phát hiện thai to, đa ối → tư vấn là đã qua thời điểm chẩn đoán xác định ĐTĐ thai kì rồi và cho bả MNT luôn (theo dõi như 1 người ĐTĐ thai kì) → tái khám 1 tuần/lần. Giải thích thêm thai to đa ối thường nguyên nhân là đến từ chuyển hóa và cũng xem qua các siêu âm hình thái (không có bất thường đường tiêu hóa…)",
      "de": [
       {
@@ -4106,6 +4132,10 @@
      "id": "tsg",
      "ten": "Tăng huyết áp – tiền sản giật",
      "ten_goc": "TIẾP CẬN TIỀN SẢN GIẬT",
+     "rubric": [
+      "trang-58",
+      "trang-60"
+     ],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- Các vấn đề cần quản lý:\n\n- Có cho nhập viện không? Nếu ngoại trú thì bao lâu tái khám (3 ngày), nếu nhập viện thì theo dõi sao (đo SH 2 lần/ngày, bilan tsg mỗi ngày, NST mỗi 3 ngày, siêu âm 2D đánh giá sinh trắc, chỉ số ối 2-3 tuần/lần)\n- Có cho thuốc hạ áp không? MgSO4?\n- Có cho corticoid không?\n- Chấm dứt thai kì lúc nào?",
      "de": [
       {
@@ -4665,6 +4695,7 @@
      "id": "cdsn",
      "ten": "Chuyển dạ sinh non",
      "ten_goc": "TIẾP CẬN CHUYỂN DẠ SINH NON",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- Check lại tuổi thai → phân coi nó có phải là 1 thai non tháng hay không\n- Thai phụ đã có chuyển dạ hay chưa\n- Check lại xem thai phụ có yếu tố nguy cơ của sinh non: nhiễm trùng tiểu không triệu chứng, loạn khuẩn âm đạo, … → yếu tố nguy cơ sinh non này có giải quyết được không?\n- Nếu không giải quyết YTNC → cổ sẽ vào sinh non\n- PAMG1: giá trị tiên đoán âm cao, nhưng mắc tiền\n- CL: giá trị tiên đoán dương cũng không cao nhưng mình sẽ dùng nó để xem là mình có xử trí tích cực hơn cho cô này hay không, chuyện cổ vô chuyển dạ là sớm hay muộn, dễ tiếp cận, rẻ tiền\n- Dưỡng thai: phụ thuộc tuổi thai, lâm sàng (có gò không, sức khỏe em bé như thế nào (ối, tim thai?), có chờ được hay không…)\n    + Có giảm gò không? → là để đợi hỗ trợ phổi có tác dụng\n    + Corticoid\n    + MgSO4\n    + P4 đặt âm đạo: thai trên 34wk chưa vỡ ối thì có thể dưỡng. Tại sao phải dưỡng:\n        * Nguy cơ cho con: 1 thai chưa đủ tháng → cơ quan chưa hoàn thiện → phổi chưa trưởng thành → suy hô hấp, hệ tiêu hóa → hoại tử ruột, **hệ miễn dịch** → tăng nguy cơ nhiễm trùng sơ sinh, thần kinh chưa phát triển → vàng da, bệnh lý não, vàng da nặng,…. Có thể phải nhập hồi sức sơ sinh\n        * Nguy cơ mẹ: băng huyết sau sanh do tổn thương đường sinh dục, nguy cơ sinh non những lần tiếp theo, nguy cơ nhiễm trùng → khả năng phải cắt tử cung → tử vong\n    + Vòng nâng: 28wk, không có nguy cơ cao, không có tiền căn sinh non hay tiền căn khoét chóp nhưng nếu sản phụ muốn thì sao\n        * Câu hỏi là đặt không → Không\n        * Khi đặt vòng thì có nguy cơ đây là 1 vật lạ → nguy cơ nhiễm trùng + tăng tiết dịch âm đạo → viêm âm đạo → lại có nguy cơ sinh non\n        * Hiệu quả thường không có\n        * Vậy nên làm gì? → đặt P4",
      "de": [
       {
@@ -4854,6 +4885,7 @@
      "id": "cl-ngan",
      "ten": "Chiều dài kênh cổ tử cung ngắn",
      "ten_goc": "CHIỀU DÀI KÊNH CỔ TỬ CUNG NGẮN",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -4935,6 +4967,7 @@
      "id": "ovn",
      "ten": "Ối vỡ non",
      "ten_goc": "TIẾP CẬN ỐI VỠ NON",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- Chị Uyên: Thai phụ ra nước nhiều vô viện thì khỏi nitrazine test, thứ duy nhất chảy ra từ âm đạo chỉ có nước ối => 100% là nước ối khỏi test. Nếu khám trong BẰNG MỎ VỊT mà khô ran, chảy có tí ra quần lót, lúc đó cần phân định rằng đó là gì thì mới nitrazine test\n- Chị Mai Phương: Ối vỡ non sau 12 giờ mới bắt đầu dùng kháng sinh dự phòng GBS vì theo nghiên cứu 12 giờ sau vỡ ối, mẹ sẽ bắt đầu vào chuyển dạ. ĐÃ VÀO CHUYỂN DẠ = KHÔNG\n- CẦN DÙNG DỰ PHÒNG GBS.\n- Không nhiễm trùng + nước ối còn đủ → mới dưỡng nổi chứ thiểu ối rồi không thể dưỡng nữa KS dùng khi nào: dựa vào CTM (có NT không)",
      "de": [
       {
@@ -5063,6 +5096,7 @@
      "id": "chuyen-da",
      "ten": "Quản lý cuộc chuyển dạ – sản đồ, CTG",
      "ten_goc": "CHƯƠNG 5: QUẢN LÝ MỘT CUỘC CHUYỂN DẠ SANH",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -5852,6 +5886,7 @@
      "id": "bhss",
      "ten": "Băng huyết sau sinh",
      "ten_goc": "TIẾP CẬN BĂNG HUYẾT SAU SINH",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -5922,6 +5957,7 @@
      "id": "tolac",
      "ten": "Tư vấn sinh ngả âm đạo trên vết mổ cũ (TOLAC)",
      "ten_goc": "TIẾP CẬN TOLAC",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- MLT 2 lần → mổ lại\n- Vết mổ xấu: đường dọc/từng bóc u xơ/mổ thai ngoài đoạn kẽ/NT vết mổ phải cắt lọc lại\n\n![](nguon/hinh/p137-1.jpg)\n\n- Lý do mổ còn tồn tại: KCH → mổ lại\n\n##### 1.1 Yếu tố tăng khả năng thành công TOLAC\n\n- Vào chuyển dạ tự nhiên\n- Từng sinh ngã âm đạo\n- Chỉ định mổ lấy thai lần trước không tồn tại\n- Thai kì hiện tại non tháng\n- Thai kì không có biến chứng\n- Mổ ngang đoạn dưới\n\n##### 1.2 Yếu tố tăng khả năng thất bại TOLAC\n\n- Tuổi mẹ tăng (>= 40 tuổi)\n- Thai trên 40 tuần\n\n![](nguon/hinh/p137-2.jpg)\n\n- Thai to\n- Mẹ béo phì\n- Ngôi mông\n- Đa thai\n- Tiền sản giật\n- Vết mổ dọc thân\n- Khởi phát chuyển dạ\n- Có bệnh nội khoa\n- Mổ lấy thai nhiều lần\n- Khoảng cách 2 lần sinh ngắn\n\n##### 1.3 Chống chỉ định TOLAC :\n\n- Vết mổ dọc thân hay hình chữ T trên cơ tử cung\n- Tiền căn vỡ tử cung\n- Vết mổ trên thân tử cung\n- Sản phụ từ chối sinh ngã âm đạo",
      "de": [
       {
@@ -6041,6 +6077,7 @@
      "id": "sa-day-ron",
      "ten": "Sa dây rốn",
      "ten_goc": "TIẾP CẬN SA DÂY RỐN",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- Cần phải linh hoạt rằng 1 tình huống ối vỡ => nghe tim thai => tim thai giảm có dấu hiệu suy thai => khám trong xem có sa dây rốn không. nếu tim thai không ảnh hưởng => chuyển đến tác vụ tiếp cận ối vỡ non là KHÁM TRONG BẰNG ĐẶT MỎ VỊT.\n\n![](nguon/hinh/p142-1.jpg)",
      "de": [
       {
@@ -6149,6 +6186,7 @@
      "id": "xhad-cap-cuu",
      "ten": "Ra huyết âm đạo nhiều (cấp cứu)",
      "ten_goc": "TIẾP CẬN BỆNH NHÂN RA HUYẾT ÂM ĐẠO NHIỀU (CẤP CỨU)",
+     "rubric": [],
      "ly_thuyet": "#### 1. LÝ THUYẾT CẦN NHỚ\n\n- Bệnh nhân nhập viện vì ra máu nhiều, cần nghĩ đến các nguyên nhân này, khi:\n\n- Vỡ tử cung: mất cơn gò, +- mất tim thai + phản ứng phúc mạc, vết mổ cũ\n- Nhau tiền đạo: tiền căn ra huyết lặp lại + siêu âm bất thường vị trí nhau bám (gần nhất >28 tuần), không đau bụng hoặc đau bụng từng cơn theo cơn gò, thường mẹ và con ổn, trừ khi mẹ gần chết.\n- Nhau bong non: Sau chấn thương, đau gồng cứng bụng, ra huyết sậm không đông, tim thai giảm hoặc mất",
      "de": [
       {
@@ -6230,6 +6268,7 @@
      "id": "ntd",
      "ten": "Nhau tiền đạo",
      "ten_goc": "TIẾP CẬN NHAU TIỀN ĐẠO",
+     "rubric": [],
      "ly_thuyet": "- Bệnh cảnh thường gặp: thai phụ nhập viện vì ra huyết màu đỏ tươi +- vài lần nhập viện vì NTĐ",
      "de": [
       {
@@ -6852,6 +6891,9 @@
      "id": "dau-bung-tcn3",
      "ten": "Đau bụng 3 tháng cuối (nhau bong non)",
      "ten_goc": "TIẾP CẬN MỘT TRƯỜNG HỢP ĐAU BỤNG Ở 3 THÁNG CUỐI THAI KÌ",
+     "rubric": [
+      "trang-81"
+     ],
      "ly_thuyet": "",
      "de": [
       {
@@ -6928,6 +6970,9 @@
      "id": "nbn",
      "ten": "Nhau bong non",
      "ten_goc": "TIẾP CẬN NHAU BONG NON",
+     "rubric": [
+      "trang-81"
+     ],
      "ly_thuyet": "",
      "de": [
       {
@@ -6997,6 +7042,7 @@
      "id": "vo-tc",
      "ten": "Vỡ tử cung",
      "ten_goc": "TIẾP CẬN VỠ TỬ CUNG",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -7067,6 +7113,7 @@
      "id": "san-giat",
      "ten": "Sản giật – tiền sản giật nặng cấp cứu",
      "ten_goc": "TIẾP CẬN SẢN GIẬT",
+     "rubric": [],
      "ly_thuyet": "",
      "de": [
       {
@@ -7189,6 +7236,9 @@
      "id": "kham-chuyen-da",
      "ten": "Khám thai phụ trong chuyển dạ (khám ngoài, khám trong)",
      "ten_goc": "KHÁM THAI PHỤ TRONG CHUYỂN DẠ (BY NPBN – EDITED BY ATP)",
+     "rubric": [
+      "trang-90"
+     ],
      "ly_thuyet": "",
      "de": [
       {

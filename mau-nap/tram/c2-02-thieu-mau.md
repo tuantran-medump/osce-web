@@ -2,6 +2,7 @@
 Mã: thieu-mau
 Chương: CHƯƠNG 2: NỬA ĐẦU THAI KÌ
 Tên gốc: TIẾP CẬN THIẾU MÁU
+Rubric: trang-18
 
 ## LÝ THUYẾT
 

@@ -217,7 +217,7 @@
       if (vungMeta && RE_META.test(l)) {
         var mm = l.match(RE_META);
         var khoa = mm[1].trim(), gt = mm[2].trim();
-        var hopLe = vungMeta === "tram" ? ["Mã", "Chương", "Tên gốc"] : ["Số", "Mã", "Nguồn đề", "Tên", "Dòng nguồn"];
+        var hopLe = vungMeta === "tram" ? ["Mã", "Chương", "Tên gốc", "Rubric"] : ["Số", "Mã", "Nguồn đề", "Tên", "Dòng nguồn"];
         if (hopLe.indexOf(khoa) < 0) { baoLoi(so, "Thông tin lạ \"" + khoa + "\". Dùng: " + hopLe.join(", ") + "."); continue; }
         (vungMeta === "tram" ? tram : de)._meta[khoa] = gt;
         continue;
@@ -237,6 +237,7 @@
       t.id = m["Mã"] || slug(t.ten);
       t.chuong_ten = m["Chương"] || "";
       t.ten_goc = m["Tên gốc"] || t.ten;
+      t.rubric = (m["Rubric"] || "").split(",").map(function (x) { return x.trim(); }).filter(Boolean);
       if (!t.de.length) baoLoi(t._dong, "Trạm \"" + t.ten + "\" chưa có đề nào (## ĐỀ: …).");
       var daCo = {}, daCoMa = {};
       t.de.forEach(function (d) {
@@ -290,6 +291,7 @@
       ten: t.ten,
       ten_goc: t.ten_goc,
       chuong_ten: t.chuong_ten,
+      rubric: t.rubric || [],
       ly_thuyet: t.ly_thuyet || "",
       de: t.de.map(function (d) {
         return {
@@ -317,7 +319,7 @@
     dsTram.forEach(function (t) {
       var ma = maChuong(t.chuong_ten);
       if (!theoMa[ma]) { theoMa[ma] = { id: ma, ten: t.chuong_ten, tram: [] }; chuong.push(theoMa[ma]); }
-      theoMa[ma].tram.push({ id: t.id, ten: t.ten, ten_goc: t.ten_goc, ly_thuyet: t.ly_thuyet, de: t.de });
+      theoMa[ma].tram.push({ id: t.id, ten: t.ten, ten_goc: t.ten_goc, rubric: t.rubric || [], ly_thuyet: t.ly_thuyet, de: t.de });
     });
     chuong.sort(function (a, b) {
       var x = soChuong(a.ten), y = soChuong(b.ten);
@@ -358,7 +360,7 @@
             return (x === null ? 999 : x) - (y === null ? 999 : y);
           });
         }
-        dich = { id: t.id, ten: t.ten, ten_goc: t.ten_goc, ly_thuyet: t.ly_thuyet, de: [] };
+        dich = { id: t.id, ten: t.ten, ten_goc: t.ten_goc, rubric: t.rubric || [], ly_thuyet: t.ly_thuyet, de: [] };
         c.tram.push(dich);
         tramTheoMa[t.id] = { c: c, t: dich };
       }
@@ -383,6 +385,7 @@
     L.push("Mã: " + tram.id);
     L.push("Chương: " + (chuongTen || tram.chuong_ten || ""));
     if (tram.ten_goc && tram.ten_goc !== tram.ten) L.push("Tên gốc: " + tram.ten_goc);
+    if (tram.rubric && tram.rubric.length) L.push("Rubric: " + tram.rubric.join(", "));
     L.push("");
     if (tram.ly_thuyet) { L.push("## LÝ THUYẾT", "", tram.ly_thuyet, ""); }
 

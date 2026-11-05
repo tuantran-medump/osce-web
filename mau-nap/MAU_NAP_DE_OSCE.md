@@ -21,6 +21,7 @@ Khuôn trống (chú thích từng dòng)
 Mã: <ma-tram>                       ← mã không dấu, không trùng; bỏ trống thì tự tạo từ tên. Trùng mã trạm có sẵn = thêm đề vào trạm đó
 Chương: CHƯƠNG <số>: <TÊN CHƯƠNG>   ← bắt buộc; trùng tên chương có sẵn thì xếp vào chương đó
 Tên gốc: <tiêu đề trong tài liệu>   ← tùy chọn
+Rubric: trang-58, trang-60          ← tùy chọn: mã rubric dùng để tự chấm (xem data/rubrics.json); bỏ trống = tự chấm bằng checklist đáp án
 
 ## LÝ THUYẾT                        ← tùy chọn: "Lý thuyết cần nhớ" hiện ở trang trạm
 <nội dung>

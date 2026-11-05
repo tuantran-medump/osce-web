@@ -2,6 +2,7 @@
 Mã: kham-chuyen-da
 Chương: CHƯƠNG 6: CẤP CỨU SẢN KHOA
 Tên gốc: KHÁM THAI PHỤ TRONG CHUYỂN DẠ (BY NPBN – EDITED BY ATP)
+Rubric: trang-90
 
 ## ĐÁP ÁN MẪU
 

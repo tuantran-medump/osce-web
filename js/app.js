@@ -8,15 +8,34 @@
   var thongBao = document.getElementById("thong-bao");
 
   if (!D) {
-    app.innerHTML = '<p class="trong">Không tải được dữ liệu (data/stations.js). Hãy chạy <code>python3 tools/build_data.py</code>.</p>';
+    app.innerHTML = '<p class="trong">Không tải được dữ liệu (data/stations.js). Hãy chạy <code>node tools/build_data.js</code>.</p>';
     return;
   }
+
+  /* ---------- Lưu trữ: mọi truy cập localStorage đi qua đây, đều bọc try/catch ---------- */
+  var LuuTru = {
+    doc: function (k, mac) {
+      try { var v = window.localStorage.getItem(k); return v === null ? mac : v; } catch (e) { return mac; }
+    },
+    ghi: function (k, v) {
+      try { window.localStorage.setItem(k, v); return true; } catch (e) { return false; }
+    },
+    docJSON: function (k, mac) {
+      try { var v = window.localStorage.getItem(k); return v === null ? mac : JSON.parse(v); } catch (e) { return mac; }
+    },
+    ghiJSON: function (k, v) {
+      try { window.localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; }
+    }
+  };
+  var RUBRIC = {};
+  ((window.OSCE_RUBRIC && window.OSCE_RUBRIC.rubric) || []).forEach(function (r) { RUBRIC[r.id] = r; });
 
   /* ---------- Đề nạp tay (localStorage) ghép vào dữ liệu ---------- */
   var D0 = JSON.parse(JSON.stringify(D)); // bản gốc, để kiểm tra trùng khi nạp
   var KHOA_NAP = "osce.nap";
   function docNap() {
-    try { var v = JSON.parse(localStorage.getItem(KHOA_NAP) || "[]"); return Array.isArray(v) ? v : []; } catch (e) { return []; }
+    var v = LuuTru.docJSON(KHOA_NAP, []);
+    return Array.isArray(v) ? v : [];
   }
   var NAP = docNap();
   NAP.forEach(function (f) {
@@ -45,10 +64,8 @@
   });
 
   /* ---------- Lưu cài đặt (an toàn khi bị chặn bộ nhớ) ---------- */
-  function doc(k, mac) {
-    try { var v = localStorage.getItem(k); return v === null ? mac : v; } catch (e) { return mac; }
-  }
-  function ghi(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* bỏ qua */ } }
+  function doc(k, mac) { return LuuTru.doc(k, mac); }
+  function ghi(k, v) { return LuuTru.ghi(k, v); }
   var CAI = { phut: Math.min(30, Math.max(1, parseInt(doc("osce.phut", "7"), 10) || 7)) };
 
   /* ---------- Tiện ích ---------- */
@@ -185,6 +202,7 @@
       "<li>Chọn chương → bốc ngẫu nhiên hoặc chọn trạm → chọn đề.</li>" +
       "<li>Màn trạm: đọc mở đầu và tác vụ; đồng hồ (mặc định 7 phút) chạy suốt trạm, báo khi còn 1 phút và khi hết giờ.</li>" +
       "<li>Làm lần lượt từng bước: ghi chú → bấm <strong>Hoàn thành bước</strong> → đọc kết quả mở ra → bấm <strong>Xem đáp án bước này</strong> nếu muốn.</li>" +
+      "<li>Làm xong trạm: phần <strong>Tự chấm</strong> hiện ra – trạm có rubric thì chọn mức F/40/80/100% cho từng mục, trạm chưa có rubric thì tick các ý đáp án. Điểm % và thời gian được lưu ở trang <strong>Lịch sử</strong> (có Xuất/Nhập file JSON để sao lưu).</li>" +
       "<li>Phím tắt: <strong>Enter</strong> = Hoàn thành bước (khi không gõ trong ô ghi chú; trong ô ghi chú dùng Ctrl/⌘ + Enter), <strong>Space</strong> = tạm dừng/tiếp tục đồng hồ.</li>" +
       '<li>Chữ trong khung xám là nguyên văn tài liệu; khung viền đứt màu vàng có nhãn <span class="nhan nhan-st">soạn thêm</span> là phần tự soạn thêm cho đủ dữ kiện luyện tập.</li>' +
       "</ul></section>";
@@ -301,9 +319,7 @@
     if (!choLuu) return;
     var moi = docNap().filter(function (f) { return f.ten !== choLuu.ten; });
     moi.push({ ten: choLuu.ten, noi_dung: choLuu.noi_dung, luu_luc: new Date().toISOString() });
-    try {
-      localStorage.setItem(KHOA_NAP, JSON.stringify(moi));
-    } catch (e) {
+    if (!LuuTru.ghiJSON(KHOA_NAP, moi)) {
       document.getElementById("nap-ket-qua").innerHTML = '<div class="the bao-loi" role="alert">Trình duyệt không cho lưu (bộ nhớ bị chặn hoặc đầy). Hãy dùng Xuất ra .md để giữ file.</div>';
       return;
     }
@@ -351,9 +367,7 @@
       b.addEventListener("click", function () {
         var f = NAP[+b.getAttribute("data-xoa")];
         if (!confirm("Xóa \"" + f.ten + "\" khỏi trình duyệt? Nên xuất ra .md trước nếu cần giữ.")) return;
-        try {
-          localStorage.setItem(KHOA_NAP, JSON.stringify(docNap().filter(function (x) { return x.ten !== f.ten; })));
-        } catch (e) { /* bỏ qua */ }
+        LuuTru.ghiJSON(KHOA_NAP, docNap().filter(function (x) { return x.ten !== f.ten; }));
         location.reload();
       });
     });
@@ -385,6 +399,7 @@
       h += '<section class="khoi buoc" id="buoc-' + i + '" data-tt="khoa" aria-labelledby="tieu-de-buoc-' + i + '"></section>';
     });
     h += '<section class="khoi ket-thuc" id="ket-thuc" hidden></section>';
+    h += '<section class="tu-cham the" id="tu-cham" aria-labelledby="tieu-de-tu-cham" hidden></section>';
     veLai(h);
 
     TT = {
@@ -517,6 +532,308 @@
       var ds = d.tram.de.filter(function (x) { return x.id !== d.id; });
       location.hash = "#/de/" + (ds.length ? ngauNhien(ds) : d).id;
     });
+    veTuCham();
+  }
+
+  /* ---------- Tự chấm ---------- */
+  var KHOA_LS = "osce.lich_su";
+  var TC = null; // trạng thái tự chấm của lần làm hiện tại
+
+  function docLichSu() {
+    var v = LuuTru.docJSON(KHOA_LS, []);
+    return Array.isArray(v) ? v : [];
+  }
+  function soVN(x, le) {
+    return Number(x).toLocaleString("vi-VN", { maximumFractionDigits: le === undefined ? 1 : le });
+  }
+  function boTheP(html) { return html.replace(/^<p>|<\/p>$/g, ""); }
+
+  // checklist: các ý cấp 1 (gạch đầu dòng / số thứ tự ở đầu dòng) trong đáp án riêng + đáp án mẫu của bước
+  function mucChecklist(b) {
+    var ra = [], daCo = {};
+    [b.dap_an_de, b.dap_an].forEach(function (chu) {
+      (chu || "").split("\n").forEach(function (l) {
+        var m = l.match(/^(?:-|\d+\.)\s+(.*)$/);
+        if (!m) return;
+        var t = m[1].trim();
+        if (!t || t === "(trống)" || daCo[t]) return;
+        daCo[t] = true;
+        ra.push(t);
+      });
+    });
+    return ra;
+  }
+
+  function veTuCham() {
+    var d = TT.de, t = d.tram;
+    var el = document.getElementById("tu-cham");
+    var dsRubric = (t.rubric || []).filter(function (id) { return RUBRIC[id]; });
+    TC = {
+      id: Date.now() + "-" + Math.random().toString(36).slice(2, 7),
+      cach: dsRubric.length ? "rubric" : "checklist",
+      rubric_id: dsRubric[0] || null,
+      chon: {},
+      tick: {},
+      da_luu: false,
+      thoi_gian_ms: Math.round(TT.daChay),
+      gio_quy_dinh_ms: TT.tong
+    };
+    var h = '<h2 id="tieu-de-tu-cham">Tự chấm</h2>';
+    h += '<p class="phu">Xem lại đáp án từng bước ở trên rồi tự chấm. Điểm được lưu vào <a href="#/lich-su">Lịch sử</a> trên trình duyệt này.</p>';
+    if (dsRubric.length > 1) {
+      h += '<label class="nhan-o" for="chon-rubric">Rubric</label><select id="chon-rubric" class="o-chu">' +
+        dsRubric.map(function (id) { return '<option value="' + id + '">' + esc(RUBRIC[id].ten) + "</option>"; }).join("") + "</select>";
+    }
+    h += '<div id="bang-cham"></div>';
+    h += '<div class="tong-diem" aria-live="polite"><div><span class="so-diem" id="so-diem">0%</span> <span class="phu" id="chi-tiet-diem"></span></div>' +
+      '<div class="hang-nut"><button type="button" class="nut nut-chinh" id="luu-diem">Lưu kết quả</button></div>' +
+      '<p class="phu" id="bao-luu" role="status"></p></div>';
+    el.innerHTML = h;
+    el.hidden = false;
+    var sel = document.getElementById("chon-rubric");
+    if (sel) sel.addEventListener("change", function () { TC.rubric_id = sel.value; TC.chon = {}; veBangCham(); });
+    document.getElementById("luu-diem").addEventListener("click", luuDiem);
+    veBangCham();
+  }
+
+  function veBangCham() {
+    var o = document.getElementById("bang-cham");
+    var h = "";
+    if (TC.cach === "rubric") {
+      var r = RUBRIC[TC.rubric_id];
+      h += '<p class="phu">Rubric: <strong>' + esc(r.ten) + "</strong> (trang " + r.trang + " tài liệu rubric" +
+        (r.co_diem ? ", tổng " + soVN(r.diem_toi_da, 2) + " điểm" : "; bảng gốc không ghi điểm, tính mỗi mục 1 điểm") +
+        "). Rubric gốc viết cho một đề cụ thể; áp dụng tương tự cho đề đang làm. Mỗi mục chọn 1 mức.</p>";
+      var nhomTruoc = "";
+      r.muc.forEach(function (m, i) {
+        if (m.nhom && m.nhom !== nhomTruoc) { h += '<h3 class="nhom-muc">' + esc(m.nhom) + "</h3>"; nhomTruoc = m.nhom; }
+        h += '<fieldset class="muc-cham"><legend>' + m.so + ". " + esc(m.ten) + ' <span class="phu">(tối đa ' + soVN(m.diem_toi_da, 2) + " đ)</span></legend><div class=\"luoi-muc\">";
+        m.muc_do.forEach(function (md) {
+          var id = "m" + i + "-" + md.khoa;
+          var tat = !md.tinh_diem;
+          h += '<label class="o-muc' + (tat ? " o-tat" : "") + '" for="' + id + '"><input type="radio" name="m' + i + '" id="' + id + '" value="' + md.khoa + '"' +
+            (tat ? " disabled" : "") + (TC.chon[i] === md.khoa ? " checked" : "") + ">" +
+            '<span class="dau-muc"><strong>' + esc(md.nhan) + "</strong> · " + (tat ? "không tính điểm" : soVN(md.diem, 2) + " đ") + "</span>";
+          if (md.ghi_chu && tat) h += '<span class="phu">' + boTheP(window.MD.inline(md.ghi_chu)) + "</span>";
+          if (md.tieu_chi.length) h += "<ul>" + md.tieu_chi.map(function (x) { return "<li>" + window.MD.inline(x) + "</li>"; }).join("") + "</ul>";
+          h += "</label>";
+        });
+        h += "</div></fieldset>";
+      });
+      o.innerHTML = h;
+      o.querySelectorAll("input[type=radio]").forEach(function (x) {
+        x.addEventListener("change", function () {
+          TC.chon[+x.name.slice(1)] = x.value;
+          capNhatDiem();
+        });
+      });
+    } else {
+      h += '<p class="phu">Trạm này chưa có rubric. Tick các ý đáp án bạn đã làm được (lấy từ đáp án riêng và đáp án mẫu của từng bước).</p>';
+      TT.de.buoc.forEach(function (b, i) {
+        var ds = mucChecklist(b);
+        if (!ds.length) ds = ["Làm đạt yêu cầu bước " + b.ten.toLowerCase() + " theo đáp án"];
+        h += '<fieldset class="muc-cham"><legend>Bước ' + (i + 1) + ": " + esc(b.ten) + ' <span class="phu">(' + ds.length + " ý)</span></legend>" +
+          '<div class="hang-nut"><button type="button" class="nut nut-nho" data-chon-het="' + i + '">Chọn tất cả</button>' +
+          '<button type="button" class="nut nut-nho" data-bo-het="' + i + '">Bỏ chọn</button></div><ul class="ds-tick">';
+        ds.forEach(function (x, k) {
+          var id = "t" + i + "-" + k;
+          h += '<li><label for="' + id + '"><input type="checkbox" id="' + id + '" data-khoa="' + i + "-" + k + '">' +
+            "<span>" + window.MD.inline(x) + "</span></label></li>";
+        });
+        h += "</ul></fieldset>";
+      });
+      o.innerHTML = h;
+      var cap = function () {
+        TC.tick = {};
+        o.querySelectorAll("input[type=checkbox]").forEach(function (x) { TC.tick[x.getAttribute("data-khoa")] = x.checked; });
+        capNhatDiem();
+      };
+      o.querySelectorAll("input[type=checkbox]").forEach(function (x) { x.addEventListener("change", cap); });
+      o.querySelectorAll("[data-chon-het],[data-bo-het]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var i = b.getAttribute("data-chon-het") || b.getAttribute("data-bo-het");
+          var bat = b.hasAttribute("data-chon-het");
+          o.querySelectorAll('input[data-khoa^="' + i + '-"]').forEach(function (x) { x.checked = bat; });
+          cap();
+        });
+      });
+      cap();
+    }
+    capNhatDiem();
+  }
+
+  function tinhDiem() {
+    if (TC.cach === "rubric") {
+      var r = RUBRIC[TC.rubric_id];
+      var dat = 0, xong = 0;
+      r.muc.forEach(function (m, i) {
+        var k = TC.chon[i];
+        if (!k) return;
+        xong++;
+        m.muc_do.forEach(function (md) { if (md.khoa === k) dat += md.diem; });
+      });
+      return { dat: Math.round(dat * 100) / 100, toi_da: r.diem_toi_da, xong: xong, tong: r.muc.length,
+        phan_tram: r.diem_toi_da ? Math.round(dat / r.diem_toi_da * 1000) / 10 : 0 };
+    }
+    var keys = Object.keys(TC.tick);
+    var co = keys.filter(function (k) { return TC.tick[k]; }).length;
+    return { dat: co, toi_da: keys.length, xong: keys.length, tong: keys.length,
+      phan_tram: keys.length ? Math.round(co / keys.length * 1000) / 10 : 0 };
+  }
+
+  function capNhatDiem() {
+    var k = tinhDiem();
+    document.getElementById("so-diem").textContent = soVN(k.phan_tram) + "%";
+    document.getElementById("chi-tiet-diem").textContent = TC.cach === "rubric"
+      ? soVN(k.dat, 2) + "/" + soVN(k.toi_da, 2) + " điểm · đã chấm " + k.xong + "/" + k.tong + " mục"
+      : k.dat + "/" + k.toi_da + " ý đạt";
+    var nut = document.getElementById("luu-diem");
+    var thieu = TC.cach === "rubric" && k.xong < k.tong;
+    nut.disabled = thieu;
+    document.getElementById("bao-luu").textContent = thieu ? "Chọn mức cho đủ " + k.tong + " mục để lưu." :
+      TC.da_luu ? "Đã lưu. Sửa lựa chọn rồi bấm Lưu lại để cập nhật." : "";
+  }
+
+  function luuDiem() {
+    var d = TT ? TT.de : null;
+    if (!d || !TC) return;
+    var k = tinhDiem();
+    var ban = {
+      id: TC.id,
+      ngay: new Date().toISOString(),
+      tram_id: d.tram.id,
+      tram_ten: d.tram.ten,
+      de_id: d.id,
+      de_ten: tenDe(d),
+      nguon_de: d.nguon_de,
+      diem: k.phan_tram,
+      diem_dat: k.dat,
+      diem_toi_da: k.toi_da,
+      cach_cham: TC.cach,
+      rubric_id: TC.cach === "rubric" ? TC.rubric_id : null,
+      chi_tiet: TC.cach === "rubric" ? TC.chon : TC.tick,
+      thoi_gian_ms: TC.thoi_gian_ms,
+      gio_quy_dinh_ms: TC.gio_quy_dinh_ms
+    };
+    var ds = docLichSu().filter(function (x) { return x.id !== ban.id; });
+    ds.push(ban);
+    var ok = LuuTru.ghiJSON(KHOA_LS, ds);
+    var bao = document.getElementById("bao-luu");
+    if (ok) {
+      TC.da_luu = true;
+      document.getElementById("luu-diem").textContent = "Lưu lại";
+      bao.innerHTML = "Đã lưu " + soVN(k.phan_tram) + "% vào <a href=\"#/lich-su\">Lịch sử</a>.";
+    } else {
+      bao.textContent = "Không lưu được: trình duyệt chặn hoặc hết bộ nhớ lưu trữ.";
+    }
+  }
+
+  /* ---------- Trang lịch sử ---------- */
+  function hopLeBanGhi(x) {
+    return x && typeof x === "object" && typeof x.id === "string" && typeof x.de_id === "string" &&
+      typeof x.ngay === "string" && !isNaN(Date.parse(x.ngay)) && typeof x.diem === "number" && isFinite(x.diem);
+  }
+
+  function trangLichSu() {
+    datTieuDe("Lịch sử");
+    var ds = docLichSu().filter(hopLeBanGhi).sort(function (a, b) { return b.ngay < a.ngay ? -1 : 1; });
+    var h = '<div class="trang-hep"><h1>Lịch sử tự chấm</h1>';
+    h += '<div class="hang-nut"><button type="button" class="nut" id="xuat-ls"' + (ds.length ? "" : " disabled") + ">⬇ Xuất file JSON</button>" +
+      '<input type="file" id="nhap-ls" class="an-file" accept=".json,application/json"><label class="nut" for="nhap-ls">⬆ Nhập file JSON</label>' +
+      (ds.length ? '<button type="button" class="nut nut-xoa" id="xoa-het">Xóa tất cả</button>' : "") + "</div>";
+    h += '<p class="phu" id="bao-ls" role="status"></p>';
+    if (!ds.length) {
+      h += '<p class="trong">Chưa có lần tự chấm nào. Làm xong một trạm rồi bấm <strong>Lưu kết quả</strong> ở phần Tự chấm.</p></div>';
+      veLai(h);
+      ganLichSu([]);
+      return;
+    }
+    var tb = ds.reduce(function (s, x) { return s + x.diem; }, 0) / ds.length;
+    h += '<p class="phu">' + ds.length + " lần · điểm trung bình <strong>" + soVN(tb) + "%</strong></p>";
+    // tổng hợp theo trạm
+    var theoTram = {};
+    ds.forEach(function (x) {
+      var t = theoTram[x.tram_id] || (theoTram[x.tram_id] = { ten: x.tram_ten, n: 0, tong: 0, cao: 0, gan: null });
+      t.n++; t.tong += x.diem; t.cao = Math.max(t.cao, x.diem);
+      if (!t.gan || x.ngay > t.gan.ngay) t.gan = x;
+    });
+    h += '<h2 class="muc">Theo trạm</h2><table class="bang-ls"><thead><tr><th>Trạm</th><th>Số lần</th><th>TB</th><th>Cao nhất</th><th>Gần nhất</th></tr></thead><tbody>';
+    Object.keys(theoTram).forEach(function (id) {
+      var t = theoTram[id];
+      h += "<tr><td data-nhan=\"Trạm\"><span>" + (TRAM[id] ? '<a href="#/tram/' + esc(id) + '">' + esc(t.ten) + "</a>" : esc(t.ten)) + "</span></td><td data-nhan=\"Số lần\">" + t.n +
+        "</td><td data-nhan=\"Trung bình\">" + soVN(t.tong / t.n) + "%</td><td data-nhan=\"Cao nhất\">" + soVN(t.cao) + "%</td><td data-nhan=\"Gần nhất\">" + soVN(t.gan.diem) + "%</td></tr>";
+    });
+    h += "</tbody></table>";
+    h += '<h2 class="muc">Từng lần làm</h2><table class="bang-ls"><thead><tr><th>Ngày</th><th>Trạm · đề</th><th>Điểm</th><th>Thời gian</th><th>Cách chấm</th><th><span class="an-chu">Thao tác</span></th></tr></thead><tbody>';
+    ds.forEach(function (x) {
+      var cach = x.cach_cham === "rubric" ? "Rubric" + (RUBRIC[x.rubric_id] ? ": " + esc(RUBRIC[x.rubric_id].ten) : "") : "Checklist đáp án";
+      h += "<tr><td data-nhan=\"Ngày\">" + esc(new Date(x.ngay).toLocaleString("vi-VN")) + "</td>" +
+        '<td data-nhan="Trạm · đề"><span>' + esc(x.tram_ten || "") + "<br>" + (DE[x.de_id] ? '<a href="#/de/' + esc(x.de_id) + '">' + esc(x.de_ten || x.de_id) + "</a>" : esc(x.de_ten || x.de_id)) + "</span></td>" +
+        '<td data-nhan="Điểm"><strong>' + soVN(x.diem) + "%</strong></td>" +
+        '<td data-nhan="Thời gian"><span>' + (typeof x.thoi_gian_ms === "number" ? mmss(x.thoi_gian_ms) : "—") +
+        (typeof x.gio_quy_dinh_ms === "number" ? " / " + mmss(x.gio_quy_dinh_ms) : "") + "</span></td>" +
+        '<td data-nhan="Cách chấm"><span>' + cach + "</span></td>" +
+        '<td><button type="button" class="nut nut-nho nut-xoa" data-xoa-ls="' + esc(x.id) + '" aria-label="Xóa lần làm này">Xóa</button></td></tr>';
+    });
+    h += "</tbody></table></div>";
+    veLai(h);
+    ganLichSu(ds);
+  }
+
+  function ganLichSu(ds) {
+    var bao = document.getElementById("bao-ls");
+    var nx = document.getElementById("xuat-ls");
+    if (nx) nx.addEventListener("click", function () {
+      var goi = { loai: "osce-lich-su", phien_ban: 1, xuat_luc: new Date().toISOString(), lich_su: docLichSu() };
+      var blob = new Blob([JSON.stringify(goi, null, 1)], { type: "application/json" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "osce-lich-su-" + new Date().toISOString().slice(0, 10) + ".json";
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    });
+    document.getElementById("nhap-ls").addEventListener("change", function (e) {
+      var f = e.target.files && e.target.files[0];
+      if (!f) return;
+      var r = new FileReader();
+      r.onload = function () {
+        var goi;
+        try { goi = JSON.parse(String(r.result)); } catch (er) { bao.textContent = "File không phải JSON hợp lệ."; return; }
+        var moi = Array.isArray(goi) ? goi : goi && Array.isArray(goi.lich_su) ? goi.lich_su : null;
+        if (!moi) { bao.textContent = "File JSON không có danh sách \"lich_su\"."; return; }
+        var hienCo = docLichSu();
+        var daCo = {};
+        hienCo.forEach(function (x) { daCo[x.id] = true; });
+        var them = 0, trung = 0, hong = 0;
+        moi.forEach(function (x) {
+          if (!hopLeBanGhi(x)) { hong++; return; }
+          if (daCo[x.id]) { trung++; return; }
+          daCo[x.id] = true;
+          hienCo.push(x);
+          them++;
+        });
+        if (!LuuTru.ghiJSON(KHOA_LS, hienCo)) { bao.textContent = "Không lưu được: trình duyệt chặn hoặc hết bộ nhớ lưu trữ."; return; }
+        trangLichSu();
+        document.getElementById("bao-ls").textContent = "Đã nhập " + them + " lần làm" + (trung ? ", bỏ qua " + trung + " lần trùng" : "") +
+          (hong ? ", bỏ qua " + hong + " bản ghi lỗi" : "") + ".";
+      };
+      r.readAsText(f, "utf-8");
+    });
+    var xh = document.getElementById("xoa-het");
+    if (xh) xh.addEventListener("click", function () {
+      if (!confirm("Xóa toàn bộ lịch sử tự chấm? Nên Xuất file JSON trước để sao lưu.")) return;
+      LuuTru.ghiJSON(KHOA_LS, []);
+      trangLichSu();
+    });
+    app.querySelectorAll("[data-xoa-ls]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        if (!confirm("Xóa lần làm này khỏi lịch sử?")) return;
+        var id = b.getAttribute("data-xoa-ls");
+        LuuTru.ghiJSON(KHOA_LS, docLichSu().filter(function (x) { return x.id !== id; }));
+        trangLichSu();
+      });
+    });
   }
 
   /* ---------- Đồng hồ ---------- */
@@ -594,7 +911,7 @@
       document.getElementById("nut-dung").addEventListener("click", tamDung);
       document.getElementById("nut-xong").addEventListener("click", function () {
         if (TT && TT.xong) {
-          var k = document.getElementById("ket-thuc");
+          var k = document.getElementById("tu-cham");
           if (k) k.scrollIntoView({ behavior: "smooth", block: "start" });
         } else hoanThanhBuoc();
       });
@@ -621,7 +938,7 @@
     nd.setAttribute("aria-label", TT.dung ? "Tiếp tục đồng hồ (Space)" : "Tạm dừng đồng hồ (Space)");
     nd.disabled = TT.xong;
     var b = TT.de.buoc[TT.hienTai];
-    document.getElementById("chu-nut-xong").innerHTML = TT.xong ? "Xem kết thúc trạm" :
+    document.getElementById("chu-nut-xong").innerHTML = TT.xong ? "Tự chấm điểm" :
       "✓ Hoàn thành bước" + '<span class="chu-dai"> ' + (TT.hienTai + 1) + (b ? ": " + esc(b.ten) : "") + "</span>";
   }
   function dungTram() {
@@ -713,6 +1030,7 @@
     else if (p[0] === "c" && p[1]) trangChu(decodeURIComponent(p[1]));
     else if (p[0] === "huong-dan") trangHuongDan();
     else if (p[0] === "nap") trangNap();
+    else if (p[0] === "lich-su") trangLichSu();
     else trangChu();
     app.focus({ preventScroll: true });
   }

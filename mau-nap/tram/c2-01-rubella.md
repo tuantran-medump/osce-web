@@ -2,6 +2,7 @@
 Mã: rubella
 Chương: CHƯƠNG 2: NỬA ĐẦU THAI KÌ
 Tên gốc: TIẾP CẬN RUBELLA
+Rubric: trang-12
 
 ## LÝ THUYẾT
 

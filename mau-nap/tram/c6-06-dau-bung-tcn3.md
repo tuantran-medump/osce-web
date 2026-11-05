@@ -2,6 +2,7 @@
 Mã: dau-bung-tcn3
 Chương: CHƯƠNG 6: CẤP CỨU SẢN KHOA
 Tên gốc: TIẾP CẬN MỘT TRƯỜNG HỢP ĐAU BỤNG Ở 3 THÁNG CUỐI THAI KÌ
+Rubric: trang-81
 
 ## ĐỀ: Đau bụng dữ dội ở 3 tháng cuối thai kì
 Số: 1

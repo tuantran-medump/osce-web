@@ -8,6 +8,7 @@
 const fs = require("fs");
 const path = require("path");
 const NapDe = require("../js/nap.js");
+const { tachRubric } = require("./rubric.js");
 
 const GOC = path.join(__dirname, "..");
 const THU_MUC = path.join(GOC, "mau-nap", "tram");
@@ -31,6 +32,13 @@ function main() {
       maDe[d.id] = 1;
     }
   }
+  // rubric
+  const kqRubric = tachRubric(fs.readFileSync(path.join(GOC, "nguon", "Rubric_OSCE_TungBuoc.md"), "utf8"));
+  kqRubric.loi.forEach(e => loi.push("Rubric_OSCE_TungBuoc.md " + e));
+  const rubricTheoMa = Object.fromEntries(kqRubric.rubric.map(r => [r.id, r]));
+  for (const t of dsTram) {
+    for (const r of t.rubric) if (!rubricTheoMa[r]) loi.push(`Trạm "${t.id}" gắn rubric lạ "${r}"`);
+  }
   if (loi.length) {
     loi.forEach(e => console.error("LỖI: " + e));
     process.exit(1);
@@ -40,11 +48,32 @@ function main() {
 
   fs.mkdirSync(path.join(GOC, "data"), { recursive: true });
   fs.writeFileSync(path.join(GOC, "data", "stations.json"), JSON.stringify(duLieu, null, 1) + "\n");
+  const rubrics = { nguon: "nguon/Rubric_OSCE_TungBuoc.md", rubric: kqRubric.rubric };
+  fs.writeFileSync(path.join(GOC, "data", "rubrics.json"), JSON.stringify(rubrics, null, 1) + "\n");
   fs.writeFileSync(path.join(GOC, "data", "stations.js"),
-    "// Sinh tự động bởi tools/build_data.js từ mau-nap/tram/*.md – không sửa tay.\nwindow.OSCE_DATA = " + JSON.stringify(duLieu) + ";\n");
+    "// Sinh tự động bởi tools/build_data.js từ mau-nap/tram/*.md và nguon/Rubric_OSCE_TungBuoc.md – không sửa tay.\n" +
+    "window.OSCE_DATA = " + JSON.stringify(duLieu) + ";\nwindow.OSCE_RUBRIC = " + JSON.stringify(rubrics) + ";\n");
   baoCao(duLieu);
+  baoCaoRubric(duLieu, kqRubric.rubric);
   const tong = duLieu.chuong.reduce((s, c) => s + c.tram.reduce((x, t) => x + t.de.length, 0), 0);
-  console.log(`Xong: ${dsTram.length} trạm, ${tong} đề -> data/stations.json, data/stations.js`);
+  console.log(`Xong: ${dsTram.length} trạm, ${tong} đề, ${kqRubric.rubric.length} rubric -> data/stations.json, data/rubrics.json, data/stations.js`);
+}
+
+function baoCaoRubric(D, rubric) {
+  const L = ["# Bảng ghép trạm – rubric", "",
+    "Sinh tự động bởi `tools/build_data.js`. Ghép bằng dòng `Rubric:` ở đầu mỗi file `mau-nap/tram/*.md`; trạm không chắc thì để trống (tự chấm bằng checklist đáp án).", "",
+    "## Danh sách rubric (nguon/Rubric_OSCE_TungBuoc.md)", "", "| Mã | Rubric | Số mục | Điểm tối đa | Gắn vào trạm |", "|---|---|---:|---:|---|"];
+  const tram = [];
+  D.chuong.forEach(c => c.tram.forEach(t => tram.push(t)));
+  for (const r of rubric) {
+    const gan = tram.filter(t => t.rubric.includes(r.id)).map(t => t.ten).join("; ") || "— (chưa gắn)";
+    L.push(`| ${r.id} | ${r.ten} | ${r.muc.length} | ${r.diem_toi_da}${r.co_diem ? "" : " (bảng không ghi điểm, quy ước 1 điểm/mục)"} | ${gan} |`);
+  }
+  L.push("", "## Từng trạm", "", "| Trạm | Rubric |", "|---|---|");
+  for (const t of tram) {
+    L.push(`| ${t.ten} | ${t.rubric.map(id => id + " – " + rubric.find(r => r.id === id).ten).join("; ") || "(trống – checklist đáp án)"} |`);
+  }
+  fs.writeFileSync(path.join(GOC, "kiem_tra", "bang_rubric.md"), L.join("\n") + "\n");
 }
 
 function baoCao(D) {

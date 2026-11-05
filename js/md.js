@@ -101,5 +101,5 @@
     return html.join("");
   }
 
-  window.MD = { render: render };
+  window.MD = { render: render, inline: inline };
 })();

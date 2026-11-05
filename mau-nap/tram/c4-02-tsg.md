@@ -2,6 +2,7 @@
 Mã: tsg
 Chương: CHƯƠNG 4: NỬA SAU THAI KÌ
 Tên gốc: TIẾP CẬN TIỀN SẢN GIẬT
+Rubric: trang-58, trang-60
 
 ## LÝ THUYẾT
 

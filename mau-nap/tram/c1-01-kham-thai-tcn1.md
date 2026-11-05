@@ -2,6 +2,7 @@
 Mã: kham-thai-tcn1
 Chương: CHƯƠNG 1: 3 THÁNG ĐẦU THAI KÌ
 Tên gốc: HỎI BỆNH SỬ KHÁM THAI THƯỜNG QUY
+Rubric: trang-4, trang-8
 
 ## ĐÁP ÁN MẪU
 

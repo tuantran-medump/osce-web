@@ -1,0 +1,4098 @@
+{
+ "nguon": "nguon/Rubric_OSCE_TungBuoc.md",
+ "rubric": [
+  {
+   "id": "trang-4",
+   "trang": 4,
+   "ten": "Thai chưa xác định vị trí (nghi thai ngoài tử cung)",
+   "dong": 7,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu trong mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Tìm hiểu tiền căn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Hỏi /xác định sai PARA khác với 0000 *hay*",
+        "Không khai thác đủ 4 con số của PARA"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Khai thác đủ tiền căn sản khoa (PARA: 0010) *và*",
+        "Buộc phải tự hỏi được lần có thai ngoài tử cung"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Khai thác tiền căn tránh thai và biết được rằng thai phụ đã mong con trong thời gian một năm qua"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Có đặt ra câu hỏi riêng cho tiền căn mắc các STDs"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 5,
+     "ten": "Khai thác bệnh sử",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không hỏi ngày kinh chót *hay*",
+        "Không khai thác tính chất kinh"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Xác định được ngày kinh chót 01.02.2021 *và*",
+        "Có khai thác đủ tính chất kinh chót"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Khai thác được kinh áp chót 04.01.2021 và tính chất của các lần hành kinh trước đó"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Có đặt câu hỏi để khai thác các triệu chứng liên quan đến thai sớm, thai ngoài tử cung, bao gồm: nghén, đau bụng, ra huyết âm đạo)"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 6,
+     "ten": "Xác định có thai",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không khẳng định rằng bà A. có thai *hay*",
+        "Khẳng định rằng bà A. bị thai ngoài tử cung"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không khẳng định rằng bà A. có thai"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nói rằng kết luận có thai là dựa trên sinh hóa (que thử thai hai vạch)"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nói rằng tình trạng hiện tại là một thai chưa xác định được vị trí"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 7,
+     "ten": "Hướng quản lý",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Ra quyết điều trị thai ngoài tử cung (nội khoa, ngoại khoa)"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chờ đợi thiết lập chẩn đoán"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Dặn dò bệnh nhân chú ý các triệu chứng sớm của thai ngoài tử cung: đau bụng, ra huyết âm đạo… trong thời gian chờ có chẩn đoán cuối cùng"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Đề nghị ít nhất một phương án cụ thể (loạt β-hCG, loạt bộ đôi, loạt siêu âm, hay hẹn tái khám sau một tuần hoặc khi có triệu chứng….)"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-8",
+   "trang": 8,
+   "ten": "Thai ngưng tiến triển",
+   "dong": 101,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu trong mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Tìm hiểu tiền căn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Định <u>sai</u> PARA *hoặc*",
+        "Hỏi <u>KHÔNG ĐỦ</u> các thành phần của PARA"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Khai thác đủ tiền căn sản khoa",
+        "(PARA: 0000)"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Hỏi đủ đặc điểm hành kinh"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Khai thác <u>SƠ LƯỢC</u> các tiền căn khác: nội-ngoại khoa, gia đình, dị ứng…"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 5,
+     "ten": "Khai thác bệnh sử",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "<u>KHÔNG HỎI</u> ngày kinh chót *hay*",
+        "<u>KHÔNG KHAI THÁC</u> tính chất kinh"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Hỏi được ngày kinh chót 03.03.2021 *và*",
+        "<u>CÓ</u> khai thác các tính chất của kinh cuối để xác định kinh cuối tin cậy cho định tuổi thai và sinh tồn thai"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Khai thác được các triệu chứng liên quan đến thai nghén thất bại sớm (nghén, đau bụng, ra huyết âm đạo…)"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Có kai thác thêm các yếu tố phơi nhiễm gây chết thai trong giai đoạn thụ thai"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 6,
+     "ten": "Xác định tình trạng thai",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "<u>KHÔNG</u> nhận định được thai đã ngưng tiến triển"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chẩn đoán <u>XÁC ĐỊNH</u> rằng thai đã ngưng tiến triển"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Giải thích tại sao chẩn đoán là thai ngưng tiến triển."
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Lí giải nguyên nhân có thể gây thai ngưng tiến triển"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 7,
+     "ten": "Hướng quản lý",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đề nghị dưỡng thai *hay*",
+        "Chờ thêm để xác định tính sinh tồn thai"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chấm dứt thai kỳ *hay*",
+        "Chờ sẩy tự nhiên"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Tư vấn các pp chấm dứt thai kì hay sẩy tự nhiên"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích sơ lược về các pp chấm dứt thai kỳ"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    },
+    {
+     "so": 8,
+     "ten": "Tiên lượng thai kỳ sau",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chắc chắn lặp lại *hay*",
+        "Chắc chắn không lặp lại"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Có thể bị thai lưu lặp lại"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nguy cơ thai lưu lần sau <u>KHÔNG TĂNG THÊM</u>"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích sơ lược nguyên nhân do tai nạn giảm phân"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-12",
+   "trang": 12,
+   "ten": "Tiêm MMR quanh thời điểm có thai (Rubella)",
+   "dong": 208,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu của mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Thu thập thông tin",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không quan tâm đến ngày kinh chót *hoặc*",
+        "Không quan tâm đến ngày chích ngừa"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thu thập được thông tin về ngày kinh chót *và*",
+        "Thu thập được thông tin về ngày thực hiện tiêm MMR"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nói được rằng mũi tiêm MMR đã được thực hiện xa / không ở quanh thời điểm thụ thai"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nói được cụ thể rằng thời điểm có thai là đã hơn một tháng kể từ lúc thực hiện mũi tiêm MMR"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 5,
+     "ten": "Tư vấn khả năng tạo miễn dịch của vaccine",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nói được khả năng bảo vệ của vaccine"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "<u>*Rất có khả năng*</u> chị được bảo vệ khỏi Rubella"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Đề nghị test huyết thanh để chứng minh có phản ứng huyết thanh Rubella"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Xác định đã chứng minh được rằng mũi tiêm có hiệu quả bảo vệ"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 6,
+     "ten": "Tư vấn nguy cơ CRS của tiêm phòng",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không biết *hoặc*",
+        "Nói rằng thai có nguy cơ mắc CRS"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nói rằng thai không có nguy cơ mắc CRS"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Hiện không có chứng cứ MMR trực tiếp gây CRS"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 7,
+     "ten": "Ra quyết định quản lí",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chấm dứt thai kỳ *hoặc*",
+        "Chủng ngừa Rubella trong thai kỳ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Theo dõi tiếp thai kỳ"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Không cần đánh giá huyết thanh Rubella lại"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Khả năng bảo vệ là dài hạn"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-18",
+   "trang": 18,
+   "ten": "Tiền căn phù thai – Thalassemia",
+   "dong": 299,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu trong mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Nhận định thai kì trước",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "<u>KHÔNG NHẬN ĐỊNH</u> thai bị phù do bệnh lí haemoglobin bẩm sinh"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "<u>NHẬN ĐỊNH ĐƯỢC</u> thai bị phù do bệnh lí haemoglobin bẩm sinh"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Giải thích được là bệnh lí di truyền do gene"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích được là kiểu gene đồng hợp tử, tức là có “sự đóng góp” của 2 vợ chồng"
+       ]
+      }
+     ],
+     "diem_toi_da": 2.5
+    },
+    {
+     "so": 5,
+     "ten": "Nhận định về thai kì lần này",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "<u>XÁC ĐỊNH</u> rằng sẽ <u>KHÔNG</u> lặp lại *hay*",
+        "<u>XÁC ĐỊNH</u> rằng <u>CHẮC CHẮN</u> sẽ lặp lại"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nói rằng có khả năng sẽ lặp lại"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Khả năng có lặp lại tùy genotype của người cha"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 3,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Vì thế cần khảo sát người cha"
+       ]
+      }
+     ],
+     "diem_toi_da": 3
+    },
+    {
+     "so": 6,
+     "ten": "Ra quyết định quản lí",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "<u>KHÔNG THỰC HIỆN</u> huyết đồ chồng *hay*",
+        "<u>ĐỀ NGHỊ NGAY</u> khảo sát xâm lấn: CVS, chọc ối"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nhánh 1: bắt đầu bằng khảo sát huyết đồ chồng, để xem MCV, MCH. Nếu giảm sẽ thực hiện tiếp thăm dò *hoặc*",
+        "Nhánh 2: thực hiện ngay khảo sát định genotype Thalassemia chồng"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nhánh 1:",
+        "Mức đạt *và*",
+        "Nói thêm rằng huyết đồ bình thường không loại được một cách chắc chắn có mang đột biến Thalassemia *hoặc*",
+        "Nhánh 2:",
+        "Mức đạt *và*",
+        "Giải thích lí do thực hiện trực tiếp là do mẹ là carrier, và thai kì trước đã có kết cục xấu"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt (nhánh 1 hoặc nhánh 2) *và*",
+        "Có nói thêm option thứ nhì là nhánh 2 hay nhánh 1 với lí giải (như ở mức trên đạt)"
+       ]
+      }
+     ],
+     "diem_toi_da": 2.5
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-29",
+   "trang": 29,
+   "ten": "Combined test vùng xám (tầm soát lệch bội)",
+   "dong": 384,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu trong mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Tìm hiểu về thai phụ",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không hỏi tuổi *hay*",
+        "Không hỏi tiền căn sản khoa *hay*",
+        "Không hỏi tiền căn gia đình"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Có hỏi đủ các yếu tố nguy cơ nền tảng: tuổi, tiền căn sản khoa, tiền căn gia đình"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Hỏi kiến thức của thai phụ về bệnh Down"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Tìm hiểu thái độ hay quan điểm của thai phụ nếu mang thai một trẻ bị Down"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 5,
+     "ten": "Lý giải kết quả xét nghiệm",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nói kết quả nguy cơ thấp *hay*",
+        "Nói kết quả nguy cơ cao"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nói được kết quả là vùng xám/chưa đủ yên tâm"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Giải thích được ý nghĩa của vùng xám (chưa loại trừ được thai bị Down hoặc cần làm thêm xét nghiệm)"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 3,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích được giá trị của xét nghiệm Combined test (các vấn đề liên quan đến detection rate, khả năng bỏ sót, khả năng phát hiện, khả năng dự báo khi kết quả ở vùng đen, xám…)"
+       ]
+      }
+     ],
+     "diem_toi_da": 3
+    },
+    {
+     "so": 6,
+     "ten": "Ra quyết định thoát xám",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nêu được bất cứ test nào trong 3 options:",
+        "- NIPT",
+        "- Siêu âm hình thái sớm",
+        "- Triple test + Soft markers *hoặc*",
+        "Đề nghị trực tiếp test xâm lấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nêu được một trong ba:",
+        "Nêu được NIPT *hoặc*",
+        "Siêu âm hình thái sớm *hoặc*",
+        "Triple test + Soft markers"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Thời điểm thực hiện xét nghiệm tương ứng *hoặc*",
+        "Đưa ra nhiều hơn một lựa chọn *hoặc*",
+        "Giải thích chi tiết một lựa chọn"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 3,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Đưa ra nhiều hơn một lựa chọn và phân tích được thứ tự ưu tiên"
+       ]
+      }
+     ],
+     "diem_toi_da": 3
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-33",
+   "trang": 33,
+   "ten": "Đọc sổ khám thai và biểu đồ tăng trưởng",
+   "dong": 474,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu của mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Định tuổi thai và vẽ vào biểu đồ tăng trưởng",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Định sai tuổi thai ở 2 lần siêu âm (khác với 24 và 32 tuần)"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Xác định đúng tuổi thai ở 2 lần siêu âm là 24 và 32 tuần"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Vẽ đúng cả hai biểu đồ BPD và AC ở # 50 th percentile"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Sử dụng vòng xoay, web page FMF và dữ kiện trong sổ khám thai để tính tuổi thai thuần thục, nhanh chóng, không lúng túng"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 5,
+     "ten": "Lí giải kết quả biểu đồ tăng trưởng",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Lí giải biểu đồ tăng trưởng là bất thường: FGR, SGA hay LGA"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Kết luận rằng biểu đồ tăng trưởng là bình thường"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Giải thích được cho thai phụ thế nào là 50<sup>th</sup> percentile"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích cho thai phụ hiểu tăng trưởng bình thường của bé sẽ diễn ra như thế nào"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 6,
+     "ten": "Đọc sổ khám thai và nhận định về thai kì",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nhận định thai kì là bất thường"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nhận định thai kì đã diễn tiến bình thường"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Chỉ rõ cụ thể những vấn đề cho phép kết luận là bình thường"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích rõ kết luận bình thường là dựa theo tất cả các thông tin lâm sàng (tăng cân, tăng trưởng của bề cao tử cung…) và các cận lâm sàng (tổng soát, siêu âm, sinh trắc…)"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 7,
+     "ten": "Tư vấn về hướng quản lí thai kì",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đề nghị nhập viện *hay*",
+        "Không hướng dẫn triệu chứng phải đi khám ngay"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Hẹn khám thai tiêu chuẩn *và*",
+        "Có hướng dẫn triệu chứng phải đi khám ngay"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Có hướng dẫn triệu chứng phải đi khám ngay"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích khi nào cần các khảo sát chuyên sâu"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    }
+   ],
+   "ghi_chu": "> Ghi chú: Bản gốc là ảnh chụp màn hình ghép, 3 hàng giao tiếp bị cắt mất cột trái; đã điền lại theo mẫu chuẩn của các bảng khác.",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-51",
+   "trang": 51,
+   "ten": "Đái tháo đường thai kỳ – MNT thất bại",
+   "dong": 567,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu trong mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Nhận định về thực hiện MNT",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Khẳng định rằng MNT thành công"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Kết luận rằng MNT thất bại",
+        "*tuy nhiên không lí giải hay lí giải chỉ có 1 trong 2 ý*",
+        "• Đường huyết đói quá thấp *hay*",
+        "• Đường huyết sau ăn quá cao"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Kết luận rằng MNT thất bại",
+        "*và có kèm theo đủ cả hai lí giải thất bại*",
+        "• Đường huyết đói quá thấp",
+        "• Đường huyết sau ăn quá cao"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nhận định được nguy hiểm do mức dao động đường huyết quá lớn"
+       ]
+      }
+     ],
+     "diem_toi_da": 2.5
+    },
+    {
+     "so": 5,
+     "ten": "Lí giải kết quả MNT",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không chỉ ra được lí do MNT thất bại"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Giải thích không đầy đủ lí do MNT bị thất bại",
+        "• Phân bố bữa ăn không hợp lý *hay*",
+        "• Lựa chọn tinh bột không hợp lí"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Giải thích đầy đủ lí do thất bại của MNT",
+        "• Phân bố bữa ăn không hợp lí *và*",
+        "• Lựa chọn tinh bột không hợp lí"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích rõ ràng lí do thất bại của MNT",
+        "• Nhịn đói thời gian dài: không có bữa tối",
+        "• Phân bố lượng tinh bột không cân đối",
+        "• Chọn loại tinh bột không hợp lí: tinh bột biến tính có GI cao"
+       ]
+      }
+     ],
+     "diem_toi_da": 2.5
+    },
+    {
+     "so": 6,
+     "ten": "Tư vấn tiết chế",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không tư vấn được cách tiết chế đúng"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tư vấn không đầy đủ cách tiết chế đúng:",
+        "• Ăn thêm bữa tối trước khi đi ngủ *hay*",
+        "• Ưu tiên tinh bột không biến tính"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tư vấn đầy đủ cách thực hiện MNT",
+        "• Ăn thêm bữa tối trước khi đi ngủ *và*",
+        "• Ưu tiên tinh bột không biến tính"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 2.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Đề nghị thử đường huyết tại nhà"
+       ]
+      }
+     ],
+     "diem_toi_da": 2.5
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-58",
+   "trang": 58,
+   "ten": "Tiền sản giật chưa có dấu hiệu nặng (đề thi thật 13.04.2022)",
+   "dong": 659,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được các yêu cầu tối thiểu trong mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Xuất sắc (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Xuất sắc (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Xuất sắc (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Nhận diện tiền sản giật",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nhận diện được tiền sản giật *hay*",
+        "Khẳng định là tiền sản giật có dấu hiệu nặng"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Xác nhận được có tình trạng tiền sản giật *và*",
+        "Tiền sản giật chưa có dấu hiệu nặng"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Lí giải được vì sao chẩn đoán tiền sản giật *và*",
+        "Lí giải được vì sao là chưa dấu hiệu nặng"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Xuất sắc (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nói được rằng đây là bệnh lý xuất hiện do thai kỳ và thường sẽ mất đi sau sanh"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 5,
+     "ten": "Nhận diện nguy cơ cho mẹ",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nói được nguy cơ tiền sản giật chuyển nặng"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nguy cơ tiền sản giật có thể chuyển nặng"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Liệt kê được ít nhất một nguy cơ cụ thể của tiền sản giật có dấu hiệu nặng trong đó có sản giật"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Xuất sắc (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Tăng huyết áp sẽ hết sau sanh hoặc thành chuyển thành tăng huyết áp mạn *hoặc*",
+        "Lí giải được vì sao có thể chuyển nặng"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 6,
+     "ten": "Nhận diện nguy cơ cho thai",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nói được nguy cơ liên quan đến sinh non do chỉ định chấm dứt thai kì sớm"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nguy cơ nguy cơ liên quan đến sinh non do chỉ định chấm dứt thai kì sớm"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Liệt kê được ít nhất một nguy cơ cụ thể, trong đó phải có suy thai hoặc tăng trưởng bào thai"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Xuất sắc (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Lí giải vì sao cần chấm dứt thai kỳ sớm *hay*",
+        "Lí giải vì sao bệnh có thể gây suy thai, FGR"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    },
+    {
+     "so": 7,
+     "ten": "Xử trí sơ cấp (sơ bộ)",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chấm dứt thai kỳ ở thời điểm hiện tại *hay*",
+        "Chỉ định dùng thuốc: hạ áp, ngừa co giật"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt yêu cầu (40%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chưa cần dùng thuốc *và*",
+        "Chấm dứt thai kỳ lúc 37 tuần"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Theo dõi huyết áp tại nhà, hướng dẫn nhận biết các triệu chứng nặng *hay*",
+        "Lí giải vì sao phải chấm dứt thai kỳ chủ động"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Xuất sắc (100%)",
+       "diem": 2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Có thể phải chấm dứt thai kỳ sớm hơn nếu tình trạng tiền sản giật trở nặng"
+       ]
+      }
+     ],
+     "diem_toi_da": 2
+    }
+   ],
+   "ghi_chu": "Thi cuối kì Module Sản Phụ khoa 1 thực hành · Ngày: 13.04.2022 · Trạm: 4122-E · Họ và tên thí sinh: ………… · Mã số SV: …………\n> Ghi chú: Bản gốc là ảnh chụp tờ đề thi đen trắng, điểm cột 100% bị mép giấy che (2.0…, 0.5…, 1.0…); màu nền các nhóm hàng là tô thêm cho dễ đọc.",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-60",
+   "trang": 60,
+   "ten": "Tiền sản giật có dấu hiệu nặng + thai non tháng",
+   "dong": 760,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chào hỏi và mở đầu tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đạt được yêu cầu tối thiểu trong mở đầu tư vấn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đạt yêu cầu tối thiểu về tính lịch sự"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mở đầu một cách thân thiện và lịch sự"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thiết lập không khí tư vấn cởi mở, thân thiện",
+        "Trao đổi 2 chiều, dùng ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 2,
+     "ten": "Đặt câu hỏi",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi không rõ, không chủ đích, thể hiện năng lực kém về vấn đề đang tư vấn",
+        "Cắt lời thai phụ, không để họ bày tỏ suy nghĩ"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt câu hỏi thể hiện rõ ràng nội dung muốn hỏi",
+        "Lắng nghe câu trả lời, không lặp lại các câu hỏi"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Câu hỏi gợi mở, bố cục, ngôn từ, nội dung tốt",
+        "Thể hiện được nghe, hiểu, thấu cảm qua thái độ, ngôn ngữ bằng lời và ngôn ngữ không lời"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.5
+    },
+    {
+     "so": 3,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Nhận diện tiền sản giật có dấu hiệu nặng",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nhận diện được TSG có dấu hiệu nặng *hay*",
+        "Không nhận diện được thai non tháng"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nhận diện được TSG có dấu hiệu nặng *và*",
+        "Nhận diện được thai non tháng"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Lí giải được chẩn đoán: HA 160/110 / đạm niệu 3+"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nêu được tình trạng thai còn ổn định"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    },
+    {
+     "so": 5,
+     "ten": "Nhận diện nguy cơ cho mẹ",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nói được nguy cơ sản giật"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nói được nguy cơ sản giật"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Thêm một trong các nguy cơ khác: tổn thương đa cơ quan, đột quị, tử vong, BHSS, sanh giúp, MLT"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nguy cơ tăng huyết áp mãn tính"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    },
+    {
+     "so": 6,
+     "ten": "Nhận diện nguy cơ cho thai",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nói được nguy cơ do sanh non"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nói được nguy cơ do sanh non"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nguy cơ suy thai"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nguy cơ IUGR"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    },
+    {
+     "so": 7,
+     "ten": "Xử trí sơ cấp (sơ bộ)",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không cho nhập viện *hay*",
+        "Không ngừa co giật"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nhập viện và thuốc chống tăng huyết áp và ngừa co giật"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nói được cụ thể ngừa co giật bằng MgSO<sub>4</sub>"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Lặp lại tổng soát TSG mỗi ngày"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 8,
+     "ten": "Xử trí tình trạng thai non tháng",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không thực hiện corticosteroid liệu pháp dự phòng RDS"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Có thực hiện corticosteroid liệu pháp dự phòng RDS"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nêu được các biện pháp đánh giá sức khoẻ thai"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích được khả năng nuôi sống thai là tốt"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 9,
+     "ten": "Kế hoạch chấm dứt thai kỳ",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không xác định thời điểm chấm dứt thai kỳ *hay*",
+        "Không đề cập đến chấm dứt thai kì"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Chấm dứt thai kỳ sau 48 giờ corticosteroid liệu pháp dự phòng RDS"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Có thể chấm dứt trước 48 giờ, nếu có biến chứng"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Phương pháp chấm dứt thai kì: ưu tiên ngả âm đạo"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-81",
+   "trang": 81,
+   "ten": "Nhau bong non",
+   "dong": 875,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Thái độ cấp cứu",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Từ từ thản nhiên"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.3,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thái độ khẩn trương"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "*Ô này không tính điểm. Xin giám khảo không ghi điểm vào ô này.*",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 0.75,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Có kêu gọi hỗ trợ"
+       ]
+      }
+     ],
+     "diem_toi_da": 0.75
+    },
+    {
+     "so": 2,
+     "ten": "Thái độ và ngôn ngữ khi giao tiếp-tư vấn",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đơn thuần đến khía cạnh y học",
+        "1 chiều, bỏ qua đáp ứng của thai phụ",
+        "Không trung thực, cung cấp thông tin sai lệch"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tìm hiểu hoàn cảnh xã hội của thai phụ",
+        "Tìm hiểu hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có chú ý đến đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “y học”"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Quan tâm đến hoàn cảnh xã hội của thai phụ",
+        "Quan tâm đến hiểu biết y-xã hội của thai phụ",
+        "2 chiều, có điều chỉnh theo đáp ứng của thai phụ",
+        "Thông tin: đủ, đúng, ngôn ngữ “đời thường”"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đồng cảm với thai phụ về khía cạnh y-xã hội",
+        "Thông tin trung thực",
+        "Dùng tốt ngôn ngữ “đời thường”",
+        "Quan tâm đến thông hiểu của thai phụ.",
+        "Cùng với thai phụ xử lý vấn đề"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 3,
+     "ten": "Nhận định băng ghi CTG",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nhận định được tình trạng đe dọa thai trên băng ghi CTG"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.7,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nhận diện được tình trạng đe dọa thai trên băng ghi CTG"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nói được rằng mức độ đe dọa là nghiêm trọng"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.75,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nhận diện được tử cung có tăng trương lực cơ bản và rối loạn cơn co kiểu gò cường tính"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.75
+    },
+    {
+     "so": 4,
+     "ten": "Chẩn đoán nhau bong non",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đề cập đến chẩn đoán nhau bong non"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.7,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Có nghi ngờ hay có nghĩ đến nhau bong non *hay*",
+        "Có đề cập đến nhau bong non trong chẩn đoán/chẩn đoán phân biệt"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Khẳng định chẩn đoán nhau bong non *và*",
+        "Không có chẩn đoán phân biệt khác"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.75,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nhận định được rằng đây là nhau bong non thể nặng"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.75
+    },
+    {
+     "so": 5,
+     "ten": "Nguy cơ cho con",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nêu được tình trạng đe dọa tính mạng con"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Tính mạng bé ở trong tình trạng bị đe dọa"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Tình trạng con là nghiêm trọng có nguy cơ tử vong"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nguy cơ tử vong thai ngay cả khi mổ khẩn *và*",
+        "Tình trạng thai diễn biến xấu rất nhanh chóng"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    },
+    {
+     "so": 6,
+     "ten": "Nguy cơ cho mẹ",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nêu được nguy cơ băng huyết sau sanh"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.6,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Nêu được nguy cơ băng huyết sau sanh"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.2,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Nói rằng nguy cơ này là do rối loạn đông máu"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.5,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Giải thích thêm các nguy cơ khác kể cả tử vong"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.5
+    },
+    {
+     "so": 7,
+     "ten": "Xử trí nhau bong non",
+     "nhom": "",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không đề nghị mổ lấy thai khẩn"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Vừa đạt mức yêu cầu (40%)",
+       "diem": 0.7,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đề nghị mổ lấy thai khẩn"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Đạt trên mức yêu cầu (80%)",
+       "diem": 1.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Chuẩn bị truyền máu cho mẹ *hay*",
+        "Chuẩn bị kíp hồi sức sơ sinh / mời nhi hỗ trợ đón bé"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành rất tốt mọi yêu cầu (100%)",
+       "diem": 1.75,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Chuẩn bị truyền máu cho mẹ *và*",
+        "Chuẩn bị kíp hồi sức sơ sinh / mời nhi hỗ trợ đón bé"
+       ]
+      }
+     ],
+     "diem_toi_da": 1.75
+    }
+   ],
+   "ghi_chu": "",
+   "co_diem": true,
+   "diem_toi_da": 10
+  },
+  {
+   "id": "trang-90",
+   "trang": 90,
+   "ten": "Skillslab 44 – Khám thai phụ trong chuyển dạ",
+   "dong": 966,
+   "muc": [
+    {
+     "so": 1,
+     "ten": "Chuẩn bị trước khám",
+     "nhom": "Chuẩn bị",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt yêu cầu (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thai phụ nằm sai tư thế trên bàn khám, *hoặc*",
+        "Không che đắp / che đắp không cẩn thận vùng hạ vị"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thai phụ nằm đúng tư thế sản khoa trên bàn khám / bàn sanh, đặt mông sát mép bàn khám, *và*",
+        "Có che đắp cẩn thận vùng hạ vị"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": false,
+       "ghi_chu": "N/A",
+       "tieu_chi": []
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành xuất sắc tác vụ (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Bộc lộ vừa đủ vùng bụng cần khám"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 2,
+     "ten": "Đo bề cao tử cung",
+     "nhom": "Khám ngoài",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt yêu cầu (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không xác định / định sai bờ trên xương vệ, *hoặc*",
+        "Không xác định / định sai vị trí đáy tử cung"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Xác định đúng bờ trên xương vệ, *và*",
+        "Xác định đúng vị trí đáy tử cung"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Đặt thước dây đúng chuẩn: thước dây đủ căng và ôm sát tử cung"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành xuất sắc tác vụ (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Kết luận đúng số đo bề cao tử cung, với sai số nhỏ hơn ± 2 cm"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 3,
+     "ten": "4 thủ thuật Leopold",
+     "nhom": "Khám ngoài",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt yêu cầu (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đứng bên trái thai phụ khi khám, *hoặc*",
+        "Không nhìn về mặt thai phụ ở thủ thuật 1, 2, 3 *hoặc*",
+        "Không nhìn về chân thai phụ ở thủ thuật 4, *hoặc*",
+        "Xác định sai cực đầu / cực mông thai"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đứng bên phải thai phụ khi khám, *và*",
+        "Nhìn về mặt thai phụ ở thủ thuật 1, 2, 3, *và*",
+        "Nhìn về chân thai phụ ở thủ thuật 4, *và*",
+        "Xác định đúng cực đầu / cực mông thai (ngôi thai)"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Xác định đúng mặt lưng / mặt bụng thai"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành xuất sắc tác vụ (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Ước đoán được lọt khi ghi nhận các ngón tay phân kì khi thực hiện thủ thuật 4"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 4,
+     "ten": "Dò tim thai bằng Doppler",
+     "nhom": "Khám ngoài",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt yêu cầu (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không nắn tìm mỏm vai để tìm ổ tim thai, *hoặc*",
+        "Không đặt gel truyền âm ở vị trí dò tim thai, *hoặc*",
+        "Đặt đầu dò cách xa ổ tim thai (sai góc ¼ ), *hoặc*",
+        "Đặt đầu dò ngay trên mỏm vai, *hoặc*",
+        "Góc giữa tạo đầu dò và thành bụng ≤ 45º, *hoặc*",
+        "Bắt nhầm dòng chảy mạch mẹ / nhau, *hoặc*",
+        "Không lau sạch gel sau khi dò tim thai"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Có nắn tìm mỏm vai để tìm ổ tim thai, *và*",
+        "Có đặt gel truyền âm ở vị trí dò tim thai, *và*",
+        "Đặt đầu dò đúng ổ tim thai (đúng góc ¼ ), *và*",
+        "Đặt đầu dò tránh được mỏm vai, *và*",
+        "Góc giữa tạo đầu dò và thành bụng > 45º, *và*",
+        "Bắt nhầm đúng dòng chảy mạch thai, *và*",
+        "Có lau sạch gel sau khi dò tim thai"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Bắt đúng ổ van tim thai"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành xuất sắc tác vụ (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Nghe đủ thời lượng ≥ 30-60 sec"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 5,
+     "ten": "Bắt cơn co tử cung",
+     "nhom": "Khám ngoài",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt yêu cầu (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt tay bắt cơn co tử cung sai vị trí (không đặt tay trên vùng rốn), *hoặc*",
+        "Dùng lực ấn sâu trên tử cung khi bắt, *hoặc*",
+        "Không bắt đủ 3 cơn co-khoảng nghỉ liên tục"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Đặt tay bắt cơn co tử cung đúng vị trí vùng rốn, *và*",
+        "Áp tay nhẹ nhàng trên vùng rốn, *và*",
+        "Bắt đủ thời gian ba cơn co-khoảng nghỉ liên tục"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Mô tả đủ các tính chất của cơn co: thời gian co, thời gian nghỉ, cường độ cơn co, trương lực cơ bản"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành xuất sắc tác vụ (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Mô tả đúng các tính chất của cơn co"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    },
+    {
+     "so": 6,
+     "ten": "Khám trong (khám âm đạo)",
+     "nhom": "Khám âm đạo",
+     "muc_do": [
+      {
+       "khoa": "F",
+       "nhan": "Không đạt yêu cầu (F)",
+       "diem": 0,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Không rửa tay (nhanh) trước khi khám, *hoặc*",
+        "Khám thô bạo, *hoặc*",
+        "Không xác định / xác định sai xóa mở cổ tử cung"
+       ]
+      },
+      {
+       "khoa": "40",
+       "nhan": "Đạt mức yêu cầu (40%)",
+       "diem": 0.4,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Thực hiện đủ và đúng rửa tay nhanh, mang găng vô khuẩn, *và*",
+        "Khám nhẹ nhàng, *và*",
+        "Xác định gần đúng xóa, mở cổ tử cung"
+       ]
+      },
+      {
+       "khoa": "80",
+       "nhan": "Trên mức yêu cầu (80%)",
+       "diem": 0.8,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức đạt *và*",
+        "Xác định đúng kiểu thế, *và*",
+        "Xác định gần đúng vị trí ngôi"
+       ]
+      },
+      {
+       "khoa": "100",
+       "nhan": "Hoàn thành xuất sắc tác vụ (100%)",
+       "diem": 1,
+       "tinh_diem": true,
+       "ghi_chu": "",
+       "tieu_chi": [
+        "Mức trên đạt *và*",
+        "Xác định đúng chồng xương, *và*",
+        "Xác định đúng vị trí ngôi thai, có kiểm chứng qua khám bụng (WHO), *và*",
+        "Xác định đúng tính chất của hai gai hông, của góc vòm vệ và ước tính khoảng cách lưỡng ụ ngồi"
+       ]
+      }
+     ],
+     "diem_toi_da": 1
+    }
+   ],
+   "ghi_chu": "ĐẠI HỌC Y DƯỢC TP.HCM – BỘ MÔN PHỤ SẢN · RUBRIC: KHÁM THAI PHỤ TRONG CHUYỂN DẠ · HỌ TÊN SV: ………… · NGƯỜI ĐÁNH GIÁ: …………\n**BÀI SKILLSLAB 44: KĨ NĂNG KHÁM THAI PHỤ TRONG CHUYỂN DẠ**",
+   "co_diem": false,
+   "diem_toi_da": 6
+  }
+ ]
+}

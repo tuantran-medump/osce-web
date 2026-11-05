@@ -2,6 +2,7 @@
 Mã: nbn
 Chương: CHƯƠNG 6: CẤP CỨU SẢN KHOA
 Tên gốc: TIẾP CẬN NHAU BONG NON
+Rubric: trang-81
 
 ## ĐỀ: 2.1 Y18 – đợt 4
 Số: 2.1

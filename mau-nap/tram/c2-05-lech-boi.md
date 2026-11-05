@@ -2,6 +2,7 @@
 Mã: lech-boi
 Chương: CHƯƠNG 2: NỬA ĐẦU THAI KÌ
 Tên gốc: TIẾP CẬN LỆCH BỘI
+Rubric: trang-29
 
 ## ĐÁP ÁN MẪU
 

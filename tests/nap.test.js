@@ -146,3 +146,30 @@ test("ghép đề nạp tay: thêm vào trạm có sẵn, báo trùng với đ�
   assert.strictEqual(cuoi.nap_tay, true);
   assert.strictEqual(cuoi.buoc[0].dap_an, "", "đáp án mẫu của file nạp không lấy của trạm có sẵn");
 });
+
+test("rubric: tách đủ 11 rubric, mỗi mục 4 mức F/40/80/100, rubric có điểm cộng đủ 10", () => {
+  const { tachRubric } = require("../tools/rubric.js");
+  const kq = tachRubric(docFile("nguon/Rubric_OSCE_TungBuoc.md"));
+  assert.deepStrictEqual(kq.loi, []);
+  assert.strictEqual(kq.rubric.length, 11);
+  for (const r of kq.rubric) {
+    for (const m of r.muc) assert.deepStrictEqual(m.muc_do.map((d) => d.khoa), ["F", "40", "80", "100"], r.id + " " + m.ten);
+    if (r.co_diem) assert.strictEqual(r.diem_toi_da, 10, r.id);
+  }
+  const r4 = kq.rubric.find((r) => r.id === "trang-4");
+  const hoi = r4.muc[1]; // "Đặt câu hỏi": ô 80% không tính điểm
+  assert.strictEqual(hoi.muc_do[2].tinh_diem, false);
+  assert.strictEqual(hoi.diem_toi_da, 0.5);
+  assert.strictEqual(r4.muc[3].muc_do[1].tieu_chi[0], "Khai thác đủ tiền căn sản khoa (PARA: 0010) *và*");
+});
+
+test("dòng Rubric: của trạm được đọc, xuất lại và gắn vào dữ liệu", () => {
+  const kq = NapDe.doc("# TRẠM: T\nChương: CHƯƠNG 1: A\nRubric: trang-4, trang-8\n## ĐỀ: X\n### Mở đầu\n- a\n### BƯỚC: Khám\n#### Đề\n");
+  assert.deepStrictEqual(kq.loi, []);
+  assert.deepStrictEqual(kq.tram[0].rubric, ["trang-4", "trang-8"]);
+  assert.match(NapDe.xuat(kq.tram[0]), /^Rubric: trang-4, trang-8$/m);
+  const tsg = D.chuong.find((c) => c.id === "c4").tram.find((t) => t.id === "tsg");
+  assert.deepStrictEqual(tsg.rubric, ["trang-58", "trang-60"]);
+  const ids = JSON.parse(docFile("data/rubrics.json")).rubric.map((r) => r.id);
+  D.chuong.forEach((c) => c.tram.forEach((t) => t.rubric.forEach((id) => assert.ok(ids.includes(id), t.id + " " + id))));
+});

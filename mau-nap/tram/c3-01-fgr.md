@@ -2,6 +2,7 @@
 Mã: fgr
 Chương: CHƯƠNG 3: LƯỢNG GIÁ SỨC KHOẺ THAI
 Tên gốc: TIẾP CẬN FGR
+Rubric: trang-33
 
 ## LÝ THUYẾT
 
