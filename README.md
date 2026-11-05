@@ -16,6 +16,7 @@ Web ôn tập OSCE Sản khoa Y4, dùng trên điện thoại, iPad và PC (Safa
 - `js/nap.js`: trình đọc/xuất file nạp, dùng chung cho web (trang **Nạp đề**) và Node (`tools/build_data.js`).
 - `tools/build_data.js`: build `data/stations.json`, `data/rubrics.json`, `data/stations.js` và bảng kiểm tra `kiem_tra/*.md` từ `mau-nap/tram/` và `nguon/Rubric_OSCE_TungBuoc.md` (bộ tách rubric: `tools/rubric.js`).
 - Ghép rubric vào trạm: dòng `Rubric: trang-58, trang-60` ở đầu file trạm; bảng ghép để duyệt: `kiem_tra/bang_rubric.md`.
+- `tests/e2e/`: kiểm thử giao diện bằng Playwright – `node tests/e2e/chay.js` (bộ nhanh, tự bật server); `DAY_DU=1 node tests/e2e/chay.js toan-trang` (toàn bộ đề × 6 cỡ màn hình). Cần cài Playwright: `npm i -D playwright && npx playwright install chromium`.
 - `tests/`: test trình đọc (file ví dụ, đọc–xuất–đọc lại toàn bộ dữ liệu, các file lỗi trong `tests/mau-loi/`).
 - `index.html`, `css/style.css`, `js/md.js`, `js/app.js`: giao diện.
 
