@@ -1,0 +1,122 @@
+{
+ "ghi_chu": "6 tình huống tập sản đồ WHO (bản rút gọn: pha hoạt động bắt đầu 4 cm, đường hành động cách đường báo động 4 giờ). Dựa trên Chương 5 của nguon/TongHop_OSCE_Y21_TungBuoc.md. 'nguyen_van' là chữ chép nguyên từ tài liệu (kèm số dòng). Trường soan_them = true nghĩa là các lần khám/giờ/số liệu là tự soạn thêm cho đủ để vẽ, khớp với lời giải trong tài liệu. Độ lọt ghi theo /5 (khám ngoài); quy đổi theo dòng 2456–2462: -3 ↔ 5, -2 ↔ 4, -1 ↔ 3, +1 ↔ 2, +2 ↔ 1, +3 ↔ 0.",
+ "tinh_huong": [
+  {
+   "id": "sd1",
+   "ten": "Chuyển dạ không tiến triển sau 2 giờ, đầu cao",
+   "nguon": "Đề 2.17 Y21 đợt 1, Chương 5 (dòng 2717–2730)",
+   "soan_them": false,
+   "boi_canh": "Thai phụ đã vào chuyển dạ hoạt động. Vẽ sản đồ theo các lần khám dưới đây rồi đánh giá và chọn xử trí.",
+   "kham": [
+    {"gio": "05:00", "cm": 4, "lot": 5, "lot_chu": "-3", "con_co": 2, "loai": "20-40", "oi": "C", "chong": "0"},
+    {"gio": "07:00", "cm": 4, "lot": 5, "lot_chu": "-3", "con_co": 3, "loai": "20-40", "oi": "C", "chong": "0"}
+   ],
+   "vi_tri": "giua",
+   "xu_tri": ["tang_co"],
+   "nguyen_van": [
+    "(2729) -> Ở ca này thì 5h đã vào chuyển dạ hoạt động, CTC mở 4cm, đầu -3, ối còn, cơn co 2 cơn (mỗi cơn 20-40s). Đến 7h thì CTC và đầu không tiến triển, ối còn, 3 cơn co (20-40s) nên mình đánh giá cái này là chuyển dạ kéo dài do sản đồ lệch phải so với đường báo động",
+    "(2730) 3. Xử lí như thế nào trên trường hợp này: Tia ối/Tăng co/Tăng co + tia ối/Mổ cấp cứu",
+    "(2417) + Đầu -3, -2 hay 4/5, 5/5 thì vẫn tăng co trước, theo dõi 1h nếu vẫn lệch phải thì tia ối"
+   ],
+   "ghi_chu_dap_an": "Tài liệu không ghi đáp án xử trí riêng cho đề này; đáp án \"tăng co\" suy từ Lý thuyết chương 5 (dòng 2417) vì đầu còn -3 (5/5)."
+  },
+  {
+   "id": "sd2",
+   "ten": "Sản đồ lệch phải, cơn co không đủ",
+   "nguon": "Đề 2.16 Y20 đợt 4 – K4, Chương 5 (dòng 2690–2713)",
+   "soan_them": true,
+   "boi_canh": "Thai phụ vào chuyển dạ, từng sinh 1 lần ổn, thai lần trước to hơn lần này, không ghi nhận bất thường khung chậu. CTG bình thường (loại I).",
+   "kham": [
+    {"gio": "01:00", "cm": 4, "lot": 5, "lot_chu": "-3", "con_co": 2, "loai": "<20", "oi": "C", "chong": "0"},
+    {"gio": "04:00", "cm": 5, "lot": 5, "lot_chu": "-3", "con_co": 2, "loai": "<20", "oi": "C", "chong": "0"}
+   ],
+   "vi_tri": "giua",
+   "xu_tri": ["tang_co"],
+   "nguyen_van": [
+    "(2703) - Sản đồ cho thấy đường biểu diễn độ mở cổ tử cung lệch phải, vận tốc < 1 cm/giờ, ngôi thai tiến triển chậm đến -3 (này mình không nhớ rõ nhưng cũng còn khá cao), ối còn, cơn co không đủ (2 cơn, kéo dài < 20 giây), không ghi nhận biến dạng ngôi thai. CTG bình thường.",
+    "(2712) 5. Thực hiện tăng co bằng oxytocin",
+    "(2713) 6. Giải thích: biểu đồ nằm bên phải đường báo động và có: cổ tử cung và ngôi thai tiến triển chạm, ối chưa vỡ, không biến dạng ngôi thai, khung chậu bình thường, cơn co không đủ → cơn co chưa đủ tốt hoặc do đầu ối cản trở, tuy nhiên do đầu còn ở cao nên tăng co để đưa đầu áp vào khung chậu hơn, sau đó tia ối nếu cơn co vẫn không hiệu quả."
+   ],
+   "ghi_chu_dap_an": "Giờ khám và số đo cụ thể là soạn thêm; tài liệu chỉ mô tả đường biểu diễn và đáp án."
+  },
+  {
+   "id": "sd3",
+   "ten": "Cổ tử cung 5 cm, lệch phải, đầu -2",
+   "nguon": "Đề 2.2 Y18 – đợt 1 và đề 2.7 Y18 – đợt 1, Chương 5 (dòng 2521–2523, 2619–2623)",
+   "soan_them": true,
+   "boi_canh": "Thai phụ chuyển dạ, CTG nhóm I. Vẽ sản đồ, đánh giá và chọn xử trí.",
+   "kham": [
+    {"gio": "09:00", "cm": 4, "lot": 4, "lot_chu": "-2", "con_co": 2, "loai": "20-40", "oi": "C", "chong": "0"},
+    {"gio": "13:00", "cm": 5, "lot": 4, "lot_chu": "-2", "con_co": 2, "loai": "20-40", "oi": "C", "chong": "0"}
+   ],
+   "vi_tri": "giua",
+   "xu_tri": ["pha_oi", "tang_co"],
+   "nguyen_van": [
+    "(2523) - CTC mở 5cm, ngôi đầu -2 , sản đồ lệch phải , cơn gò 2 cơn/10ph => Bấm ối, đánh giá lại sau 1h",
+    "(2621) - Sản đồ lệch P đường báo động => cần làm gì tiếp theo",
+    "(2622) - Khi đó đầu còn cao (2/5) có thể tia ối hoặc tăng co đều được",
+    "(2623) - Mong đợi gì sau khi làm thủ thuật => chờ 30p – 1h sau đánh giá lại độ mở CTC, mong đợi sản đồ sẽ song song với đường báo động"
+   ],
+   "ghi_chu_dap_an": "Lần khám 09:00 là soạn thêm để có điểm bắt đầu; lần 13:00 theo dòng 2523."
+  },
+  {
+   "id": "sd4",
+   "ten": "Sản đồ chuyển phải – chọn phá ối hay tăng co",
+   "nguon": "Đề 2.15 Y20 đợt 3, Chương 5 (dòng 2674–2688)",
+   "soan_them": true,
+   "boi_canh": "Thai phụ con so 39 tuần, nguy cơ có cuộc chuyển dạ kéo dài. Vẽ sản đồ, đọc ở vị trí hiện tại, đưa ra hướng xử trí và giải thích.",
+   "kham": [
+    {"gio": "02:00", "cm": 4, "lot": 4, "lot_chu": "-2", "con_co": 3, "loai": "20-40", "oi": "C", "chong": "0"},
+    {"gio": "06:00", "cm": 5, "lot": 4, "lot_chu": "-2", "con_co": 2, "loai": "20-40", "oi": "C", "chong": "0"}
+   ],
+   "vi_tri": "giua",
+   "xu_tri": ["pha_oi", "tang_co"],
+   "nguyen_van": [
+    "(2687) - Sản đồ này chuyển phải. Phải giải thích rõ vì sao đọc là chuyển phải.",
+    "(2688) - Khi chọn hướng quản lí, đáp án có 4 xử trí: phá ối (A), tăng co (B), phá ối và tăng co (C), chờ đợi thêm (D). Khi giải thích phải giải thích được tại sao mình chọn xử trí này và kèm theo tại sao không chọn xử trí kia. Đáp án gợi ý là phá ối hoặc tăng co. Ví dụ: Khi chọn phá ối thì phải giải thích tại sao lại chọn phá ối và tại sao không chọn tăng co."
+   ],
+   "ghi_chu_dap_an": "Các lần khám là soạn thêm (tài liệu không ghi số liệu sản đồ của đề này)."
+  },
+  {
+   "id": "sd5",
+   "ten": "Chuyển dạ bình thường, cổ tử cung 8 cm",
+   "nguon": "Đề 2.2 Y18 – đợt 5, Chương 5 (dòng 2529–2532)",
+   "soan_them": true,
+   "boi_canh": "Thai phụ chuyển dạ, ối chưa vỡ, CTG nhóm I. Vẽ sản đồ và đánh giá.",
+   "kham": [
+    {"gio": "08:00", "cm": 4, "lot": 4, "lot_chu": "-2", "con_co": 3, "loai": "20-40", "oi": "C", "chong": "0"},
+    {"gio": "09:30", "cm": 6, "lot": 4, "lot_chu": "-2", "con_co": 3, "loai": ">40", "oi": "C", "chong": "0"},
+    {"gio": "11:30", "cm": 8, "lot": 3, "lot_chu": "-1", "con_co": 4, "loai": ">40", "oi": "C", "chong": "0"}
+   ],
+   "vi_tri": "trai",
+   "xu_tri": ["theo_doi"],
+   "nguyen_van": [
+    "(2531) - CTC mở 8cm, ngôi thai 3/5, ối chưa vỡ, không chồng xương, CTG nhóm I",
+    "(2532) - => Chuyển dạ bình thường , tiếp tục theo dõi",
+    "(2468) - Bên phải hoặc Chạm đường báo động: có thể đợi 1 tiếng rồi vẽ sản đồ lại."
+   ],
+   "ghi_chu_dap_an": "Lần khám 08:00 và 09:30 là soạn thêm; lần 11:30 theo dòng 2531."
+  },
+  {
+   "id": "sd6",
+   "ten": "Chạm đường hành động, chồng xương, cơn co cường tính",
+   "nguon": "Đề 2.13 Y17 đợt 2, Chương 5 (dòng 2655–2661)",
+   "soan_them": true,
+   "boi_canh": "Sản phụ đang theo dõi sanh ngả âm đạo. CTG nhóm II với nhịp giảm muộn lặp lại. Vẽ sản đồ, đánh giá tình trạng hiện tại và ra quyết định.",
+   "kham": [
+    {"gio": "22:00", "cm": 4, "lot": 4, "lot_chu": "-2", "con_co": 3, "loai": "20-40", "oi": "C", "chong": "0"},
+    {"gio": "02:00", "cm": 7, "lot": 3, "lot_chu": "-1", "con_co": 5, "loai": ">40", "oi": "T", "chong": "+"},
+    {"gio": "05:00", "cm": 8, "lot": 3, "lot_chu": "-1", "con_co": 5, "loai": ">40", "oi": "T", "chong": "++"},
+    {"gio": "06:00", "cm": 8, "lot": 3, "lot_chu": "-1", "con_co": 5, "loai": ">40", "oi": "T", "chong": "++"}
+   ],
+   "vi_tri": "hanh_dong",
+   "xu_tri": ["mo"],
+   "nguyen_van": [
+    "(2659) - CTG nhóm 2 nhưng xấu nhịp giảm muộn lặp lại, sản đồ có chồng xương ++, ối trong, không lọt (3/5), kiểu thế phải ngang, chuyện dạ kéo dài chạm đường hành động, CTC mở 8. Giờ khám thấy mọi thứ vẫn y chang 1 giờ trước. Cơn gò suốt 4 tiếng qua 5 cơn/10 phút >40s.",
+    "(2660) - Đọc được nguyên nhân là bất xứng đầu chậu. Yêu cầu chuyển sanh mổ, các chuẩn bị khác.",
+    "(2661) - Giám thị báo phỏng mổ 30 phút nữa mới trống, có chờ được ko. (khẳng định không chờ được)"
+   ],
+   "ghi_chu_dap_an": "Các lần khám 22:00, 02:00, 05:00 là soạn thêm để dựng đường biểu diễn; lần 06:00 theo dòng 2659."
+  }
+ ]
+}

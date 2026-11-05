@@ -1,0 +1,9 @@
+{
+  "name": "osce-web",
+  "private": true,
+  "description": "Web ôn OSCE Sản khoa Y4 – HTML/CSS/JS thuần, không cần build để chạy",
+  "scripts": {
+    "build": "node tools/build_data.js",
+    "test": "node --test tests/*.test.js"
+  }
+}

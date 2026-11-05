@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0f5e57" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1716" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="OSCE Sản">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="Ôn OSCE Sản khoa Y4: trạm có đồng hồ, tự chấm, tập đọc CTG, sản đồ, biểu đồ tăng trưởng, thi thử. Dùng được offline.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <title>Ôn OSCE Sản khoa Y4</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="bo-qua" href="#app">Bỏ qua tới nội dung</a>
+  <header class="dau-trang">
+    <a class="logo" href="#/" aria-label="Về trang chủ">
+      <span class="logo-dau" aria-hidden="true">OSCE</span>
+      <span class="logo-chu">Ôn OSCE<span class="chu-phu-logo"> Sản khoa Y4</span></span>
+    </a>
+    <nav class="menu" aria-label="Trang phụ"><a class="lien-ket-phu" href="#/luyen-tap">Luyện tập</a><a class="lien-ket-phu" href="#/lich-su">Lịch sử</a><a class="lien-ket-phu" href="#/huong-dan">Hướng dẫn</a></nav>
+  </header>
+  <main id="app" tabindex="-1">
+    <noscript><p class="trong">Trang cần bật JavaScript để chạy.</p></noscript>
+  </main>
+  <dialog id="xem-hinh" aria-label="Xem hình">
+    <form method="dialog"><button class="nut nut-dong" aria-label="Đóng hình">Đóng ✕</button></form>
+    <div class="khung-hinh"><img alt="Hình phóng to"></div>
+  </dialog>
+  <div id="thong-bao" class="thong-bao" role="status" aria-live="assertive" hidden></div>
+  <script src="data/stations.js"></script>
+  <script src="js/md.js"></script>
+  <script src="data/cong-cu.js"></script>
+  <script src="js/nap.js"></script>
+  <script src="js/ctg.js"></script>
+  <script src="js/cong-cu.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

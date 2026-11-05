@@ -1,0 +1,31 @@
+{
+ "ghi_chu": "Khóa đáp án dạng chọn cho form Tập đọc CTG, suy ra từ phần đáp án gốc của từng ca trong nguon/tap-doc-ctg/script/data.py (ctg-ca-goc.json). Lời giải chi tiết hiện nguyên văn từ bản gốc. con_co = số cơn/10 phút chấp nhận [thấp, cao]; nen = tim thai cơ bản, chấp nhận ±5 nhịp/phút. Xử trí: A = theo dõi thường quy; B = hồi sức trong tử cung / xử trí nguyên nhân, theo dõi EFM liên tục; C = chấm dứt chuyển dạ/thai kì ngay (thường mổ lấy thai cấp cứu).",
+ "tom_tat": {
+  "c1": "NST 38 tuần: 5 nhịp tăng 15 × 15, dao động trung bình",
+  "c6": "Cơn co nhiều do oxytocin, nhịp giảm muộn lặp lại, dao động trung bình",
+  "c2": "Nhịp giảm sớm lặp lại khi ngôi +2",
+  "c10": "Nhau bong non: tăng trương lực, nhịp chậm 90, mất dao động",
+  "c5": "Dao động tối thiểu đơn độc sau pethidine",
+  "c7": "Nhịp giảm bất định lặp lại, dao động trung bình",
+  "c3": "Nhịp nhanh 170 do nhiễm trùng ối",
+  "c9": "Mất dao động + nhịp giảm muộn lặp lại (TSG, FGR)",
+  "c8": "Nhịp giảm kéo dài sau tê ngoài màng cứng, tụt HA",
+  "c12": "Dao động tăng (> 25) ở thai phụ ĐTĐ kiểm soát kém",
+  "c4": "Nhịp chậm 100 đơn độc, dao động trung bình",
+  "c11": "Biểu đồ hình sin thực ≥ 20 phút"
+ },
+ "khoa": {
+  "c1":  {"nen": 140, "dao_dong": "trung_binh", "nhip_tang": "co",    "nhip_giam": "khong",    "con_co": [0, 1], "nhom": 1, "xu_tri": "A"},
+  "c6":  {"nen": 145, "dao_dong": "trung_binh", "nhip_tang": "khong", "nhip_giam": "muon",     "con_co": [5, 7], "nhom": 2, "xu_tri": "B"},
+  "c2":  {"nen": 135, "dao_dong": "trung_binh", "nhip_tang": "co",    "nhip_giam": "som",      "con_co": [3, 5], "nhom": 1, "xu_tri": "A"},
+  "c10": {"nen": 90,  "dao_dong": "mat",        "nhip_tang": "khong", "nhip_giam": "khong",    "con_co": [6, 8], "nhom": 3, "xu_tri": "C"},
+  "c5":  {"nen": 140, "dao_dong": "toi_thieu",  "nhip_tang": "khong", "nhip_giam": "khong",    "con_co": [2, 4], "nhom": 2, "xu_tri": "B"},
+  "c7":  {"nen": 140, "dao_dong": "trung_binh", "nhip_tang": "khong", "nhip_giam": "bat_dinh", "con_co": [3, 4], "nhom": 2, "xu_tri": "B"},
+  "c3":  {"nen": 170, "dao_dong": "trung_binh", "nhip_tang": "khong", "nhip_giam": "khong",    "con_co": [2, 4], "nhom": 2, "xu_tri": "B"},
+  "c9":  {"nen": 150, "dao_dong": "mat",        "nhip_tang": "khong", "nhip_giam": "muon",     "con_co": [2, 4], "nhom": 3, "xu_tri": "C"},
+  "c8":  {"nen": 140, "dao_dong": "trung_binh", "nhip_tang": "khong", "nhip_giam": "keo_dai",  "con_co": [2, 4], "nhom": 2, "xu_tri": "B"},
+  "c12": {"nen": 145, "dao_dong": "tang",       "nhip_tang": "khong", "nhip_giam": "khong",    "con_co": [2, 4], "nhom": 2, "xu_tri": "B"},
+  "c4":  {"nen": 100, "dao_dong": "trung_binh", "nhip_tang": "co",    "nhip_giam": "khong",    "con_co": [2, 3], "nhom": 2, "xu_tri": "B"},
+  "c11": {"nen": 150, "dao_dong": "hinh_sin",   "nhip_tang": "khong", "nhip_giam": "khong",    "con_co": [0, 1], "nhom": 3, "xu_tri": "C"}
+ }
+}
