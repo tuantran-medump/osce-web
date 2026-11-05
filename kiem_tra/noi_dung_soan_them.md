@@ -4,7 +4,7 @@ Mọi đoạn dưới đây là phần tự soạn thêm, không có trong tài 
 
 ## Hỏi bệnh sử khám thai thường quy (trễ kinh, tuổi thai)
 
-### 2.1 — Y20 đợt 3
+### 2.1 Y20 đợt 3 — Y20 đợt 3
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -24,7 +24,7 @@ Mọi đoạn dưới đây là phần tự soạn thêm, không có trong tài 
 - Tim phổi bình thường, bụng mềm, không đau.
 - Khám mỏ vịt: âm đạo sạch, cổ tử cung đóng, không ra huyết.
 
-### 2.2 — Y19 – đợt 1
+### 2.2 Y19 – đợt 1 — Y19 – đợt 1
 
 **Khám – kết quả (soạn thêm):**
 
@@ -108,7 +108,7 @@ Thai phụ hỏi thêm: "Thai của tôi có tốt không bác sĩ?"
 
 Thai phụ hỏi thêm: "Bây giờ sẽ giải quyết như thế nào?"
 
-### 2.7 — Y17 đợt 1
+### 2.7 Y17 đợt 1 — Y17 đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -133,7 +133,7 @@ Giấy tờ khám thai thai phụ mang theo:
 - Siêu âm hôm nay 22/05/2023: một thai sống trong tử cung, CRL 45 mm (tương ứng 11 tuần 2 ngày), tim thai 160 lần/phút.
 - Chưa làm xét nghiệm máu, chưa tầm soát lệch bội.
 
-### 2.8 — Y17 đợt 3
+### 2.8 Y17 đợt 3 — Y17 đợt 3
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -167,7 +167,7 @@ Thai phụ hỏi: "Thai ngoài tử cung lần trước do nguyên nhân gì? L�
 - Tim đều, phổi trong, bụng mềm, không điểm đau, không phản ứng thành bụng.
 - Khám mỏ vịt: âm đạo sạch, không ra huyết, cổ tử cung đóng, không sang thương.
 
-### 2.10 — Y20 đợt 1
+### 2.10 Y20 đợt 1 — Y20 đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -211,7 +211,7 @@ Thai phụ hỏi: "Thai ngoài tử cung lần trước do nguyên nhân gì? L�
 
 - Siêu âm ngả âm đạo: không còn thấy túi thai; lòng tử cung có khối echo hỗn hợp dày 22 mm, có tín hiệu mạch máu; hai phần phụ bình thường; không dịch ổ bụng.
 
-### 2.2 — Y20 đợt 4 – K4
+### 2.2 Y20 đợt 4 – K4 — Y20 đợt 4 – K4
 
 **Khám – kết quả (soạn thêm):**
 
@@ -222,7 +222,7 @@ Thai phụ hỏi: "Thai ngoài tử cung lần trước do nguyên nhân gì? L�
 
 ## Rubella
 
-### 2.3 — Y18 – đợt 3
+### 2.3 Y18 – đợt 3 — Y18 – đợt 3
 
 **Mở đầu (soạn thêm):**
 
@@ -244,7 +244,7 @@ Thai phụ hỏi: "Tại sao tôi chưa mắc, chưa tiêm ngừa mà vẫn có 
 - Rubella IgM (+), IgG (+).
 - Thai phụ không sốt, không phát ban, không đau khớp; chưa từng tiêm ngừa Rubella; không rõ tiếp xúc người bệnh.
 
-### 2.5 — Y21 – đợt 1
+### 2.5 Y21 – đợt 1 — Y21 – đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -256,7 +256,7 @@ Thai phụ hỏi: "Tại sao tôi chưa mắc, chưa tiêm ngừa mà vẫn có 
 - Sổ khám thai: kinh chót tin cậy (kinh đều 28 ngày), siêu âm hôm nay CRL phù hợp tuổi thai 6 tuần.
 - Rubella IgM (−), IgG (+) (lấy máu lúc thai 6 tuần).
 
-### TH-A Tình huống: Tại sao phải xét nghiệm Rubella khi đã tiêm ngừa? — Tình huống trong tài liệu
+### Tình huống: Tại sao phải xét nghiệm Rubella khi đã tiêm ngừa? — Tình huống trong tài liệu
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -268,7 +268,7 @@ Thai phụ hỏi: "Tại sao tôi chưa mắc, chưa tiêm ngừa mà vẫn có 
 
 - Nếu đề nghị: Rubella IgG (+), IgM (−).
 
-### TH-B Tình huống: Kết quả huyết thanh tầm soát Rubella đầu thai kỳ bất thường — Tình huống trong tài liệu
+### Tình huống: Kết quả huyết thanh tầm soát Rubella đầu thai kỳ bất thường — Tình huống trong tài liệu
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -328,7 +328,7 @@ Thai phụ 26 tuổi, PARA 0000, thai 9 tuần, đã được chẩn đoán α-t
 
 - Huyết đồ: Hb 9,8 g/dL, MCV 72 fL, MCH 23 pg; ferritin 12 ng/mL.
 
-### 2.4 — Y17 đợt 4
+### 2.4 Y17 đợt 4 — Y17 đợt 4
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -380,7 +380,7 @@ Thai phụ 27 tuổi, PARA 0000, thai 9 tuần, đến khám, mang theo các k�
 
 ## Giang mai
 
-### 2.1 — Y18 – đợt 4
+### 2.1 Y18 – đợt 4 — Y18 – đợt 4
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -398,7 +398,7 @@ Thai phụ 27 tuổi, PARA 0000, thai 9 tuần, đến khám, mang theo các k�
 
 - Nếu đề nghị: TPHA (+); RPR định lượng 1:16.
 
-### 2.2 — Y17 đợt 1
+### 2.2 Y17 đợt 1 — Y17 đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -415,7 +415,7 @@ Thai phụ 27 tuổi, PARA 0000, thai 9 tuần, đến khám, mang theo các k�
 
 - Chỉ có kết quả Rapid syphilis test (+) của đoàn tình nguyện; tại địa phương không làm được VDRL, TPHA.
 
-### TH1 Tình huống 1: VDRL + — Tình huống trong tài liệu
+### Tình huống 1: VDRL + — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -435,7 +435,7 @@ Thai phụ 24 tuổi, PARA 0000, thai 16 tuần, đến khám vì xét nghiệm 
 
 - Nếu đề nghị: TPHA (+); VDRL định lượng 1:8.
 
-### TH2 Tình huống 2: VDRL – — Tình huống trong tài liệu
+### Tình huống 2: VDRL – — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -455,7 +455,7 @@ Thai phụ 26 tuổi, PARA 1001, thai 20 tuần, đến khám vì chồng vừa 
 
 - VDRL (−). Siêu âm hôm nay: thai 20 tuần, sinh trắc bách phân vị 50, chưa thấy phù nhau thai.
 
-### TH3 Tình huống 3: RST — Tình huống trong tài liệu
+### Tình huống 3: RST — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -475,7 +475,7 @@ Thai phụ 22 tuổi, thai 18 tuần, sống ở vùng sâu, đến trạm y t�
 
 - RST (+). Tại trạm không có VDRL, TPHA.
 
-### TH4 Tình huống 4: TPPA (+) — Tình huống trong tài liệu
+### Tình huống 4: TPPA (+) — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -583,7 +583,7 @@ Thai phụ 33 tuổi, thai 12 tuần, có tiền căn sinh con bị hội chứn
 - Siêu âm hình thái học lúc 20 tuần: một nốt echo sáng 2 mm ở thất trái; không thấy bất thường cấu trúc tim và các cơ quan khác; sinh trắc ở bách phân vị 50.
 - Combined test lúc 12 tuần: nguy cơ thấp (T21 1:5.000).
 
-### 2.8 — Y21 – đợt 1
+### 2.8 Y21 – đợt 1 — Y21 – đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -601,7 +601,7 @@ Thai phụ hỏi: "Em trai tôi bị Down, vậy con của tôi có bị bệnh 
 
 ## Xét nghiệm HIV trong thai kỳ
 
-### 1 Thai phụ thắc mắc tại sao phải xét nghiệm HIV — Không ghi năm/đợt
+### Thai phụ thắc mắc tại sao phải xét nghiệm HIV — Không ghi năm/đợt
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -611,7 +611,7 @@ Thai phụ hỏi: "Em trai tôi bị Down, vậy con của tôi có bị bệnh 
 
 ## Lên lịch khám thai
 
-### 1 Lên lịch khám thai — Đề soạn thêm (tài liệu không có đề)
+### Lên lịch khám thai — Đề soạn thêm (tài liệu không có đề)
 
 **Mở đầu (soạn thêm):**
 
@@ -641,7 +641,7 @@ Thai phụ 25 tuổi, PARA 0000, thai 8 tuần, vừa siêu âm thấy một tha
 
 Thai phụ hỏi: "Con tôi bị gì và nguyên nhân bị vậy? Có chắc chắn là do Rubella không?"
 
-### 3.2 — Y20 đợt 1
+### 3.2 Y20 đợt 1 — Y20 đợt 1
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -657,13 +657,13 @@ Các lần siêu âm sinh trắc (tuổi thai tính theo ngày dự sinh trên s
 Thai phụ Chu Thị C., sinh năm 1977, không biết ngày kinh cuối, đi khám không mang theo giấy tờ cũ. Đề cho các phiếu siêu âm ở nhiều thời điểm.
 Yêu cầu: (1) vẽ biểu đồ tăng trưởng đường kính lưỡng đỉnh và chu vi vòng bụng; (2) kết luận tình trạng tăng trưởng thai và định hướng nguyên nhân; (3) chọn tối đa 2 khảo sát cần làm hôm nay, giải thích.
 
-### 3.5 — Y19 – Đợt 2 – Trạm 3
+### 3.5 Y19 – Đợt 2 – Trạm 3 — Y19 – Đợt 2 – Trạm 3
 
 **Xử trí – tư vấn – yêu cầu (soạn thêm):**
 
 Câu 2: Xử trí trường hợp trên như thế nào?
 
-### 3.6 — Y19 đợt 2
+### 3.6 Y19 đợt 2 — Y19 đợt 2
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -671,7 +671,7 @@ Câu 2: Xử trí trường hợp trên như thế nào?
 - Siêu âm grey-scale: EFW bách phân vị 3, AFI 7 cm, nhau tiền đạo trung tâm.
 - Velocimetry Doppler: PI động mạch rốn bách phân vị 50, PI động mạch não giữa bách phân vị 40, CPR 2,54.
 
-### 3.7 — Y19 – đợt 5
+### 3.7 Y19 – đợt 5 — Y19 – đợt 5
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -679,14 +679,14 @@ Câu 2: Xử trí trường hợp trên như thế nào?
 - Siêu âm hôm nay 28/06/2023: BPD bách phân vị 75, AC bách phân vị 97, FL bách phân vị 60, EFW bách phân vị 95; AFI 20 cm; chưa thấy bất thường cấu trúc.
 - Nếu đề nghị nghiệm pháp dung nạp đường 75 g: đói 95 mg/dL, 1 giờ 190 mg/dL, 2 giờ 160 mg/dL.
 
-### 3.8 — Y18 Đợt 1
+### 3.8 Y18 Đợt 1 — Y18 Đợt 1
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
 - Siêu âm mốc lúc 12 tuần: CRL 55 mm, phù hợp tuổi thai.
 - Siêu âm hôm nay (24 tuần theo mốc): BPD < bách phân vị 3, HC < bách phân vị 1, AC bách phân vị 40, FL bách phân vị 45, EFW bách phân vị 30; AFI 12 cm.
 
-### 3.9 — Y18 Đợt 2
+### 3.9 Y18 Đợt 2 — Y18 Đợt 2
 
 **Mở đầu (soạn thêm):**
 
@@ -698,7 +698,7 @@ Thai phụ đến khám, đưa 1 phiếu siêu âm sinh trắc hôm nay (không 
 - Nếu hỏi siêu âm trước đó: thai phụ đưa phiếu siêu âm sớm có MSD (chưa thấy phôi).
 - Nếu hỏi tiếp siêu âm có CRL sớm nhất: CRL 45 mm (11 tuần 2 ngày), làm cách hôm nay 13 tuần 6 ngày.
 
-### 3.10 — Y18 Đợt 3
+### 3.10 Y18 Đợt 3 — Y18 Đợt 3
 
 **Mở đầu (soạn thêm):**
 
@@ -721,14 +721,14 @@ Thai phụ đến khám vì giảm cử động thai. Yêu cầu: khám, giải 
 - NST: nhịp tim thai căn bản 140 lần/phút, dao động nội tại 10 nhịp/phút, có 2 nhịp tăng trong 20 phút, không nhịp giảm.
 - Siêu âm thai: sinh trắc bách phân vị 50, AFI 12 cm, nhau nhóm I.
 
-### 3.11 — Y18 đợt 4
+### 3.11 Y18 đợt 4 — Y18 đợt 4
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
 - Giấy IVF: chuyển phôi ngày 5 vào 01/03/2023.
 - Siêu âm hôm nay 20/09/2023: BPD bách phân vị 50, AC bách phân vị 45, FL bách phân vị 50, EFW bách phân vị 50; AFI 13 cm.
 
-### 3.12 — Y18 đợt 5
+### 3.12 Y18 đợt 5 — Y18 đợt 5
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -747,7 +747,7 @@ Thai phụ con lần 2, thai 38 tuần, đến khám thai; có sổ khám thai, 
 
 - Siêu âm hôm nay: ngôi đầu, AFI 3 cm.
 
-### 3.14 — Y17 Đợt 2
+### 3.14 Y17 Đợt 2 — Y17 Đợt 2
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -763,7 +763,7 @@ Thai phụ con lần 2, thai 38 tuần, đến khám thai; có sổ khám thai, 
 
 ## Giảm cử động thai – NST
 
-### 1.1 — Y18 – đợt 3
+### 1.1 Y18 – đợt 3 — Y18 – đợt 3
 
 **Khám – kết quả (soạn thêm):**
 
@@ -784,7 +784,7 @@ Thai phụ con lần 2, thai 38 tuần, đến khám thai; có sổ khám thai, 
 - NST: nhịp tim thai căn bản 140 lần/phút, dao động nội tại 10 nhịp/phút, 2 nhịp tăng trong 20 phút, không nhịp giảm.
 - Siêu âm: sinh trắc bách phân vị 50, AFI 12 cm.
 
-### 1.2 — Y20 đợt 3
+### 1.2 Y20 đợt 3 — Y20 đợt 3
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -795,7 +795,7 @@ Băng NST:
 
 ## Quá ngày dự sinh
 
-### 1.1 — Y19 – Đợt 1
+### 1.1 Y19 – Đợt 1 — Y19 – Đợt 1
 
 **Khám – kết quả (soạn thêm):**
 
@@ -815,7 +815,7 @@ Băng NST:
 - Sinh hiệu ổn; bề cao tử cung 32 cm; không cơn gò; tim thai 144 lần/phút.
 - Khám trong: cổ tử cung hé, xóa 40%, mật độ trung bình, ngôi -2, ối còn (Bishop 4 điểm).
 
-### 1.3 — Y17 đợt 3
+### 1.3 Y17 đợt 3 — Y17 đợt 3
 
 **Khám – kết quả (soạn thêm):**
 
@@ -840,7 +840,7 @@ Sổ khám thai và nhật ký 2 tuần qua:
 - Đường huyết mao mạch: đói 85–92 mg/dL; 2 giờ sau ăn 135–150 mg/dL (đa số > 120 mg/dL).
 - Siêu âm: EFW bách phân vị 40 lúc 28 tuần, bách phân vị 80 hôm nay (32 tuần).
 
-### 2.2 — Y18 – đợt 4
+### 2.2 Y18 – đợt 4 — Y18 – đợt 4
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -853,7 +853,7 @@ Sổ khám thai và nhật ký 2 tuần qua:
 - Nhật ký bữa ăn: chia 6 bữa, bữa sáng ít tinh bột, chọn tinh bột tải đường thấp, nhiều rau; vận động 30 phút mỗi ngày.
 - Nhật ký đường huyết: đói 98–105 mg/dL; 2 giờ sau ăn 145–165 mg/dL.
 
-### 2.3 — Y20 đợt 1
+### 2.3 Y20 đợt 1 — Y20 đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -866,7 +866,7 @@ Sổ khám thai và nhật ký 2 tuần qua:
 
 - Sổ khám thai: đã khám 3 lần, các tầm soát bình thường, siêu âm chưa thấy bất thường; đường huyết đói hôm nay 88 mg/dL.
 
-### TH1 Tình huống 1: OGTT (+) dương, tư vấn MNT — Tình huống trong tài liệu
+### Tình huống 1: OGTT (+) dương, tư vấn MNT — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -883,7 +883,7 @@ Thai phụ 30 tuổi, PARA 0000, thai 26 tuần, đến nhận kết quả nghi�
 - OGTT 75 g (24 tuần 6 ngày): đói 95 mg/dL, 1 giờ 185 mg/dL, 2 giờ 150 mg/dL.
 - Sổ khám thai: tầm soát TCN1 và siêu âm hình thái bình thường; sinh trắc bách phân vị 60; AFI 14 cm.
 
-### TH2 Tình huống 2: Tư vấn điều chỉnh MNT — Tình huống trong tài liệu
+### Tình huống 2: Tư vấn điều chỉnh MNT — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -899,7 +899,7 @@ Thai phụ 29 tuổi, thai 30 tuần, được chẩn đoán đái tháo đườ
 - Nhật ký bữa ăn: 3 bữa chính, bữa tối lúc 18 giờ, không ăn khuya; bữa sáng nui hoặc phở bò; trưa 2 chén cơm trắng.
 - Nhật ký đường huyết: đói 65–70 mg/dL; 2 giờ sau ăn sáng 160–180 mg/dL; 2 giờ sau ăn trưa 150 mg/dL.
 
-### TH3 Tình huống 3: OGTT (-), xem sổ khám thai thấy bất thường ở TCN 3 — Tình huống trong tài liệu
+### Tình huống 3: OGTT (-), xem sổ khám thai thấy bất thường ở TCN 3 — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -917,7 +917,7 @@ Thai phụ 33 tuổi, PARA 1001, thai 34 tuần, nghiệm pháp dung nạp đư�
 
 ## Tăng huyết áp – tiền sản giật
 
-### 2.1 — Y18 – đợt 1
+### 2.1 Y18 – đợt 1 — Y18 – đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -931,7 +931,7 @@ Thai phụ 33 tuổi, PARA 1001, thai 34 tuần, nghiệm pháp dung nạp đư�
 - Phù 2 chân (+); phổi không ran; không vàng da, không ban xuất huyết; phản xạ gân xương bình thường.
 - Bề cao tử cung 26 cm, tim thai 140 lần/phút, không cơn gò.
 
-### 2.2 — Y19 – Đợt 1
+### 2.2 Y19 – Đợt 1 — Y19 – Đợt 1
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -963,7 +963,7 @@ Thai phụ đến khám vì đo thấy tăng huyết áp.
 - Không đau đầu, không nhìn mờ, không đau ngực, không khó thở, không đau thượng vị, không tiểu ít.
 - Sổ khám thai: huyết áp trước tuần 20 khoảng 130/80 mmHg, sau tuần 20 khoảng 150/90 mmHg; đạm niệu âm tính ở mọi lần khám.
 
-### 2.6 — Y20 đợt 3
+### 2.6 Y20 đợt 3 — Y20 đợt 3
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -981,7 +981,7 @@ Thai phụ đến khám vì đo thấy tăng huyết áp.
 
 Thai phụ hỏi: "Lần này tôi có bị tiền sản giật lại không? Tôi có cần đổi thuốc huyết áp không?"
 
-### TH1 Tình huống 1: Tiền sản giật chưa có dấu hiệu nặng — Tình huống trong tài liệu
+### Tình huống 1: Tiền sản giật chưa có dấu hiệu nặng — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -1005,7 +1005,7 @@ Thai phụ 28 tuổi, PARA 0000, thai 32 tuần, đến khám thai định kỳ,
 - AST 25 U/L, ALT 22 U/L; LDH 300 U/L; bilirubin bình thường; creatinine 0,7 mg/dL; acid uric 5 mg/dL; tiểu cầu 220 K/µL; Hb 12 g/dL.
 - NST có đáp ứng; siêu âm: sinh trắc bách phân vị 40, AFI 11 cm; Doppler động mạch rốn bình thường.
 
-### TH2 Tình huống 2: Tiền sản giật có dấu hiệu nặng — Tình huống trong tài liệu
+### Tình huống 2: Tiền sản giật có dấu hiệu nặng — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -1028,7 +1028,7 @@ Thai phụ 30 tuổi, PARA 0000, thai 33 tuần, đến khám vì nhức đầu 
 - Tiểu cầu 160 K/µL; AST 45 U/L, ALT 40 U/L; creatinine 0,9 mg/dL; LDH 400 U/L.
 - NST có đáp ứng; siêu âm: sinh trắc bách phân vị 25, AFI 9 cm.
 
-### TH3 Tình huống 3: Hội chứng HELLP — Tình huống trong tài liệu
+### Tình huống 3: Hội chứng HELLP — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -1072,7 +1072,7 @@ Thai phụ 26 tuổi, PARA 0000, thai 24 tuần, siêu âm ngả âm đạo đo 
 
 - Siêu âm ngả âm đạo: CL 24 mm, lỗ trong cổ tử cung hình chữ T; fFN âm tính; TPTNT bình thường.
 
-### 2.2 — Y16
+### 2.2 Y16 — Y16
 
 **Cận lâm sàng – kết quả (soạn thêm):**
 
@@ -1080,7 +1080,7 @@ Thai phụ 26 tuổi, PARA 0000, thai 24 tuần, siêu âm ngả âm đạo đo 
 
 ## Chiều dài kênh cổ tử cung ngắn
 
-### 1 Siêu âm phát hiện CL ngắn — Đề soạn thêm (tài liệu không có đề)
+### Siêu âm phát hiện CL ngắn — Đề soạn thêm (tài liệu không có đề)
 
 **Mở đầu (soạn thêm):**
 
@@ -1105,7 +1105,7 @@ Thai phụ 25 tuổi, thai 22 tuần, đến khám vì lần trước siêu âm 
 
 ## Ối vỡ non
 
-### 2.1 — Y19 – đợt 2
+### 2.1 Y19 – đợt 2 — Y19 – đợt 2
 
 **Mở đầu (soạn thêm):**
 
@@ -1154,7 +1154,7 @@ Mô tả băng CTG: cơn gò 4 cơn/10 phút; nhịp tim thai căn bản 140 l�
 
 Sản phụ đang chuyển dạ giai đoạn hoạt động: cổ tử cung mở 5 cm, ngôi đầu độ lọt -2, ối còn, cơn gò 2 cơn/10 phút; đường biểu diễn cổ tử cung lệch phải đường báo động; CTG nhóm I. Đánh giá và xử trí tiếp theo.
 
-### 2.2-d3 Sản đồ – CTG: bất xứng đầu chậu — Y18 – đợt 3
+### Sản đồ – CTG: bất xứng đầu chậu — Y18 – đợt 3
 
 **Mở đầu (soạn thêm):**
 
@@ -1163,7 +1163,7 @@ Sản phụ con so, thai 39 tuần, chuyển dạ giai đoạn hoạt động.
 - CTG: cơn gò 5 cơn/10 phút; nhịp tim thai căn bản 150 lần/phút, dao động nội tại 6–15 nhịp/phút; có nhịp giảm muộn sau các cơn gò.
 Đọc sản đồ, CTG và xử trí.
 
-### 2.3 — Y17 – Đợt 1
+### 2.3 Y17 – Đợt 1 — Y17 – Đợt 1
 
 **Mở đầu (soạn thêm):**
 
@@ -1173,7 +1173,7 @@ Băng EFM lúc 9 giờ: nhịp tim thai căn bản 140 lần/phút, dao động 
 
 - Khám trong: cổ tử cung mở trọn, ối đã vỡ, nước ối trong, ngôi chỏm, kiểu thế chẩm vệ, độ lọt +3, không chồng xương; khung chậu bình thường.
 
-### 2.6 — Y19 – đợt 5
+### 2.6 Y19 – đợt 5 — Y19 – đợt 5
 
 **Mở đầu (soạn thêm):**
 
@@ -1183,7 +1183,7 @@ Trạm giấy: sản phụ con so, thai 39 tuần, đang chuyển dạ. Cho băn
 - 10 giờ: cổ tử cung 6 cm, độ lọt 3/5, cơn gò 3 cơn/10 phút mỗi cơn 40 giây, ối còn.
 - 12 giờ: cổ tử cung 8 cm, độ lọt 2/5, kiểu thế chẩm chậu trái trước, cơn gò 4 cơn/10 phút mỗi cơn 45 giây, ối vỡ, nước ối trong; không chồng xương.
 
-### 2.7 — Y18 – đợt 1
+### 2.7 Y18 – đợt 1 — Y18 – đợt 1
 
 **Mở đầu (soạn thêm):**
 
@@ -1213,7 +1213,7 @@ Trạm vấn đáp: cho sản đồ và CTG.
 Sản phụ chuyển dạ kéo dài. Sản đồ: cổ tử cung mở 8 cm không tiến triển 3 giờ, ngôi chưa lọt (3/5), chồng xương (+++), có bướu huyết thanh, đầu ngưng xoay ở kiểu thế chẩm chậu phải sau; cơn gò cường tính 5–6 cơn/10 phút; nước ối xanh. CTG: nhịp tim thai căn bản 160 lần/phút, dao động nội tại 5 nhịp/phút, nhịp giảm muộn lặp lại.
 Nhận định và xử trí.
 
-### 2.11 — Y18 – đợt 5
+### 2.11 Y18 – đợt 5 — Y18 – đợt 5
 
 **Mở đầu (soạn thêm):**
 
@@ -1221,26 +1221,26 @@ Bác sĩ đóng vai hộ sinh, đưa sản đồ và CTG.
 - Sản đồ: bắt đầu lúc 4 giờ 30 ở pha hoạt động; đầu 3/5, ối chưa vỡ; từ 4 giờ 30 đến 7 giờ ngôi không xuống, đường biểu diễn chuyển phải lúc 7 giờ; cơn gò 2 cơn/10 phút; không chồng xương; thai không to; sản phụ không có chống chỉ định sinh thường.
 - CTG: trương lực căn bản 20 mmHg, cường độ cơn gò 40–60 mmHg; nhịp tim thai căn bản 140 lần/phút, có nhịp tăng, không nhịp giảm.
 
-### 2.12 — Y18
+### 2.12 Y18 — Y18
 
 **Mở đầu (soạn thêm):**
 
 Dữ kiện: sản phụ con so, thai 39 tuần, chuyển dạ giai đoạn hoạt động; cổ tử cung mở 7 cm, độ lọt 2/5, ối vỡ tự nhiên lúc này, nước ối xanh lẫn phân su; đường biểu diễn cổ tử cung nằm bên trái đường báo động; cơn gò 4 cơn/10 phút; CTG nhóm I.
 
-### 2.13 — Y17 đợt 2
+### 2.13 Y17 đợt 2 — Y17 đợt 2
 
 **Xử trí – tư vấn – yêu cầu (soạn thêm):**
 
 Giám thị báo: phòng mổ 30 phút nữa mới trống, có chờ được không?
 
-### 2.14 — Y20 đợt 1
+### 2.14 Y20 đợt 1 — Y20 đợt 1
 
 **Mở đầu (soạn thêm):**
 
 - Khám: không có cơn gò rõ, cổ tử cung xóa 50%, mở 2 cm, ối vỡ, nước ối trong, ngôi đầu cao; nhiệt độ 37,2 °C.
 - CTG lúc 20 giờ: cơn gò 1–2 cơn/10 phút, không đều, trương lực căn bản 10 mmHg, cường độ 40–50 mmHg; nhịp tim thai căn bản 140 lần/phút, dao động nội tại 5–10 nhịp/phút; có một đoạn tăng 20 nhịp kéo dài khoảng 10 giây; các nhịp giảm bắt đầu và kết thúc cùng cơn gò, trong đó một nhịp giảm kéo dài khoảng 2 phút.
 
-### 2.15 — Y20 đợt 3
+### 2.15 Y20 đợt 3 — Y20 đợt 3
 
 **Mở đầu (soạn thêm):**
 
@@ -1248,14 +1248,14 @@ Sản phụ con so, thai 39 tuần.
 - Sản đồ: vào pha hoạt động lúc 2 giờ (cổ tử cung 4 cm, độ lọt 4/5, ối còn, cơn gò 3 cơn/10 phút mỗi cơn 30 giây).
 - Diễn tiến sau đó (chưa vẽ): 6 giờ cổ tử cung 5 cm, độ lọt 4/5, ối còn, cơn gò 2 cơn/10 phút mỗi cơn 25 giây, không chồng xương, tim thai 140 lần/phút.
 
-### 2.16 — Y20 đợt 4 – K4
+### 2.16 Y20 đợt 4 – K4 — Y20 đợt 4 – K4
 
 **Mở đầu (soạn thêm):**
 
 - Sản đồ: vào pha hoạt động lúc 1 giờ (cổ tử cung 4 cm); 4 giờ cổ tử cung 5 cm, ngôi đầu độ lọt -3, ối còn, cơn co 2 cơn/10 phút mỗi cơn dưới 20 giây, không biến dạng ngôi.
 - CTG: cơn co 2 cơn/10 phút, trương lực căn bản 10 mmHg, cường độ 60–100 mmHg; nhịp tim thai căn bản 140 lần/phút, dao động nội tại 5–10 nhịp/phút, có nhịp tăng, không nhịp giảm.
 
-### 2.17 — Y21 đợt 1
+### 2.17 Y21 đợt 1 — Y21 đợt 1
 
 **Mở đầu (soạn thêm):**
 
@@ -1264,7 +1264,7 @@ Sản phụ con so, thai 39 tuần.
 
 ## Băng huyết sau sinh
 
-### 1.1 — Y18 – đợt 3
+### 1.1 Y18 – đợt 3 — Y18 – đợt 3
 
 **Mở đầu (soạn thêm):**
 
@@ -1284,7 +1284,7 @@ Sản phụ vừa sinh thường được 15 phút, bánh nhau đã sổ. Hộ s
 
 ## Tư vấn sinh ngả âm đạo trên vết mổ cũ (TOLAC)
 
-### 2.1 — Y19 – Đợt 1
+### 2.1 Y19 – Đợt 1 — Y19 – Đợt 1
 
 **Khám – kết quả (soạn thêm):**
 
@@ -1298,7 +1298,7 @@ Sản phụ vừa sinh thường được 15 phút, bánh nhau đã sổ. Hộ s
 - Siêu âm 39 tuần: ngôi đầu, EFW 3.100 g, AFI 12 cm, nhau mặt sau nhóm I; độ dày đoạn dưới cơ tử cung 3 mm.
 - NST có đáp ứng.
 
-### 2.2 — Y19 – đợt 5
+### 2.2 Y19 – đợt 5 — Y19 – đợt 5
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -1309,14 +1309,14 @@ Sản phụ vừa sinh thường được 15 phút, bánh nhau đã sổ. Hộ s
 
 ## Sa dây rốn
 
-### 2.1 — Y18
+### 2.1 Y18 — Y18
 
 **Khám – kết quả (soạn thêm):**
 
 - Tim thai qua Doppler 90 lần/phút, chậm kéo dài.
 - Khám trong: sờ thấy quai dây rốn trong âm đạo, còn đập; cổ tử cung mở 3 cm; ối vỡ hoàn toàn, nước ối trong; ngôi đầu cao, độ lọt -3.
 
-### 2.2 — Y18 – đợt 2
+### 2.2 Y18 – đợt 2 — Y18 – đợt 2
 
 **Khám – kết quả (soạn thêm):**
 
@@ -1325,7 +1325,7 @@ Sản phụ vừa sinh thường được 15 phút, bánh nhau đã sổ. Hộ s
 
 ## Ra huyết âm đạo nhiều (cấp cứu)
 
-### 1 Thai phụ 35 tuần ra huyết âm đạo nhiều — Đề soạn thêm (tài liệu không có đề)
+### Thai phụ 35 tuần ra huyết âm đạo nhiều — Đề soạn thêm (tài liệu không có đề)
 
 **Mở đầu (soạn thêm):**
 
@@ -1350,7 +1350,7 @@ Thai phụ 35 tuần được đưa vào phòng cấp cứu vì ra huyết âm �
 
 ## Nhau tiền đạo
 
-### 2.1 — Y21 đợt 1
+### 2.1 Y21 đợt 1 — Y21 đợt 1
 
 **Khám – kết quả (soạn thêm):**
 
@@ -1367,7 +1367,7 @@ Thai phụ 35 tuần được đưa vào phòng cấp cứu vì ra huyết âm �
 
 Thai phụ hỏi: "Nhau tiền đạo có hết được không bác sĩ?"
 
-### 2.2 — Y20 – đợt 2
+### 2.2 Y20 – đợt 2 — Y20 – đợt 2
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -1387,7 +1387,7 @@ Thai phụ hỏi: "Nhau tiền đạo có hết được không bác sĩ?"
 
 Thai phụ hỏi: "Tôi từng mổ lấy thai nên lần này mới bị nhau tiền đạo phải không?"
 
-### 2.3 — Y20 đợt 3
+### 2.3 Y20 đợt 3 — Y20 đợt 3
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -1405,7 +1405,7 @@ Thai phụ hỏi: "Tôi từng mổ lấy thai nên lần này mới bị nhau t
 - Siêu âm tuần 28 trong sổ: bánh nhau mặt sau, mép dưới phủ qua lỗ trong cổ tử cung.
 - Nếu xin xét nghiệm: Hb 11 g/dL, tiểu cầu 230 K/µL, đông máu bình thường; CTG nhóm I.
 
-### 2.4 — Y19 – đợt 2
+### 2.4 Y19 – đợt 2 — Y19 – đợt 2
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -1415,7 +1415,7 @@ Thai phụ hỏi: "Tôi từng mổ lấy thai nên lần này mới bị nhau t
 
 - Sinh hiệu ổn; bề cao tử cung 28 cm; không cơn gò; tim thai 145 lần/phút; khám mỏ vịt: cổ tử cung đóng, không ra huyết.
 
-### 2.5 — Y18 đợt 1
+### 2.5 Y18 đợt 1 — Y18 đợt 1
 
 **Mở đầu (soạn thêm):**
 
@@ -1432,7 +1432,7 @@ Trạm cấp cứu: thai phụ mang thai đủ tháng được đưa vào phòng
 - Phiếu siêu âm: nhau tiền đạo trung tâm, không thấy dấu hiệu nhau cài răng lược.
 - Sổ khám thai: thai 38 tuần, tuổi thai chính xác.
 
-### 2.6 — Y18
+### 2.6 Y18 — Y18
 
 **Hỏi bệnh – kết quả (soạn thêm):**
 
@@ -1444,7 +1444,7 @@ Trạm cấp cứu: thai phụ mang thai đủ tháng được đưa vào phòng
 - Sinh hiệu ổn; bề cao tử cung 24 cm; không cơn gò; tim thai 150 lần/phút.
 - Khám mỏ vịt: ít máu đỏ sậm ở âm đạo, cổ tử cung đóng.
 
-### TH1 Tình huống 1: Tư vấn nhau tiền đạo ra huyết ít/ ổn định – không ra huyết — Tình huống trong tài liệu
+### Tình huống 1: Tư vấn nhau tiền đạo ra huyết ít/ ổn định – không ra huyết — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -1466,7 +1466,7 @@ Thai phụ 31 tuổi, thai 33 tuần, đến khám vì ra huyết âm đạo lư
 - Hb 11,8 g/dL.
 - Siêu âm ngả âm đạo: nhau tiền đạo trung tâm mặt trước, phủ lỗ trong cổ tử cung; không thấy khối máu tụ sau nhau; chưa thấy dấu hiệu nhau cài răng lược; sinh trắc phù hợp 33 tuần; AFI 12 cm.
 
-### TH2 Tình huống 2: Nhau tiền đạo ra huyết nhiều — Tình huống trong tài liệu
+### Tình huống 2: Nhau tiền đạo ra huyết nhiều — Tình huống trong tài liệu
 
 **Mở đầu (soạn thêm):**
 
@@ -1483,7 +1483,7 @@ Thai phụ 35 tuần, đã biết nhau tiền đạo trung tâm, nhập cấp c�
 
 ## Nhau bong non
 
-### 2.1 — Y18 – đợt 4
+### 2.1 Y18 – đợt 4 — Y18 – đợt 4
 
 **Khám – kết quả (soạn thêm):**
 
@@ -1499,7 +1499,7 @@ Thai phụ 35 tuần, đã biết nhau tiền đạo trung tâm, nhập cấp c�
 
 ## Vỡ tử cung
 
-### 1 Thai 40 tuần đột ngột đau bụng dữ dội — Không ghi năm/đợt (ảnh đề Trạm 6)
+### Thai 40 tuần đột ngột đau bụng dữ dội — Không ghi năm/đợt (ảnh đề Trạm 6)
 
 **Mở đầu (soạn thêm):**
 
@@ -1517,7 +1517,7 @@ Thai phụ mang thai 40 tuần thì đột ngột đau bụng dữ dội, da xan
 
 ## Sản giật – tiền sản giật nặng cấp cứu
 
-### 1 Tiền sản giật dấu hiệu nặng nhập cấp cứu — Không ghi năm/đợt (ảnh đề Trạm 5)
+### Tiền sản giật dấu hiệu nặng nhập cấp cứu — Không ghi năm/đợt (ảnh đề Trạm 5)
 
 **Mở đầu (soạn thêm):**
 
@@ -1538,7 +1538,7 @@ Người nhà hỏi:
 1. Em tôi bị gì vậy BS? Tại sao nó lại bị như vậy?
 2. Giờ phải giải quyết như thế nào? Có nguy cơ gì cho mẹ và cho bé không?
 
-### 2 Thai phụ co giật — Đề soạn thêm (tài liệu không có đề sản giật)
+### Thai phụ co giật — Đề soạn thêm (tài liệu không có đề sản giật)
 
 **Mở đầu (soạn thêm):**
 
@@ -1555,7 +1555,7 @@ Thai phụ 36 tuần đang nằm theo dõi tiền sản giật nặng thì độ
 
 ## Khám thai phụ trong chuyển dạ (khám ngoài, khám trong)
 
-### 1 Khám lâm sàng thai phụ 40 tuần chuyển dạ — Y20 đợt 4
+### Khám lâm sàng thai phụ 40 tuần chuyển dạ — Y20 đợt 4
 
 **Khám – kết quả (soạn thêm):**
 
@@ -1563,7 +1563,7 @@ Thai phụ 36 tuần đang nằm theo dõi tiền sản giật nặng thì độ
 - Bề cao tử cung 32 cm; Leopold: ngôi đầu, lưng trái, chưa lọt (4/5).
 - Tim thai (giảng viên đưa): 140 lần/phút, đều; cơn gò 3 cơn/10 phút, mỗi cơn 35 giây.
 
-### 2 Khám thai phụ 37 tuần chảy nước ối — Y20 đợt 1
+### Khám thai phụ 37 tuần chảy nước ối — Y20 đợt 1
 
 **Khám – kết quả (soạn thêm):**
 

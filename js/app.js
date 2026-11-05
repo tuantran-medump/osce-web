@@ -12,6 +12,19 @@
     return;
   }
 
+  /* ---------- Đề nạp tay (localStorage) ghép vào dữ liệu ---------- */
+  var D0 = JSON.parse(JSON.stringify(D)); // bản gốc, để kiểm tra trùng khi nạp
+  var KHOA_NAP = "osce.nap";
+  function docNap() {
+    try { var v = JSON.parse(localStorage.getItem(KHOA_NAP) || "[]"); return Array.isArray(v) ? v : []; } catch (e) { return []; }
+  }
+  var NAP = docNap();
+  NAP.forEach(function (f) {
+    var kq = window.NapDe.doc(f.noi_dung, f.ten);
+    f.loi = kq.loi.concat(kq.loi.length ? [] : window.NapDe.ghep(D, kq.tram, true));
+    f.soDe = kq.tram.reduce(function (s, t) { return s + t.de.length; }, 0);
+  });
+
   /* ---------- Chỉ mục ---------- */
   var CHUONG = {}, TRAM = {}, DE = {};
   var tongDe = 0, tongTram = 0;
@@ -59,6 +72,7 @@
   function chipNguon(d) {
     var h = '<span class="chip" title="Nguồn đề">' + esc(d.nguon_de) + "</span>";
     if (d.soan_them && d.soan_them.length) h += ' <span class="chip chip-st">có phần soạn thêm</span>';
+    if (d.nap_tay) h += ' <span class="chip chip-nap">nạp tay</span>';
     return h;
   }
   function veLai(html) {
@@ -176,6 +190,176 @@
       "</ul></section>";
     h += '<h2 class="muc">Hướng dẫn thi OSCE (theo tài liệu)</h2><section class="the">' + md(D.huong_dan_chung) + "</section></div>";
     veLai(h);
+  }
+
+  /* ---------- Trang nạp đề ---------- */
+  var choLuu = null; // { ten, noi_dung } đã xem trước, hợp lệ
+
+  function trangNap() {
+    datTieuDe("Nạp đề");
+    choLuu = null;
+    var h = '<div class="trang-hep"><h1>Nạp đề</h1>';
+    h += '<p class="phu">Nạp thêm đề bằng file Markdown theo khuôn <a href="mau-nap/MAU_NAP_DE_OSCE.md" download>MAU_NAP_DE_OSCE.md</a> ' +
+      "(trạm / đề / bước; mỗi bước có Đề, Kết quả, Hình, Đáp án; dòng <code>Soạn thêm:</code>). Đề nạp tay chỉ lưu trên trình duyệt này – nhớ <strong>Xuất ra .md</strong> để sao lưu hoặc đưa vào repo (thư mục <code>mau-nap/tram/</code>).</p>";
+    h += '<section class="the nap-nhap"><div class="chon-file"><input type="file" id="nap-file" class="an-file" accept=".md,.markdown,.txt,text/markdown,text/plain">' +
+      '<label class="nut" for="nap-file">📄 Chọn file .md</label><span class="phu" id="nap-file-ten">Chưa chọn file</span></div>' +
+      '<label class="nhan-o" for="nap-ten">Tên file</label><input type="text" id="nap-ten" class="o-chu" value="de-nap-tay.md" autocomplete="off">' +
+      '<label class="nhan-o" for="nap-chu">Hoặc dán chữ Markdown</label>' +
+      '<textarea id="nap-chu" class="o-chu" rows="12" spellcheck="false" placeholder="# TRẠM: …&#10;Chương: CHƯƠNG 2: NỬA ĐẦU THAI KÌ&#10;&#10;## ĐỀ: …"></textarea>' +
+      '<div class="hang-nut"><button type="button" class="nut" id="nap-xem">Xem trước</button>' +
+      '<button type="button" class="nut nut-chinh" id="nap-luu" disabled>Lưu</button></div></section>';
+    h += '<section id="nap-ket-qua" aria-live="polite"></section>';
+    h += '<h2 class="muc">Đề đã nạp trên trình duyệt này</h2><div id="nap-ds"></div></div>';
+    veLai(h);
+
+    var oChu = document.getElementById("nap-chu");
+    var oTen = document.getElementById("nap-ten");
+    var nutLuu = document.getElementById("nap-luu");
+    function doiNoiDung() { choLuu = null; nutLuu.disabled = true; }
+    oChu.addEventListener("input", doiNoiDung);
+    oTen.addEventListener("input", doiNoiDung);
+    document.getElementById("nap-file").addEventListener("change", function (e) {
+      var f = e.target.files && e.target.files[0];
+      if (!f) return;
+      var r = new FileReader();
+      r.onload = function () {
+        oChu.value = String(r.result);
+        oTen.value = f.name;
+        document.getElementById("nap-file-ten").textContent = f.name;
+        doiNoiDung();
+        xemTruoc();
+      };
+      r.readAsText(f, "utf-8");
+    });
+    document.getElementById("nap-xem").addEventListener("click", xemTruoc);
+    nutLuu.addEventListener("click", luuNap);
+    veDanhSachNap();
+  }
+
+  function xemTruoc() {
+    var chu = document.getElementById("nap-chu").value;
+    var ten = (document.getElementById("nap-ten").value || "de-nap-tay.md").trim();
+    var o = document.getElementById("nap-ket-qua");
+    var kq = window.NapDe.doc(chu, ten);
+    var loi = kq.loi.slice();
+    if (!chu.trim()) loi = [{ dong: 1, thong_bao: "Chưa có nội dung." }];
+    if (!loi.length && !kq.tram.length) loi.push({ dong: 1, thong_bao: "Không thấy dòng \"# TRẠM: …\" nào." });
+    if (!loi.length) {
+      // kiểm tra trùng với đề có sẵn và đề đã nạp khác (trừ file cùng tên sẽ bị thay)
+      var thu = JSON.parse(JSON.stringify(D0));
+      NAP.forEach(function (f) {
+        if (f.ten === ten) return;
+        var k = window.NapDe.doc(f.noi_dung, f.ten);
+        if (!k.loi.length) window.NapDe.ghep(thu, k.tram, true);
+      });
+      var tramMoi = {};
+      kq.tram.forEach(function (t) { tramMoi[t.id] = !thu.chuong.some(function (c) { return c.tram.some(function (x) { return x.id === t.id; }); }); });
+      window.NapDe.ghep(thu, JSON.parse(JSON.stringify(kq.tram)), true).forEach(function (e) {
+        e.dong = timDong(chu, e);
+        loi.push(e);
+      });
+    }
+    var nutLuu = document.getElementById("nap-luu");
+    if (loi.length) {
+      choLuu = null;
+      nutLuu.disabled = true;
+      o.innerHTML = '<div class="the bao-loi" role="alert"><h2>Có ' + loi.length + " lỗi – chưa lưu được</h2><ul>" +
+        loi.map(function (e) { return "<li><strong>Dòng " + (e.dong || "?") + ":</strong> " + esc(e.thong_bao) + "</li>"; }).join("") + "</ul></div>";
+      return;
+    }
+    choLuu = { ten: ten, noi_dung: chu };
+    nutLuu.disabled = false;
+    var h = '<div class="the bao-ok"><h2>Xem trước – hợp lệ</h2><p class="phu">' + kq.tram.length + " trạm, " +
+      kq.tram.reduce(function (s, t) { return s + t.de.length; }, 0) + " đề. Bấm <strong>Lưu</strong> để thêm vào web.</p>";
+    kq.tram.forEach(function (t) {
+      h += "<h3>" + esc(t.ten) + ' <span class="chip">' + (tramMoi[t.id] ? "trạm mới" : "thêm vào trạm có sẵn") + "</span></h3>" +
+        '<p class="phu">' + esc(t.chuong_ten) + "</p>";
+      t.de.forEach(function (d) {
+        h += '<details class="xem-de"><summary>' + esc(window.NapDe.tenHienThi(d)) + " · " + esc(d.nguon_de) +
+          (d.soan_them.length ? ' <span class="chip chip-st">có phần soạn thêm</span>' : "") + "</summary>";
+        h += "<h4>Mở đầu</h4>" + khoiNguon(d.mo_dau) + khoiST(d.mo_dau_soan_them);
+        if (d.tac_vu || d.tac_vu_soan_them) h += "<h4>Tác vụ</h4>" + khoiNguon(d.tac_vu) + khoiST(d.tac_vu_soan_them);
+        d.buoc.forEach(function (b, i) {
+          h += "<h4>Bước " + (i + 1) + ": " + esc(b.ten) + "</h4>" + (b.de || b.de_soan_them ? khoiNguon(b.de) + khoiST(b.de_soan_them) : '<p class="trong">(yêu cầu chung)</p>');
+          if (b.ket_qua || b.ket_qua_soan_them) h += '<p class="phu">Kết quả:</p>' + khoiNguon(b.ket_qua) + khoiST(b.ket_qua_soan_them);
+          h += '<p class="phu">Đáp án: ' + (b.dap_an || b.dap_an_de ? "có" : "không có") + "</p>";
+        });
+        h += "</details>";
+      });
+    });
+    o.innerHTML = h + "</div>";
+  }
+
+  function timDong(chu, e) {
+    var ds = chu.replace(/\r\n?/g, "\n").split("\n");
+    for (var i = 0; i < ds.length; i++) if (e.ma_de && ds[i].trim() === "Mã: " + e.ma_de) return i + 1;
+    for (var j = 0; j < ds.length; j++) if (e.ten_de && /^## ĐỀ:/.test(ds[j]) && ds[j].indexOf(e.ten_de) >= 0) return j + 1;
+    return e.dong || 0;
+  }
+
+  function luuNap() {
+    if (!choLuu) return;
+    var moi = docNap().filter(function (f) { return f.ten !== choLuu.ten; });
+    moi.push({ ten: choLuu.ten, noi_dung: choLuu.noi_dung, luu_luc: new Date().toISOString() });
+    try {
+      localStorage.setItem(KHOA_NAP, JSON.stringify(moi));
+    } catch (e) {
+      document.getElementById("nap-ket-qua").innerHTML = '<div class="the bao-loi" role="alert">Trình duyệt không cho lưu (bộ nhớ bị chặn hoặc đầy). Hãy dùng Xuất ra .md để giữ file.</div>';
+      return;
+    }
+    location.hash = "#/nap";
+    location.reload();
+  }
+
+  function taiXuong(ten, chu) {
+    var blob = new Blob([chu], { type: "text/markdown;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = /\.md$/i.test(ten) ? ten : ten + ".md";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+
+  function veDanhSachNap() {
+    var o = document.getElementById("nap-ds");
+    if (!NAP.length) { o.innerHTML = '<p class="trong">Chưa có đề nạp tay.</p>'; return; }
+    var h = '<ul class="danh-sach">';
+    NAP.forEach(function (f, i) {
+      h += '<li class="the nap-muc"><div class="noi-dung"><strong>' + esc(f.ten) + '</strong><span class="phu">' + f.soDe + " đề · lưu lúc " +
+        esc(new Date(f.luu_luc).toLocaleString("vi-VN")) + "</span>" +
+        (f.loi.length ? '<span class="loi-nho">Có ' + f.loi.length + " lỗi khi ghép (đề lỗi không hiện): " + esc(f.loi[0].thong_bao) + "</span>" : "") +
+        '</div><div class="hang-nut"><button type="button" class="nut nut-nho" data-xuat="' + i + '">Xuất ra .md</button>' +
+        '<button type="button" class="nut nut-nho" data-sua="' + i + '">Sửa</button>' +
+        '<button type="button" class="nut nut-nho nut-xoa" data-xoa="' + i + '">Xóa</button></div></li>';
+    });
+    h += '</ul><div class="hang-nut"><button type="button" class="nut" id="xuat-het">Xuất tất cả ra một file .md</button></div>';
+    o.innerHTML = h;
+    o.querySelectorAll("[data-xuat]").forEach(function (b) {
+      b.addEventListener("click", function () { var f = NAP[+b.getAttribute("data-xuat")]; taiXuong(f.ten, f.noi_dung); });
+    });
+    o.querySelectorAll("[data-sua]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = NAP[+b.getAttribute("data-sua")];
+        document.getElementById("nap-chu").value = f.noi_dung;
+        document.getElementById("nap-ten").value = f.ten;
+        xemTruoc();
+        document.getElementById("nap-chu").scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    });
+    o.querySelectorAll("[data-xoa]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = NAP[+b.getAttribute("data-xoa")];
+        if (!confirm("Xóa \"" + f.ten + "\" khỏi trình duyệt? Nên xuất ra .md trước nếu cần giữ.")) return;
+        try {
+          localStorage.setItem(KHOA_NAP, JSON.stringify(docNap().filter(function (x) { return x.ten !== f.ten; })));
+        } catch (e) { /* bỏ qua */ }
+        location.reload();
+      });
+    });
+    document.getElementById("xuat-het").addEventListener("click", function () {
+      taiXuong("de-nap-tay-tat-ca.md", NAP.map(function (f) { return f.noi_dung.replace(/\s+$/, ""); }).join("\n\n"));
+    });
   }
 
   /* ---------- Màn trạm thi ---------- */
@@ -528,6 +712,7 @@
     else if (p[0] === "de" && p[1]) trangThi(decodeURIComponent(p[1]));
     else if (p[0] === "c" && p[1]) trangChu(decodeURIComponent(p[1]));
     else if (p[0] === "huong-dan") trangHuongDan();
+    else if (p[0] === "nap") trangNap();
     else trangChu();
     app.focus({ preventScroll: true });
   }

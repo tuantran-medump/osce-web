@@ -159,6 +159,33 @@ details.ly-thuyet > summary, details.gap > summary { cursor: pointer; min-height
 .nhan-nguon { background: var(--chinh); color: var(--tren-chinh); }
 .nhan-chung { background: var(--vien); color: var(--chu); }
 
+.menu { display: flex; gap: 4px; flex: none; }
+.chip-nap { background: var(--be-mat-2); color: var(--chu-phu); border: 1px solid var(--vien); }
+
+/* Nạp đề */
+.nhan-o { display: block; font-weight: 650; margin: 12px 0 6px; }
+.nhan-o:first-child { margin-top: 0; }
+.o-chu { width: 100%; font: inherit; font-size: 1rem; padding: 10px 12px; border-radius: 12px; border: 1.5px solid var(--vien); background: var(--be-mat); color: var(--chu); min-height: 48px; }
+textarea.o-chu { font-size: .95rem; line-height: 1.5; resize: vertical; }
+.o-chu:focus { border-color: var(--chinh); outline: none; box-shadow: 0 0 0 3px var(--chinh-nhat); }
+.an-file { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+.chon-file { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.an-file:focus-visible + .nut { outline: 3px solid var(--chinh); outline-offset: 2px; }
+#nap-ket-qua .the { margin-top: 16px; }
+.bao-loi { border: 2px solid var(--nguy); background: var(--nguy-nen); }
+.bao-loi h2 { color: var(--nguy); }
+.bao-loi ul { margin: 0; padding-left: 1.2em; }
+.bao-ok { border: 2px solid var(--xong); }
+.bao-ok h3 { margin-top: 14px; font-size: 1.05rem; }
+.xem-de { border-top: 1px solid var(--vien); padding: 4px 0; }
+.xem-de summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-weight: 650; }
+.xem-de h4 { margin: 10px 0 4px; font-size: .95rem; }
+.nap-muc { display: grid; gap: 6px; }
+.nap-muc .noi-dung { display: grid; gap: 2px; min-width: 0; }
+.nap-muc .hang-nut { margin-top: 4px; }
+.loi-nho { color: var(--nguy); font-size: .9rem; }
+.nut-xoa { color: var(--nguy); }
+
 /* Màn trạm thi */
 .dau-thi h1 { margin-bottom: 6px; }
 .dau-thi .dong-chip { margin-bottom: 4px; }

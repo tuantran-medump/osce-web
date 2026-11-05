@@ -9,17 +9,26 @@ Web ôn tập OSCE Sản khoa Y4, dùng trên điện thoại, iPad và PC (Safa
 
 ## Cấu trúc
 
-- `nguon/`: nội dung gốc (OSCE Y21 viết lại từng bước + hình, 29 lưu đồ SVG, rubric OSCE từng bước, tập đọc CTG, mẫu trống sản đồ và biểu đồ tăng trưởng). Không sửa tay nội dung y khoa trong thư mục này.
-- `tools/build_data.py`: sinh `data/stations.json` và `data/stations.js` từ `nguon/TongHop_OSCE_Y21_TungBuoc.md`.
-- `tools/cau_hinh/c1.py … c6.py`: cách chia từng trạm/đề theo số dòng của file nguồn (chữ được chép nguyên dòng) và phần **soạn thêm** (khóa `st`).
-- `kiem_tra/bang_kiem_tra.md`: số đề mỗi trạm, các bước của từng đề, bước nào có soạn thêm, tiêu đề bị bỏ qua.
-- `kiem_tra/noi_dung_soan_them.md`: toàn bộ nội dung soạn thêm để duyệt.
+- `mau-nap/tram/*.md`: **nguồn dữ liệu duy nhất** – mỗi trạm một file theo khuôn nạp đề (chữ nguyên văn từ tài liệu; phần tự soạn thêm nằm dưới dòng `Soạn thêm:`).
+- `mau-nap/MAU_NAP_DE_OSCE.md`: khuôn file nạp (có chú thích từng dòng) + một đề ví dụ điền đủ.
+- `mau-nap/huong-dan-chung.md`: phần "Hướng dẫn thi OSCE" ở cuối tài liệu.
+- `nguon/`: tài liệu gốc để đối chiếu (OSCE Y21 viết lại từng bước + hình, lưu đồ, rubric, tập đọc CTG, mẫu trống). Không sửa tay nội dung y khoa trong thư mục này.
+- `js/nap.js`: trình đọc/xuất file nạp, dùng chung cho web (trang **Nạp đề**) và Node (`tools/build_data.js`).
+- `tools/build_data.js`: build `data/stations.json`, `data/stations.js` và bảng kiểm tra `kiem_tra/*.md` từ `mau-nap/tram/`.
+- `tests/`: test trình đọc (file ví dụ, đọc–xuất–đọc lại toàn bộ dữ liệu, các file lỗi trong `tests/mau-loi/`).
 - `index.html`, `css/style.css`, `js/md.js`, `js/app.js`: giao diện.
 
-## Sinh lại dữ liệu
+## Sửa / thêm đề
+
+1. Sửa hoặc thêm file trong `mau-nap/tram/` theo khuôn `mau-nap/MAU_NAP_DE_OSCE.md`.
+2. Build lại dữ liệu và chạy test:
 
 ```bash
-python3 tools/build_data.py
+node tools/build_data.js
 ```
 
-Sửa nội dung soạn thêm hoặc cách chia dòng trong `tools/cau_hinh/`, chạy lại lệnh trên; giao diện không cần sửa.
+```bash
+node --test tests/*.test.js
+```
+
+Trên web, trang **Nạp đề** cho phép chọn file .md hoặc dán chữ, xem trước, báo lỗi theo dòng, lưu vào trình duyệt (localStorage) và **Xuất ra .md** để đưa vào `mau-nap/tram/`.

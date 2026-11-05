@@ -14,5 +14,9 @@
 - `nguon/` là nội dung gốc: **không tóm tắt, không sửa, không viết lại** nội dung y khoa trong thư mục này. Web chỉ hiển thị/trích nguyên văn.
 - Bất kỳ phần nào tự soạn thêm (không có trong `nguon/`) phải **gắn nhãn "soạn thêm"** rõ ràng trên giao diện.
 
+## Dữ liệu
+- Nguồn dữ liệu duy nhất: `mau-nap/tram/*.md` (khuôn: `mau-nap/MAU_NAP_DE_OSCE.md`). Không sửa tay `data/stations.json` / `data/stations.js`.
+- Sau khi sửa đề: chạy `node tools/build_data.js` và `node --test tests/*.test.js`.
+
 ## Quy trình
 - Mỗi việc làm xong thì **commit và push** ngay.
